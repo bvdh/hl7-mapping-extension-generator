@@ -1,0 +1,480 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-Contract.term.asset.valuedItem",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Contract.term.asset.valuedItem",
+  "name": "ContractTermAssetValuedItem",
+  "title": "Contract Term Asset ValuedItem ",
+  "status": "draft",
+  "description": "Cross version extension for Contract.term.asset.valuedItem from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Contract Term Asset ValuedItem ",
+        "definition": "Cross version extension for Contract.term.asset.valuedItem from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:unitPrice",
+        "path": "Extension.extension",
+        "sliceName": "unitPrice",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:unitPrice.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:unitPrice.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "unitPrice"
+      },
+      {
+        "id": "Extension.extension:unitPrice.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Money"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:identifier",
+        "path": "Extension.extension",
+        "sliceName": "identifier",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:identifier.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:identifier.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "identifier"
+      },
+      {
+        "id": "Extension.extension:identifier.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:quantity",
+        "path": "Extension.extension",
+        "sliceName": "quantity",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:quantity.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:quantity.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "quantity"
+      },
+      {
+        "id": "Extension.extension:quantity.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:effectiveTime",
+        "path": "Extension.extension",
+        "sliceName": "effectiveTime",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:effectiveTime.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:effectiveTime.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "effectiveTime"
+      },
+      {
+        "id": "Extension.extension:effectiveTime.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:securityLabelNumber",
+        "path": "Extension.extension",
+        "sliceName": "securityLabelNumber",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:securityLabelNumber.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:securityLabelNumber.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "securityLabelNumber"
+      },
+      {
+        "id": "Extension.extension:securityLabelNumber.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "unsignedInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:points",
+        "path": "Extension.extension",
+        "sliceName": "points",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:points.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:points.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "points"
+      },
+      {
+        "id": "Extension.extension:points.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:linkId",
+        "path": "Extension.extension",
+        "sliceName": "linkId",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:linkId.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:linkId.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "linkId"
+      },
+      {
+        "id": "Extension.extension:linkId.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:responsible",
+        "path": "Extension.extension",
+        "sliceName": "responsible",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:responsible.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:responsible.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "responsible"
+      },
+      {
+        "id": "Extension.extension:responsible.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization",
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:recipient",
+        "path": "Extension.extension",
+        "sliceName": "recipient",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:recipient.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:recipient.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "recipient"
+      },
+      {
+        "id": "Extension.extension:recipient.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization",
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:payment",
+        "path": "Extension.extension",
+        "sliceName": "payment",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:payment.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:payment.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "payment"
+      },
+      {
+        "id": "Extension.extension:payment.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:paymentDate",
+        "path": "Extension.extension",
+        "sliceName": "paymentDate",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:paymentDate.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:paymentDate.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "paymentDate"
+      },
+      {
+        "id": "Extension.extension:paymentDate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:net",
+        "path": "Extension.extension",
+        "sliceName": "net",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:net.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:net.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "net"
+      },
+      {
+        "id": "Extension.extension:net.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Money"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:factor",
+        "path": "Extension.extension",
+        "sliceName": "factor",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:factor.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:factor.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "factor"
+      },
+      {
+        "id": "Extension.extension:factor.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:entity",
+        "path": "Extension.extension",
+        "sliceName": "entity",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:entity.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:entity.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "entity"
+      },
+      {
+        "id": "Extension.extension:entity.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:entity.value[x]:valueReference",
+        "path": "Extension.extension.value[x]",
+        "sliceName": "valueReference",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Resource"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Contract.term.asset.valuedItem"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

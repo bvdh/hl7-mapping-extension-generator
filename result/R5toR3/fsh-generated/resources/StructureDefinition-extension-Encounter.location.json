@@ -1,0 +1,189 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-Encounter.location",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.location",
+  "name": "EncounterLocation",
+  "title": "Encounter Location ",
+  "status": "draft",
+  "description": "Cross version extension for Encounter.location from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "Encounter",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Encounter Location ",
+        "definition": "Cross version extension for Encounter.location from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:period",
+        "path": "Extension.extension",
+        "sliceName": "period",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:period.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:period.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "period"
+      },
+      {
+        "id": "Extension.extension:period.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:form",
+        "path": "Extension.extension",
+        "sliceName": "form",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:form.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:form.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "form"
+      },
+      {
+        "id": "Extension.extension:form.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/location-form|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:location",
+        "path": "Extension.extension",
+        "sliceName": "location",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:location.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:location.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "location"
+      },
+      {
+        "id": "Extension.extension:location.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Location"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:status",
+        "path": "Extension.extension",
+        "sliceName": "status",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:status.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:status.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "status"
+      },
+      {
+        "id": "Extension.extension:status.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/encounter-location-status|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.location"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

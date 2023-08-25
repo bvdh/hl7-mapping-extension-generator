@@ -1,0 +1,915 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-Evidence.statistic",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Evidence.statistic",
+  "name": "EvidenceStatistic",
+  "title": "Evidence Statistic ",
+  "status": "draft",
+  "description": "Cross version extension for Evidence.statistic from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Evidence Statistic ",
+        "definition": "Cross version extension for Evidence.statistic from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:note",
+        "path": "Extension.extension",
+        "sliceName": "note",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:note.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:note.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "note"
+      },
+      {
+        "id": "Extension.extension:note.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Annotation"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:quantity",
+        "path": "Extension.extension",
+        "sliceName": "quantity",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:quantity.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:quantity.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "quantity"
+      },
+      {
+        "id": "Extension.extension:quantity.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic",
+        "path": "Extension.extension",
+        "sliceName": "modelCharacteristic",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:code",
+        "path": "Extension.extension.extension",
+        "sliceName": "code",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:code.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:code.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:code.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/statistic-model-code|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable",
+        "path": "Extension.extension.extension",
+        "sliceName": "variable",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension:valueCategory",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "valueCategory",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension:valueCategory.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension:valueCategory.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "valueCategory"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension:valueCategory.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension:valueRange",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "valueRange",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension:valueRange.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension:valueRange.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "valueRange"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension:valueRange.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Range"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension:variableDefinition",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "variableDefinition",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension:variableDefinition.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension:variableDefinition.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "variableDefinition"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension:variableDefinition.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Group"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension:handling",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "handling",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension:handling.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension:handling.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "handling"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension:handling.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/variable-handling|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension:id",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension:id.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension:valueQuantity",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "valueQuantity",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension:valueQuantity.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension:valueQuantity.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "valueQuantity"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension:valueQuantity.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "variable"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:value",
+        "path": "Extension.extension.extension",
+        "sliceName": "value",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:value.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:value.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "value"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:value.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "modelCharacteristic"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:statisticType",
+        "path": "Extension.extension",
+        "sliceName": "statisticType",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:statisticType.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:statisticType.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "statisticType"
+      },
+      {
+        "id": "Extension.extension:statisticType.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/statistic-type|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:numberAffected",
+        "path": "Extension.extension",
+        "sliceName": "numberAffected",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:numberAffected.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:numberAffected.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "numberAffected"
+      },
+      {
+        "id": "Extension.extension:numberAffected.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "unsignedInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:description",
+        "path": "Extension.extension",
+        "sliceName": "description",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:description.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:description.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:description.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:sampleSize",
+        "path": "Extension.extension",
+        "sliceName": "sampleSize",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension:numberOfParticipants",
+        "path": "Extension.extension.extension",
+        "sliceName": "numberOfParticipants",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension:numberOfParticipants.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension:numberOfParticipants.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "numberOfParticipants"
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension:numberOfParticipants.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "unsignedInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension:note",
+        "path": "Extension.extension.extension",
+        "sliceName": "note",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension:note.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension:note.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "note"
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension:note.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Annotation"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension:knownDataCount",
+        "path": "Extension.extension.extension",
+        "sliceName": "knownDataCount",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension:knownDataCount.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension:knownDataCount.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "knownDataCount"
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension:knownDataCount.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "unsignedInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension:description",
+        "path": "Extension.extension.extension",
+        "sliceName": "description",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension:description.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension:description.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension:description.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension:numberOfStudies",
+        "path": "Extension.extension.extension",
+        "sliceName": "numberOfStudies",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension:numberOfStudies.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension:numberOfStudies.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "numberOfStudies"
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension:numberOfStudies.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "unsignedInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:sampleSize.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "sampleSize"
+      },
+      {
+        "id": "Extension.extension:sampleSize.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:category",
+        "path": "Extension.extension",
+        "sliceName": "category",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:category.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:category.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "category"
+      },
+      {
+        "id": "Extension.extension:category.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:numberOfEvents",
+        "path": "Extension.extension",
+        "sliceName": "numberOfEvents",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:numberOfEvents.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:numberOfEvents.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "numberOfEvents"
+      },
+      {
+        "id": "Extension.extension:numberOfEvents.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "unsignedInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:attributeEstimate",
+        "path": "Extension.extension",
+        "sliceName": "attributeEstimate",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:note",
+        "path": "Extension.extension.extension",
+        "sliceName": "note",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:note.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:note.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "note"
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:note.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Annotation"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:quantity",
+        "path": "Extension.extension.extension",
+        "sliceName": "quantity",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:quantity.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:quantity.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "quantity"
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:quantity.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:level",
+        "path": "Extension.extension.extension",
+        "sliceName": "level",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:level.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:level.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "level"
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:level.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:range",
+        "path": "Extension.extension.extension",
+        "sliceName": "range",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:range.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:range.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "range"
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:range.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Range"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:description",
+        "path": "Extension.extension.extension",
+        "sliceName": "description",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:description.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:description.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:description.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:type",
+        "path": "Extension.extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:type.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:type.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:type.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/attribute-estimate-type|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "attributeEstimate"
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Evidence.statistic"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

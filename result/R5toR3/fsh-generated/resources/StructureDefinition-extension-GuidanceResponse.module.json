@@ -1,0 +1,86 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-GuidanceResponse.module",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-GuidanceResponse.module",
+  "name": "GuidanceResponseModule",
+  "title": "GuidanceResponse Module[x] ",
+  "status": "draft",
+  "description": "Cross version extension for GuidanceResponse.module[x] from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "GuidanceResponse",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "GuidanceResponse Module[x] ",
+        "definition": "Cross version extension for GuidanceResponse.module[x] from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-GuidanceResponse.module"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "uri"
+          },
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.value[x]:valueCodeableConcept",
+        "path": "Extension.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/guidance-module-code|5.0.0"
+        }
+      }
+    ]
+  }
+}

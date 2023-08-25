@@ -1,0 +1,3267 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-StructureDefinition.snapshot",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-StructureDefinition.snapshot",
+  "name": "StructureDefinitionSnapshot",
+  "title": "StructureDefinition Snapshot ",
+  "status": "draft",
+  "description": "Cross version extension for StructureDefinition.snapshot from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "StructureDefinition",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "StructureDefinition Snapshot ",
+        "definition": "Cross version extension for StructureDefinition.snapshot from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element",
+        "path": "Extension.extension",
+        "sliceName": "element",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition",
+        "path": "Extension.extension.extension",
+        "sliceName": "elementdefinition",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:code",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "code",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:code.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:code.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:code.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://loinc.org/vs"
+        }
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:defaultValue",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "defaultValue",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:defaultValue.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:defaultValue.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "defaultValue"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:defaultValue.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "base64Binary"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "code"
+          },
+          {
+            "code": "date"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "decimal"
+          },
+          {
+            "code": "id"
+          },
+          {
+            "code": "instant"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "markdown"
+          },
+          {
+            "code": "oid"
+          },
+          {
+            "code": "positiveInt"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "unsignedInt"
+          },
+          {
+            "code": "uri"
+          },
+          {
+            "code": "uuid"
+          },
+          {
+            "code": "Address"
+          },
+          {
+            "code": "Age"
+          },
+          {
+            "code": "Annotation"
+          },
+          {
+            "code": "Attachment"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "ContactPoint"
+          },
+          {
+            "code": "Count"
+          },
+          {
+            "code": "Distance"
+          },
+          {
+            "code": "Duration"
+          },
+          {
+            "code": "HumanName"
+          },
+          {
+            "code": "Identifier"
+          },
+          {
+            "code": "Money"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Ratio"
+          },
+          {
+            "code": "Reference"
+          },
+          {
+            "code": "SampledData"
+          },
+          {
+            "code": "Signature"
+          },
+          {
+            "code": "Timing"
+          },
+          {
+            "code": "Meta"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:pattern",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "pattern",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:pattern.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:pattern.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "pattern"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:pattern.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "base64Binary"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "code"
+          },
+          {
+            "code": "date"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "decimal"
+          },
+          {
+            "code": "id"
+          },
+          {
+            "code": "instant"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "markdown"
+          },
+          {
+            "code": "oid"
+          },
+          {
+            "code": "positiveInt"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "unsignedInt"
+          },
+          {
+            "code": "uri"
+          },
+          {
+            "code": "uuid"
+          },
+          {
+            "code": "Address"
+          },
+          {
+            "code": "Age"
+          },
+          {
+            "code": "Annotation"
+          },
+          {
+            "code": "Attachment"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "ContactPoint"
+          },
+          {
+            "code": "Count"
+          },
+          {
+            "code": "Distance"
+          },
+          {
+            "code": "Duration"
+          },
+          {
+            "code": "HumanName"
+          },
+          {
+            "code": "Identifier"
+          },
+          {
+            "code": "Money"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Ratio"
+          },
+          {
+            "code": "Reference"
+          },
+          {
+            "code": "SampledData"
+          },
+          {
+            "code": "Signature"
+          },
+          {
+            "code": "Timing"
+          },
+          {
+            "code": "Meta"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "binding",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:valueSet",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "valueSet",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:valueSet.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:valueSet.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "valueSet"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:valueSet.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:strength",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "strength",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:strength.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:strength.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "strength"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:strength.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/binding-strength|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "additional",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:valueSet",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "valueSet",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:valueSet.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:valueSet.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "valueSet"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:valueSet.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:shortDoco",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "shortDoco",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:shortDoco.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:shortDoco.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "shortDoco"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:shortDoco.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:purpose",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "purpose",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:purpose.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:purpose.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "purpose"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:purpose.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/additional-binding-purpose|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:usage",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "usage",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:usage.extension:usagecontext",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "sliceName": "usagecontext",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:usage.extension:usagecontext.extension:code",
+        "path": "Extension.extension.extension.extension.extension.extension.extension.extension",
+        "sliceName": "code",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:usage.extension:usagecontext.extension:code.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:usage.extension:usagecontext.extension:code.url",
+        "path": "Extension.extension.extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:usage.extension:usagecontext.extension:code.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://terminology.hl7.org/ValueSet/usage-context-type"
+        }
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:usage.extension:usagecontext.extension:id",
+        "path": "Extension.extension.extension.extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:usage.extension:usagecontext.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:usage.extension:usagecontext.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:usage.extension:usagecontext.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:usage.extension:usagecontext.extension:value",
+        "path": "Extension.extension.extension.extension.extension.extension.extension.extension",
+        "sliceName": "value",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:usage.extension:usagecontext.extension:value.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:usage.extension:usagecontext.extension:value.url",
+        "path": "Extension.extension.extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "value"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:usage.extension:usagecontext.extension:value.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:usage.extension:usagecontext.extension:value.value[x]:valueReference",
+        "path": "Extension.extension.extension.extension.extension.extension.extension.extension.value[x]",
+        "sliceName": "valueReference",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/PlanDefinition",
+              "http://hl7.org/fhir/StructureDefinition/ResearchStudy",
+              "http://hl7.org/fhir/StructureDefinition/HealthcareService",
+              "http://hl7.org/fhir/StructureDefinition/Group",
+              "http://hl7.org/fhir/StructureDefinition/Location",
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:usage.extension:usagecontext.extension:value.value[x]:valueCodeableConcept",
+        "path": "Extension.extension.extension.extension.extension.extension.extension.extension.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/use-context|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:usage.extension:usagecontext.url",
+        "path": "Extension.extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "usagecontext"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:usage.extension:usagecontext.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:usage.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "usage"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:usage.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:documentation",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "documentation",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:documentation.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:documentation.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "documentation"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:documentation.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:id",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:any",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "any",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:any.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:any.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "any"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:any.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:element",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "element",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:element.extension:id",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:element.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:element.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:element.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:element.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "element"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.extension:element.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "additional"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:additional.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:description",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "description",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:description.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:description.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:description.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:id",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:element",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "element",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:element.extension:id",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:element.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:element.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:element.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:element.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "element"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.extension:element.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "binding"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:binding.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:type",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:type.extension:versioning",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "versioning",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:type.extension:versioning.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:type.extension:versioning.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "versioning"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:type.extension:versioning.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/reference-version-rules|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:type.extension:code",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "code",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:type.extension:code.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:type.extension:code.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:type.extension:code.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:type.extension:profile",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "profile",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:type.extension:profile.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:type.extension:profile.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "profile"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:type.extension:profile.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:type.extension:targetProfile",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "targetProfile",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:type.extension:targetProfile.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:type.extension:targetProfile.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "targetProfile"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:type.extension:targetProfile.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:type.extension:aggregation",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "aggregation",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:type.extension:aggregation.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:type.extension:aggregation.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "aggregation"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:type.extension:aggregation.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/resource-aggregation-mode|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:type.extension:id",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:type.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:type.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:type.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:type.extension:element",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "element",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:type.extension:element.extension:id",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:type.extension:element.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:type.extension:element.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:type.extension:element.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:type.extension:element.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "element"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:type.extension:element.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:type.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:type.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:representation",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "representation",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:representation.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:representation.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "representation"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:representation.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/property-representation|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:example",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "example",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:example.extension:id",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:example.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:example.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:example.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:example.extension:label",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "label",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:example.extension:label.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:example.extension:label.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "label"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:example.extension:label.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:example.extension:value",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "value",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:example.extension:value.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:example.extension:value.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "value"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:example.extension:value.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "base64Binary"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "code"
+          },
+          {
+            "code": "date"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "decimal"
+          },
+          {
+            "code": "id"
+          },
+          {
+            "code": "instant"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "markdown"
+          },
+          {
+            "code": "oid"
+          },
+          {
+            "code": "positiveInt"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "unsignedInt"
+          },
+          {
+            "code": "uri"
+          },
+          {
+            "code": "uuid"
+          },
+          {
+            "code": "Address"
+          },
+          {
+            "code": "Age"
+          },
+          {
+            "code": "Annotation"
+          },
+          {
+            "code": "Attachment"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "ContactPoint"
+          },
+          {
+            "code": "Count"
+          },
+          {
+            "code": "Distance"
+          },
+          {
+            "code": "Duration"
+          },
+          {
+            "code": "HumanName"
+          },
+          {
+            "code": "Identifier"
+          },
+          {
+            "code": "Money"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Ratio"
+          },
+          {
+            "code": "Reference"
+          },
+          {
+            "code": "SampledData"
+          },
+          {
+            "code": "Signature"
+          },
+          {
+            "code": "Timing"
+          },
+          {
+            "code": "Meta"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:example.extension:element",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "element",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:example.extension:element.extension:id",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:example.extension:element.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:example.extension:element.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:example.extension:element.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:example.extension:element.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "element"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:example.extension:element.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:example.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "example"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:example.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:mustHaveValue",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "mustHaveValue",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:mustHaveValue.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:mustHaveValue.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "mustHaveValue"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:mustHaveValue.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:path",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "path",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:path.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:path.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "path"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:path.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:minValue",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "minValue",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:minValue.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:minValue.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "minValue"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:minValue.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "date"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "decimal"
+          },
+          {
+            "code": "instant"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "positiveInt"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "unsignedInt"
+          },
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:min",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "min",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:min.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:min.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "min"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:min.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "unsignedInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:alias",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "alias",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:alias.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:alias.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "alias"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:alias.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:definition",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "definition",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:definition.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:definition.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "definition"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:definition.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:id",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:id.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:sliceIsConstraining",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "sliceIsConstraining",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:sliceIsConstraining.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:sliceIsConstraining.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "sliceIsConstraining"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:sliceIsConstraining.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "slicing",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:ordered",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "ordered",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:ordered.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:ordered.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "ordered"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:ordered.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:description",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "description",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:description.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:description.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:description.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:rules",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "rules",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:rules.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:rules.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "rules"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:rules.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/resource-slicing-rules|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:id",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:discriminator",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "discriminator",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:discriminator.extension:path",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "path",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:discriminator.extension:path.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:discriminator.extension:path.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "path"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:discriminator.extension:path.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:discriminator.extension:id",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:discriminator.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:discriminator.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:discriminator.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:discriminator.extension:type",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:discriminator.extension:type.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:discriminator.extension:type.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:discriminator.extension:type.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/discriminator-type|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:discriminator.extension:element",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "element",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:discriminator.extension:element.extension:id",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:discriminator.extension:element.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:discriminator.extension:element.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:discriminator.extension:element.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:discriminator.extension:element.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "element"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:discriminator.extension:element.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:discriminator.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "discriminator"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:discriminator.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:element",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "element",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:element.extension:id",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:element.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:element.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:element.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:element.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "element"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.extension:element.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "slicing"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:slicing.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:requirements",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "requirements",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:requirements.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:requirements.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "requirements"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:requirements.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:mapping",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "mapping",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:mapping.extension:identity",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "identity",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:mapping.extension:identity.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:mapping.extension:identity.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "identity"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:mapping.extension:identity.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:mapping.extension:comment",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "comment",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:mapping.extension:comment.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:mapping.extension:comment.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "comment"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:mapping.extension:comment.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:mapping.extension:language",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "language",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:mapping.extension:language.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:mapping.extension:language.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "language"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:mapping.extension:language.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/mimetypes|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:mapping.extension:id",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:mapping.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:mapping.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:mapping.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:mapping.extension:map",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "map",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:mapping.extension:map.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:mapping.extension:map.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "map"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:mapping.extension:map.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:mapping.extension:element",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "element",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:mapping.extension:element.extension:id",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:mapping.extension:element.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:mapping.extension:element.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:mapping.extension:element.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:mapping.extension:element.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "element"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:mapping.extension:element.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:mapping.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "mapping"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:mapping.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:mustSupport",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "mustSupport",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:mustSupport.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:mustSupport.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "mustSupport"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:mustSupport.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:max",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "max",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:max.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:max.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "max"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:max.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:maxValue",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "maxValue",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:maxValue.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:maxValue.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "maxValue"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:maxValue.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "date"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "decimal"
+          },
+          {
+            "code": "instant"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "positiveInt"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "unsignedInt"
+          },
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:isModifier",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "isModifier",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:isModifier.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:isModifier.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "isModifier"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:isModifier.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:valueAlternatives",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "valueAlternatives",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:valueAlternatives.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:valueAlternatives.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "valueAlternatives"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:valueAlternatives.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:isSummary",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "isSummary",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:isSummary.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:isSummary.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "isSummary"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:isSummary.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:label",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "label",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:label.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:label.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "label"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:label.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:condition",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "condition",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:condition.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:condition.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "condition"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:condition.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:sliceName",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "sliceName",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:sliceName.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:sliceName.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "sliceName"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:sliceName.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:contentReference",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "contentReference",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:contentReference.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:contentReference.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "contentReference"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:contentReference.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:orderMeaning",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "orderMeaning",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:orderMeaning.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:orderMeaning.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "orderMeaning"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:orderMeaning.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:short",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "short",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:short.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:short.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "short"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:short.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:comment",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "comment",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:comment.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:comment.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "comment"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:comment.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "constraint",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.extension:severity",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "severity",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.extension:severity.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.extension:severity.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "severity"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.extension:severity.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/constraint-severity|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.extension:requirements",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "requirements",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.extension:requirements.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.extension:requirements.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "requirements"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.extension:requirements.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.extension:expression",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "expression",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.extension:expression.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.extension:expression.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "expression"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.extension:expression.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.extension:source",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "source",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.extension:source.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.extension:source.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "source"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.extension:source.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.extension:id",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.extension:suppress",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "suppress",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.extension:suppress.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.extension:suppress.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "suppress"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.extension:suppress.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.extension:human",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "human",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.extension:human.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.extension:human.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "human"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.extension:human.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.extension:key",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "key",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.extension:key.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.extension:key.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "key"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.extension:key.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.extension:element",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "element",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.extension:element.extension:id",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.extension:element.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.extension:element.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.extension:element.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.extension:element.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "element"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.extension:element.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "constraint"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:constraint.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:fixed",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "fixed",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:fixed.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:fixed.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "fixed"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:fixed.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "base64Binary"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "code"
+          },
+          {
+            "code": "date"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "decimal"
+          },
+          {
+            "code": "id"
+          },
+          {
+            "code": "instant"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "markdown"
+          },
+          {
+            "code": "oid"
+          },
+          {
+            "code": "positiveInt"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "unsignedInt"
+          },
+          {
+            "code": "uri"
+          },
+          {
+            "code": "uuid"
+          },
+          {
+            "code": "Address"
+          },
+          {
+            "code": "Age"
+          },
+          {
+            "code": "Annotation"
+          },
+          {
+            "code": "Attachment"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "ContactPoint"
+          },
+          {
+            "code": "Count"
+          },
+          {
+            "code": "Distance"
+          },
+          {
+            "code": "Duration"
+          },
+          {
+            "code": "HumanName"
+          },
+          {
+            "code": "Identifier"
+          },
+          {
+            "code": "Money"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Ratio"
+          },
+          {
+            "code": "Reference"
+          },
+          {
+            "code": "SampledData"
+          },
+          {
+            "code": "Signature"
+          },
+          {
+            "code": "Timing"
+          },
+          {
+            "code": "Meta"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:meaningWhenMissing",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "meaningWhenMissing",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:meaningWhenMissing.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:meaningWhenMissing.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "meaningWhenMissing"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:meaningWhenMissing.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:isModifierReason",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "isModifierReason",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:isModifierReason.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:isModifierReason.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "isModifierReason"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:isModifierReason.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:maxLength",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "maxLength",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:maxLength.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:maxLength.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "maxLength"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:maxLength.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:base",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "base",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:base.extension:path",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "path",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:base.extension:path.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:base.extension:path.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "path"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:base.extension:path.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:base.extension:min",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "min",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:base.extension:min.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:base.extension:min.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "min"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:base.extension:min.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "unsignedInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:base.extension:max",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "max",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:base.extension:max.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:base.extension:max.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "max"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:base.extension:max.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:base.extension:id",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:base.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:base.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:base.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:base.extension:element",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "element",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:base.extension:element.extension:id",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:base.extension:element.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:base.extension:element.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:base.extension:element.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:base.extension:element.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "element"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:base.extension:element.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:base.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "base"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.extension:base.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "elementdefinition"
+      },
+      {
+        "id": "Extension.extension:element.extension:elementdefinition.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "element"
+      },
+      {
+        "id": "Extension.extension:element.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-StructureDefinition.snapshot"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

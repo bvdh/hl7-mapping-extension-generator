@@ -1,0 +1,190 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-Bundle.entry.response",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Bundle.entry.response",
+  "name": "BundleEntryResponse",
+  "title": "Bundle Entry Response ",
+  "status": "draft",
+  "description": "Cross version extension for Bundle.entry.response from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "Bundle.entry",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Bundle Entry Response ",
+        "definition": "Cross version extension for Bundle.entry.response from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:etag",
+        "path": "Extension.extension",
+        "sliceName": "etag",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:etag.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:etag.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "etag"
+      },
+      {
+        "id": "Extension.extension:etag.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:location",
+        "path": "Extension.extension",
+        "sliceName": "location",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:location.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:location.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "location"
+      },
+      {
+        "id": "Extension.extension:location.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:lastModified",
+        "path": "Extension.extension",
+        "sliceName": "lastModified",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:lastModified.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:lastModified.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "lastModified"
+      },
+      {
+        "id": "Extension.extension:lastModified.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "instant"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:outcome",
+        "path": "Extension.extension",
+        "sliceName": "outcome",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:outcome.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "outcome"
+      },
+      {
+        "id": "Extension.extension:status",
+        "path": "Extension.extension",
+        "sliceName": "status",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:status.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:status.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "status"
+      },
+      {
+        "id": "Extension.extension:status.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Bundle.entry.response"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

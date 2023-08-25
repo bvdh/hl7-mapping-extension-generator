@@ -1,0 +1,172 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-PackagedProductDefinition.packaging.shelfLifeStorage",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.packaging.shelfLifeStorage",
+  "name": "PackagedProductDefinitionPackagingShelfLifeStorage",
+  "title": "PackagedProductDefinition Packaging ShelfLifeStorage ",
+  "status": "draft",
+  "description": "Cross version extension for PackagedProductDefinition.packaging.shelfLifeStorage from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "PackagedProductDefinition Packaging ShelfLifeStorage ",
+        "definition": "Cross version extension for PackagedProductDefinition.packaging.shelfLifeStorage from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:productshelflife",
+        "path": "Extension.extension",
+        "sliceName": "productshelflife",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:productshelflife.extension:period",
+        "path": "Extension.extension.extension",
+        "sliceName": "period",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:productshelflife.extension:period.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:productshelflife.extension:period.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "period"
+      },
+      {
+        "id": "Extension.extension:productshelflife.extension:period.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          },
+          {
+            "code": "Duration"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:productshelflife.extension:specialPrecautionsForStorage",
+        "path": "Extension.extension.extension",
+        "sliceName": "specialPrecautionsForStorage",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:productshelflife.extension:specialPrecautionsForStorage.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:productshelflife.extension:specialPrecautionsForStorage.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "specialPrecautionsForStorage"
+      },
+      {
+        "id": "Extension.extension:productshelflife.extension:specialPrecautionsForStorage.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:productshelflife.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:productshelflife.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:productshelflife.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:productshelflife.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:productshelflife.extension:type",
+        "path": "Extension.extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:productshelflife.extension:type.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:productshelflife.extension:type.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:productshelflife.extension:type.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:productshelflife.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "productshelflife"
+      },
+      {
+        "id": "Extension.extension:productshelflife.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.packaging.shelfLifeStorage"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

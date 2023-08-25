@@ -1,0 +1,57 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-Contract.term.offer.party.id",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Contract.term.offer.party.id",
+  "name": "ContractTermOfferPartyId",
+  "title": "Contract Term Offer Party Id ",
+  "status": "draft",
+  "description": "Cross version extension for Contract.term.offer.party.id from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Contract Term Offer Party Id ",
+        "definition": "Cross version extension for Contract.term.offer.party.id from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Contract.term.offer.party.id"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      }
+    ]
+  }
+}

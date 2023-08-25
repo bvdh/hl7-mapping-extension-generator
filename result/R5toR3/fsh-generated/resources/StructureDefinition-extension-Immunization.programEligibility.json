@@ -1,0 +1,134 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-Immunization.programEligibility",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.programEligibility",
+  "name": "ImmunizationProgramEligibility",
+  "title": "Immunization ProgramEligibility ",
+  "status": "draft",
+  "description": "Cross version extension for Immunization.programEligibility from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "Immunization",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Immunization ProgramEligibility ",
+        "definition": "Cross version extension for Immunization.programEligibility from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:program",
+        "path": "Extension.extension",
+        "sliceName": "program",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:program.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:program.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "program"
+      },
+      {
+        "id": "Extension.extension:program.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/immunization-vaccine-funding-program|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:programStatus",
+        "path": "Extension.extension",
+        "sliceName": "programStatus",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:programStatus.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:programStatus.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "programStatus"
+      },
+      {
+        "id": "Extension.extension:programStatus.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/immunization-program-eligibility|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.programEligibility"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

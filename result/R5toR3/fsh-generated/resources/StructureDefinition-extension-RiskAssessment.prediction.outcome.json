@@ -1,0 +1,57 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-RiskAssessment.prediction.outcome",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-RiskAssessment.prediction.outcome",
+  "name": "RiskAssessmentPredictionOutcome",
+  "title": "RiskAssessment Prediction Outcome ",
+  "status": "draft",
+  "description": "Cross version extension for RiskAssessment.prediction.outcome from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "RiskAssessment.prediction",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "RiskAssessment Prediction Outcome ",
+        "definition": "Cross version extension for RiskAssessment.prediction.outcome from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-RiskAssessment.prediction.outcome"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      }
+    ]
+  }
+}

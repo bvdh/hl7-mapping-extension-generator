@@ -1,0 +1,130 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-OperationDefinition.parameter.binding",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-OperationDefinition.parameter.binding",
+  "name": "OperationDefinitionParameterBinding",
+  "title": "OperationDefinition Parameter Binding ",
+  "status": "draft",
+  "description": "Cross version extension for OperationDefinition.parameter.binding from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "OperationDefinition.parameter",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "OperationDefinition Parameter Binding ",
+        "definition": "Cross version extension for OperationDefinition.parameter.binding from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:valueSet",
+        "path": "Extension.extension",
+        "sliceName": "valueSet",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:valueSet.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:valueSet.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "valueSet"
+      },
+      {
+        "id": "Extension.extension:valueSet.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:strength",
+        "path": "Extension.extension",
+        "sliceName": "strength",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:strength.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:strength.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "strength"
+      },
+      {
+        "id": "Extension.extension:strength.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/binding-strength|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-OperationDefinition.parameter.binding"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

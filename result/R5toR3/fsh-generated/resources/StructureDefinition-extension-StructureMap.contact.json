@@ -1,0 +1,143 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-StructureMap.contact",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-StructureMap.contact",
+  "name": "StructureMapContact",
+  "title": "StructureMap Contact ",
+  "status": "draft",
+  "description": "Cross version extension for StructureMap.contact from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "StructureMap",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "StructureMap Contact ",
+        "definition": "Cross version extension for StructureMap.contact from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:contactdetail",
+        "path": "Extension.extension",
+        "sliceName": "contactdetail",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:contactdetail.extension:name",
+        "path": "Extension.extension.extension",
+        "sliceName": "name",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:contactdetail.extension:name.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:contactdetail.extension:name.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "name"
+      },
+      {
+        "id": "Extension.extension:contactdetail.extension:name.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:contactdetail.extension:telecom",
+        "path": "Extension.extension.extension",
+        "sliceName": "telecom",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:contactdetail.extension:telecom.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:contactdetail.extension:telecom.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "telecom"
+      },
+      {
+        "id": "Extension.extension:contactdetail.extension:telecom.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "ContactPoint"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:contactdetail.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:contactdetail.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:contactdetail.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:contactdetail.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:contactdetail.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "contactdetail"
+      },
+      {
+        "id": "Extension.extension:contactdetail.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-StructureMap.contact"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

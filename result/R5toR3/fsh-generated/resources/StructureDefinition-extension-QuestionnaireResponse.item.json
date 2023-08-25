@@ -1,0 +1,303 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-QuestionnaireResponse.item",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-QuestionnaireResponse.item",
+  "name": "QuestionnaireResponseItem",
+  "title": "QuestionnaireResponse Item ",
+  "status": "draft",
+  "description": "Cross version extension for QuestionnaireResponse.item from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "QuestionnaireResponse",
+      "type": "element"
+    },
+    {
+      "expression": "QuestionnaireResponse.item.answer",
+      "type": "element"
+    },
+    {
+      "expression": "QuestionnaireResponse.item",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "QuestionnaireResponse Item ",
+        "definition": "Cross version extension for QuestionnaireResponse.item from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:linkId",
+        "path": "Extension.extension",
+        "sliceName": "linkId",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:linkId.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:linkId.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "linkId"
+      },
+      {
+        "id": "Extension.extension:linkId.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:answer",
+        "path": "Extension.extension",
+        "sliceName": "answer",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:answer.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:answer.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:answer.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:answer.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:answer.extension:value",
+        "path": "Extension.extension.extension",
+        "sliceName": "value",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:answer.extension:value.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:answer.extension:value.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "value"
+      },
+      {
+        "id": "Extension.extension:answer.extension:value.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "date"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "decimal"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "uri"
+          },
+          {
+            "code": "Attachment"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:answer.extension:value.value[x]:valueReference",
+        "path": "Extension.extension.extension.value[x]",
+        "sliceName": "valueReference",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Resource"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:answer.extension:value.value[x]:valueCoding",
+        "path": "Extension.extension.extension.value[x]",
+        "sliceName": "valueCoding",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/questionnaire-answers|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:answer.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "answer"
+      },
+      {
+        "id": "Extension.extension:answer.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:definition",
+        "path": "Extension.extension",
+        "sliceName": "definition",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:definition.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:definition.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "definition"
+      },
+      {
+        "id": "Extension.extension:definition.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:text",
+        "path": "Extension.extension",
+        "sliceName": "text",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:text.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:text.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "text"
+      },
+      {
+        "id": "Extension.extension:text.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-QuestionnaireResponse.item"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

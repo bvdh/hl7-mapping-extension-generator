@@ -1,0 +1,324 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-CapabilityStatement.messaging",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-CapabilityStatement.messaging",
+  "name": "CapabilityStatementMessaging",
+  "title": "CapabilityStatement Messaging ",
+  "status": "draft",
+  "description": "Cross version extension for CapabilityStatement.messaging from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "CapabilityStatement",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "CapabilityStatement Messaging ",
+        "definition": "Cross version extension for CapabilityStatement.messaging from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:endpoint",
+        "path": "Extension.extension",
+        "sliceName": "endpoint",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:endpoint.extension:protocol",
+        "path": "Extension.extension.extension",
+        "sliceName": "protocol",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:endpoint.extension:protocol.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:endpoint.extension:protocol.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "protocol"
+      },
+      {
+        "id": "Extension.extension:endpoint.extension:protocol.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/message-transport|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:endpoint.extension:address",
+        "path": "Extension.extension.extension",
+        "sliceName": "address",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:endpoint.extension:address.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:endpoint.extension:address.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "address"
+      },
+      {
+        "id": "Extension.extension:endpoint.extension:address.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:endpoint.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:endpoint.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:endpoint.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:endpoint.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:endpoint.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "endpoint"
+      },
+      {
+        "id": "Extension.extension:endpoint.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:documentation",
+        "path": "Extension.extension",
+        "sliceName": "documentation",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:documentation.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:documentation.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "documentation"
+      },
+      {
+        "id": "Extension.extension:documentation.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:reliableCache",
+        "path": "Extension.extension",
+        "sliceName": "reliableCache",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:reliableCache.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:reliableCache.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "reliableCache"
+      },
+      {
+        "id": "Extension.extension:reliableCache.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "unsignedInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:supportedMessage",
+        "path": "Extension.extension",
+        "sliceName": "supportedMessage",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:supportedMessage.extension:mode",
+        "path": "Extension.extension.extension",
+        "sliceName": "mode",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:supportedMessage.extension:mode.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:supportedMessage.extension:mode.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "mode"
+      },
+      {
+        "id": "Extension.extension:supportedMessage.extension:mode.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/event-capability-mode|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:supportedMessage.extension:definition",
+        "path": "Extension.extension.extension",
+        "sliceName": "definition",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:supportedMessage.extension:definition.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:supportedMessage.extension:definition.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "definition"
+      },
+      {
+        "id": "Extension.extension:supportedMessage.extension:definition.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:supportedMessage.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:supportedMessage.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:supportedMessage.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:supportedMessage.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:supportedMessage.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "supportedMessage"
+      },
+      {
+        "id": "Extension.extension:supportedMessage.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-CapabilityStatement.messaging"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

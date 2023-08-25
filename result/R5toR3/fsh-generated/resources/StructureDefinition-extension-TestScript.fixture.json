@@ -1,0 +1,155 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-TestScript.fixture",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestScript.fixture",
+  "name": "TestScriptFixture",
+  "title": "TestScript Fixture ",
+  "status": "draft",
+  "description": "Cross version extension for TestScript.fixture from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "TestScript",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "TestScript Fixture ",
+        "definition": "Cross version extension for TestScript.fixture from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:resource",
+        "path": "Extension.extension",
+        "sliceName": "resource",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:resource.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:resource.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "resource"
+      },
+      {
+        "id": "Extension.extension:resource.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Resource"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:autocreate",
+        "path": "Extension.extension",
+        "sliceName": "autocreate",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:autocreate.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:autocreate.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "autocreate"
+      },
+      {
+        "id": "Extension.extension:autocreate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:autodelete",
+        "path": "Extension.extension",
+        "sliceName": "autodelete",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:autodelete.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:autodelete.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "autodelete"
+      },
+      {
+        "id": "Extension.extension:autodelete.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestScript.fixture"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

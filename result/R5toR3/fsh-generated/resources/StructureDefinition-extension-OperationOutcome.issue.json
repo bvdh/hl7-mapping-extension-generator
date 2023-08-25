@@ -1,0 +1,242 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-OperationOutcome.issue",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-OperationOutcome.issue",
+  "name": "OperationOutcomeIssue",
+  "title": "OperationOutcome Issue ",
+  "status": "draft",
+  "description": "Cross version extension for OperationOutcome.issue from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "OperationOutcome",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "OperationOutcome Issue ",
+        "definition": "Cross version extension for OperationOutcome.issue from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:severity",
+        "path": "Extension.extension",
+        "sliceName": "severity",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:severity.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:severity.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "severity"
+      },
+      {
+        "id": "Extension.extension:severity.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/issue-severity|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:diagnostics",
+        "path": "Extension.extension",
+        "sliceName": "diagnostics",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:diagnostics.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:diagnostics.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "diagnostics"
+      },
+      {
+        "id": "Extension.extension:diagnostics.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:code",
+        "path": "Extension.extension",
+        "sliceName": "code",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:code.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:code.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:code.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/issue-type|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:expression",
+        "path": "Extension.extension",
+        "sliceName": "expression",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:expression.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:expression.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "expression"
+      },
+      {
+        "id": "Extension.extension:expression.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:location",
+        "path": "Extension.extension",
+        "sliceName": "location",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:location.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:location.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "location"
+      },
+      {
+        "id": "Extension.extension:location.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:details",
+        "path": "Extension.extension",
+        "sliceName": "details",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:details.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:details.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "details"
+      },
+      {
+        "id": "Extension.extension:details.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/operation-outcome|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-OperationOutcome.issue"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

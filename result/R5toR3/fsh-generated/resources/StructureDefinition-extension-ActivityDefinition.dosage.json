@@ -1,0 +1,626 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-ActivityDefinition.dosage",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActivityDefinition.dosage",
+  "name": "ActivityDefinitionDosage",
+  "title": "ActivityDefinition Dosage ",
+  "status": "draft",
+  "description": "Cross version extension for ActivityDefinition.dosage from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "ActivityDefinition",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "ActivityDefinition Dosage ",
+        "definition": "Cross version extension for ActivityDefinition.dosage from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:dosage",
+        "path": "Extension.extension",
+        "sliceName": "dosage",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:maxDosePerLifetime",
+        "path": "Extension.extension.extension",
+        "sliceName": "maxDosePerLifetime",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:maxDosePerLifetime.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:maxDosePerLifetime.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "maxDosePerLifetime"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:maxDosePerLifetime.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:dosage.extension:additionalInstruction",
+        "path": "Extension.extension.extension",
+        "sliceName": "additionalInstruction",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:additionalInstruction.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:additionalInstruction.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "additionalInstruction"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:additionalInstruction.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/additional-instruction-codes|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:dosage.extension:method",
+        "path": "Extension.extension.extension",
+        "sliceName": "method",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:method.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:method.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "method"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:method.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/administration-method-codes|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:dosage.extension:timing",
+        "path": "Extension.extension.extension",
+        "sliceName": "timing",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:timing.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:timing.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "timing"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:timing.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Timing"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:dosage.extension:doseAndRate",
+        "path": "Extension.extension.extension",
+        "sliceName": "doseAndRate",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:doseAndRate.extension:dose",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "dose",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:doseAndRate.extension:dose.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:doseAndRate.extension:dose.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "dose"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:doseAndRate.extension:dose.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Range"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:dosage.extension:doseAndRate.extension:rate",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "rate",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:doseAndRate.extension:rate.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:doseAndRate.extension:rate.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "rate"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:doseAndRate.extension:rate.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Ratio"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:dosage.extension:doseAndRate.extension:id",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:doseAndRate.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:doseAndRate.extension:id.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:doseAndRate.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:dosage.extension:doseAndRate.extension:type",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:doseAndRate.extension:type.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:doseAndRate.extension:type.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:doseAndRate.extension:type.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://terminology.hl7.org/ValueSet/dose-rate-type"
+        }
+      },
+      {
+        "id": "Extension.extension:dosage.extension:doseAndRate.extension:element",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "element",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:doseAndRate.extension:element.extension:id",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:doseAndRate.extension:element.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:doseAndRate.extension:element.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:doseAndRate.extension:element.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:dosage.extension:doseAndRate.extension:element.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "element"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:doseAndRate.extension:element.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:doseAndRate.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "doseAndRate"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:doseAndRate.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:asNeededFor",
+        "path": "Extension.extension.extension",
+        "sliceName": "asNeededFor",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:asNeededFor.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:asNeededFor.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "asNeededFor"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:asNeededFor.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/medication-as-needed-reason|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:dosage.extension:asNeeded",
+        "path": "Extension.extension.extension",
+        "sliceName": "asNeeded",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:asNeeded.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:asNeeded.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "asNeeded"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:asNeeded.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:dosage.extension:sequence",
+        "path": "Extension.extension.extension",
+        "sliceName": "sequence",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:sequence.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:sequence.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "sequence"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:sequence.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:dosage.extension:site",
+        "path": "Extension.extension.extension",
+        "sliceName": "site",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:site.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:site.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "site"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:site.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/approach-site-codes|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:dosage.extension:route",
+        "path": "Extension.extension.extension",
+        "sliceName": "route",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:route.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:route.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "route"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:route.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/route-codes|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:dosage.extension:maxDosePerPeriod",
+        "path": "Extension.extension.extension",
+        "sliceName": "maxDosePerPeriod",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:maxDosePerPeriod.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:maxDosePerPeriod.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "maxDosePerPeriod"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:maxDosePerPeriod.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Ratio"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:dosage.extension:maxDosePerAdministration",
+        "path": "Extension.extension.extension",
+        "sliceName": "maxDosePerAdministration",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:maxDosePerAdministration.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:maxDosePerAdministration.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "maxDosePerAdministration"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:maxDosePerAdministration.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:dosage.extension:text",
+        "path": "Extension.extension.extension",
+        "sliceName": "text",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:text.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:text.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "text"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:text.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:dosage.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:dosage.extension:patientInstruction",
+        "path": "Extension.extension.extension",
+        "sliceName": "patientInstruction",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:patientInstruction.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:patientInstruction.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "patientInstruction"
+      },
+      {
+        "id": "Extension.extension:dosage.extension:patientInstruction.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:dosage.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "dosage"
+      },
+      {
+        "id": "Extension.extension:dosage.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActivityDefinition.dosage"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+Extension:   GuidanceResponseIdentifier
+Id:          extension-GuidanceResponse.identifier
+Title:       "GuidanceResponse Identifier "
+Description: "Cross version extension for GuidanceResponse.identifier from FHIR version 4.0.1 to FHIR version 5.0.0"
+Context:     GuidanceResponse
+* value[x] only Identifier
+

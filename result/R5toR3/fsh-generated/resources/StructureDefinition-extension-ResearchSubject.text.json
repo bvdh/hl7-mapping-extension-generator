@@ -1,0 +1,207 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-ResearchSubject.text",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchSubject.text",
+  "name": "ResearchSubjectText",
+  "title": "ResearchSubject Text ",
+  "status": "draft",
+  "description": "Cross version extension for ResearchSubject.text from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "ResearchSubject",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "ResearchSubject Text ",
+        "definition": "Cross version extension for ResearchSubject.text from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:narrative",
+        "path": "Extension.extension",
+        "sliceName": "narrative",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:narrative.extension:div",
+        "path": "Extension.extension.extension",
+        "sliceName": "div",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:narrative.extension:div.extension:xhtml",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "xhtml",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:narrative.extension:div.extension:xhtml.extension:id",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:narrative.extension:div.extension:xhtml.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:narrative.extension:div.extension:xhtml.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:narrative.extension:div.extension:xhtml.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:narrative.extension:div.extension:xhtml.extension:value",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "value",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:narrative.extension:div.extension:xhtml.extension:value.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:narrative.extension:div.extension:xhtml.extension:value.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "value"
+      },
+      {
+        "id": "Extension.extension:narrative.extension:div.extension:xhtml.extension:value.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:narrative.extension:div.extension:xhtml.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "xhtml"
+      },
+      {
+        "id": "Extension.extension:narrative.extension:div.extension:xhtml.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:narrative.extension:div.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "div"
+      },
+      {
+        "id": "Extension.extension:narrative.extension:div.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:narrative.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:narrative.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:narrative.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:narrative.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:narrative.extension:status",
+        "path": "Extension.extension.extension",
+        "sliceName": "status",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:narrative.extension:status.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:narrative.extension:status.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "status"
+      },
+      {
+        "id": "Extension.extension:narrative.extension:status.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/narrative-status|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:narrative.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "narrative"
+      },
+      {
+        "id": "Extension.extension:narrative.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchSubject.text"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

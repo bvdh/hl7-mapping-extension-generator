@@ -1,0 +1,273 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-ClaimResponse.item.detail",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.item.detail",
+  "name": "ClaimResponseItemDetail",
+  "title": "ClaimResponse Item Detail ",
+  "status": "draft",
+  "description": "Cross version extension for ClaimResponse.item.detail from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "ClaimResponse.item",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "ClaimResponse Item Detail ",
+        "definition": "Cross version extension for ClaimResponse.item.detail from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:traceNumber",
+        "path": "Extension.extension",
+        "sliceName": "traceNumber",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:traceNumber.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:traceNumber.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "traceNumber"
+      },
+      {
+        "id": "Extension.extension:traceNumber.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:detailSequence",
+        "path": "Extension.extension",
+        "sliceName": "detailSequence",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:detailSequence.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:detailSequence.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "detailSequence"
+      },
+      {
+        "id": "Extension.extension:detailSequence.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "positiveInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:subDetail",
+        "path": "Extension.extension",
+        "sliceName": "subDetail",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:subDetail.extension:subDetailSequence",
+        "path": "Extension.extension.extension",
+        "sliceName": "subDetailSequence",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:subDetail.extension:subDetailSequence.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:subDetail.extension:subDetailSequence.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "subDetailSequence"
+      },
+      {
+        "id": "Extension.extension:subDetail.extension:subDetailSequence.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "positiveInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:subDetail.extension:traceNumber",
+        "path": "Extension.extension.extension",
+        "sliceName": "traceNumber",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:subDetail.extension:traceNumber.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:subDetail.extension:traceNumber.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "traceNumber"
+      },
+      {
+        "id": "Extension.extension:subDetail.extension:traceNumber.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:subDetail.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:subDetail.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:subDetail.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:subDetail.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:subDetail.extension:noteNumber",
+        "path": "Extension.extension.extension",
+        "sliceName": "noteNumber",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:subDetail.extension:noteNumber.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:subDetail.extension:noteNumber.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "noteNumber"
+      },
+      {
+        "id": "Extension.extension:subDetail.extension:noteNumber.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "positiveInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:subDetail.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "subDetail"
+      },
+      {
+        "id": "Extension.extension:subDetail.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:noteNumber",
+        "path": "Extension.extension",
+        "sliceName": "noteNumber",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:noteNumber.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:noteNumber.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "noteNumber"
+      },
+      {
+        "id": "Extension.extension:noteNumber.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "positiveInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.item.detail"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

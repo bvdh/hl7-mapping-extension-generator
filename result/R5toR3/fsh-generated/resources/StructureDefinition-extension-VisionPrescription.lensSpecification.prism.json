@@ -1,0 +1,130 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-VisionPrescription.lensSpecification.prism",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-VisionPrescription.lensSpecification.prism",
+  "name": "VisionPrescriptionLensSpecificationPrism",
+  "title": "VisionPrescription LensSpecification Prism ",
+  "status": "draft",
+  "description": "Cross version extension for VisionPrescription.lensSpecification.prism from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "VisionPrescription LensSpecification Prism ",
+        "definition": "Cross version extension for VisionPrescription.lensSpecification.prism from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:amount",
+        "path": "Extension.extension",
+        "sliceName": "amount",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:amount.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:amount.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "amount"
+      },
+      {
+        "id": "Extension.extension:amount.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:base",
+        "path": "Extension.extension",
+        "sliceName": "base",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:base.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:base.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "base"
+      },
+      {
+        "id": "Extension.extension:base.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/vision-base-codes|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-VisionPrescription.lensSpecification.prism"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

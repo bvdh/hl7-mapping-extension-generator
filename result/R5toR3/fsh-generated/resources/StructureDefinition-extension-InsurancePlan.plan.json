@@ -1,0 +1,620 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-InsurancePlan.plan",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-InsurancePlan.plan",
+  "name": "InsurancePlanPlan",
+  "title": "InsurancePlan Plan ",
+  "status": "draft",
+  "description": "Cross version extension for InsurancePlan.plan from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "InsurancePlan Plan ",
+        "definition": "Cross version extension for InsurancePlan.plan from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:identifier",
+        "path": "Extension.extension",
+        "sliceName": "identifier",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:identifier.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:identifier.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "identifier"
+      },
+      {
+        "id": "Extension.extension:identifier.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:type.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:specificCost",
+        "path": "Extension.extension",
+        "sliceName": "specificCost",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:category",
+        "path": "Extension.extension.extension",
+        "sliceName": "category",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:category.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:category.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "category"
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:category.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:benefit",
+        "path": "Extension.extension.extension",
+        "sliceName": "benefit",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:benefit.extension:cost",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "cost",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:benefit.extension:cost.extension:qualifiers",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "qualifiers",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:benefit.extension:cost.extension:qualifiers.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:benefit.extension:cost.extension:qualifiers.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "qualifiers"
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:benefit.extension:cost.extension:qualifiers.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:benefit.extension:cost.extension:applicability",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "applicability",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:benefit.extension:cost.extension:applicability.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:benefit.extension:cost.extension:applicability.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "applicability"
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:benefit.extension:cost.extension:applicability.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/insuranceplan-applicability|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:benefit.extension:cost.extension:id",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:benefit.extension:cost.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:benefit.extension:cost.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:benefit.extension:cost.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:benefit.extension:cost.extension:type",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:benefit.extension:cost.extension:type.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:benefit.extension:cost.extension:type.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:benefit.extension:cost.extension:type.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:benefit.extension:cost.extension:value",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "value",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:benefit.extension:cost.extension:value.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:benefit.extension:cost.extension:value.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "value"
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:benefit.extension:cost.extension:value.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:benefit.extension:cost.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "cost"
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:benefit.extension:cost.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:benefit.extension:id",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:benefit.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:benefit.extension:id.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:benefit.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:benefit.extension:type",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:benefit.extension:type.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:benefit.extension:type.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:benefit.extension:type.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:benefit.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "benefit"
+      },
+      {
+        "id": "Extension.extension:specificCost.extension:benefit.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:specificCost.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "specificCost"
+      },
+      {
+        "id": "Extension.extension:specificCost.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:generalCost",
+        "path": "Extension.extension",
+        "sliceName": "generalCost",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:generalCost.extension:cost",
+        "path": "Extension.extension.extension",
+        "sliceName": "cost",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:generalCost.extension:cost.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:generalCost.extension:cost.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "cost"
+      },
+      {
+        "id": "Extension.extension:generalCost.extension:cost.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Money"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:generalCost.extension:comment",
+        "path": "Extension.extension.extension",
+        "sliceName": "comment",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:generalCost.extension:comment.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:generalCost.extension:comment.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "comment"
+      },
+      {
+        "id": "Extension.extension:generalCost.extension:comment.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:generalCost.extension:groupSize",
+        "path": "Extension.extension.extension",
+        "sliceName": "groupSize",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:generalCost.extension:groupSize.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:generalCost.extension:groupSize.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "groupSize"
+      },
+      {
+        "id": "Extension.extension:generalCost.extension:groupSize.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "positiveInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:generalCost.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:generalCost.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:generalCost.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:generalCost.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:generalCost.extension:type",
+        "path": "Extension.extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:generalCost.extension:type.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:generalCost.extension:type.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:generalCost.extension:type.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:generalCost.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "generalCost"
+      },
+      {
+        "id": "Extension.extension:generalCost.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:coverageArea",
+        "path": "Extension.extension",
+        "sliceName": "coverageArea",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:coverageArea.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:coverageArea.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "coverageArea"
+      },
+      {
+        "id": "Extension.extension:coverageArea.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Location"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:network",
+        "path": "Extension.extension",
+        "sliceName": "network",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:network.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:network.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "network"
+      },
+      {
+        "id": "Extension.extension:network.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-InsurancePlan.plan"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,296 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-VerificationResult.attestation",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-VerificationResult.attestation",
+  "name": "VerificationResultAttestation",
+  "title": "VerificationResult Attestation ",
+  "status": "draft",
+  "description": "Cross version extension for VerificationResult.attestation from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "VerificationResult Attestation ",
+        "definition": "Cross version extension for VerificationResult.attestation from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:date",
+        "path": "Extension.extension",
+        "sliceName": "date",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:date.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:date.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "date"
+      },
+      {
+        "id": "Extension.extension:date.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:sourceIdentityCertificate",
+        "path": "Extension.extension",
+        "sliceName": "sourceIdentityCertificate",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:sourceIdentityCertificate.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:sourceIdentityCertificate.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "sourceIdentityCertificate"
+      },
+      {
+        "id": "Extension.extension:sourceIdentityCertificate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:proxyIdentityCertificate",
+        "path": "Extension.extension",
+        "sliceName": "proxyIdentityCertificate",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:proxyIdentityCertificate.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:proxyIdentityCertificate.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "proxyIdentityCertificate"
+      },
+      {
+        "id": "Extension.extension:proxyIdentityCertificate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:communicationMethod",
+        "path": "Extension.extension",
+        "sliceName": "communicationMethod",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:communicationMethod.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:communicationMethod.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "communicationMethod"
+      },
+      {
+        "id": "Extension.extension:communicationMethod.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/verificationresult-communication-method|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:onBehalfOf",
+        "path": "Extension.extension",
+        "sliceName": "onBehalfOf",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:onBehalfOf.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:onBehalfOf.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "onBehalfOf"
+      },
+      {
+        "id": "Extension.extension:onBehalfOf.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization",
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:proxySignature",
+        "path": "Extension.extension",
+        "sliceName": "proxySignature",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:proxySignature.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:proxySignature.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "proxySignature"
+      },
+      {
+        "id": "Extension.extension:proxySignature.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Signature"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:sourceSignature",
+        "path": "Extension.extension",
+        "sliceName": "sourceSignature",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:sourceSignature.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:sourceSignature.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "sourceSignature"
+      },
+      {
+        "id": "Extension.extension:sourceSignature.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Signature"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:who",
+        "path": "Extension.extension",
+        "sliceName": "who",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:who.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:who.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "who"
+      },
+      {
+        "id": "Extension.extension:who.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-VerificationResult.attestation"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

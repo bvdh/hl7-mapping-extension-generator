@@ -1,0 +1,276 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-SubstanceDefinition.relationship",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubstanceDefinition.relationship",
+  "name": "SubstanceDefinitionRelationship",
+  "title": "SubstanceDefinition Relationship ",
+  "status": "draft",
+  "description": "Cross version extension for SubstanceDefinition.relationship from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "SubstanceDefinition Relationship ",
+        "definition": "Cross version extension for SubstanceDefinition.relationship from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:comparator",
+        "path": "Extension.extension",
+        "sliceName": "comparator",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:comparator.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:comparator.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "comparator"
+      },
+      {
+        "id": "Extension.extension:comparator.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/substance-amount-type|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:amount",
+        "path": "Extension.extension",
+        "sliceName": "amount",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:amount.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:amount.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "amount"
+      },
+      {
+        "id": "Extension.extension:amount.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Ratio"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:source",
+        "path": "Extension.extension",
+        "sliceName": "source",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:source.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:source.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "source"
+      },
+      {
+        "id": "Extension.extension:source.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/DocumentReference"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:type.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/substance-relationship-type|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:ratioHighLimitAmount",
+        "path": "Extension.extension",
+        "sliceName": "ratioHighLimitAmount",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:ratioHighLimitAmount.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:ratioHighLimitAmount.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "ratioHighLimitAmount"
+      },
+      {
+        "id": "Extension.extension:ratioHighLimitAmount.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Ratio"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:substanceDefinition",
+        "path": "Extension.extension",
+        "sliceName": "substanceDefinition",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:substanceDefinition.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:substanceDefinition.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "substanceDefinition"
+      },
+      {
+        "id": "Extension.extension:substanceDefinition.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:isDefining",
+        "path": "Extension.extension",
+        "sliceName": "isDefining",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:isDefining.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:isDefining.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "isDefining"
+      },
+      {
+        "id": "Extension.extension:isDefining.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubstanceDefinition.relationship"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

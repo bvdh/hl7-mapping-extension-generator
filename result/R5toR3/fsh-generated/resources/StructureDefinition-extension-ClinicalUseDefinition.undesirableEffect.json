@@ -1,0 +1,246 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-ClinicalUseDefinition.undesirableEffect",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ClinicalUseDefinition.undesirableEffect",
+  "name": "ClinicalUseDefinitionUndesirableEffect",
+  "title": "ClinicalUseDefinition UndesirableEffect ",
+  "status": "draft",
+  "description": "Cross version extension for ClinicalUseDefinition.undesirableEffect from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "ClinicalUseDefinition UndesirableEffect ",
+        "definition": "Cross version extension for ClinicalUseDefinition.undesirableEffect from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:symptomConditionEffect",
+        "path": "Extension.extension",
+        "sliceName": "symptomConditionEffect",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:symptomConditionEffect.extension:codeablereference",
+        "path": "Extension.extension.extension",
+        "sliceName": "codeablereference",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:symptomConditionEffect.extension:codeablereference.extension:reference",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "reference",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:symptomConditionEffect.extension:codeablereference.extension:reference.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:symptomConditionEffect.extension:codeablereference.extension:reference.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:symptomConditionEffect.extension:codeablereference.extension:reference.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:symptomConditionEffect.extension:codeablereference.extension:concept",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "concept",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:symptomConditionEffect.extension:codeablereference.extension:concept.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:symptomConditionEffect.extension:codeablereference.extension:concept.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "concept"
+      },
+      {
+        "id": "Extension.extension:symptomConditionEffect.extension:codeablereference.extension:concept.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:symptomConditionEffect.extension:codeablereference.extension:id",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:symptomConditionEffect.extension:codeablereference.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:symptomConditionEffect.extension:codeablereference.extension:id.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:symptomConditionEffect.extension:codeablereference.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:symptomConditionEffect.extension:codeablereference.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "codeablereference"
+      },
+      {
+        "id": "Extension.extension:symptomConditionEffect.extension:codeablereference.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:symptomConditionEffect.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "symptomConditionEffect"
+      },
+      {
+        "id": "Extension.extension:symptomConditionEffect.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:classification",
+        "path": "Extension.extension",
+        "sliceName": "classification",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:classification.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:classification.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "classification"
+      },
+      {
+        "id": "Extension.extension:classification.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/undesirable-effect-classification|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:frequencyOfOccurrence",
+        "path": "Extension.extension",
+        "sliceName": "frequencyOfOccurrence",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:frequencyOfOccurrence.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:frequencyOfOccurrence.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "frequencyOfOccurrence"
+      },
+      {
+        "id": "Extension.extension:frequencyOfOccurrence.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/undesirable-effect-frequency|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ClinicalUseDefinition.undesirableEffect"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

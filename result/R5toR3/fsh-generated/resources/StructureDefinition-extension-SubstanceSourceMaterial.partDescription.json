@@ -1,0 +1,126 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-SubstanceSourceMaterial.partDescription",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubstanceSourceMaterial.partDescription",
+  "name": "SubstanceSourceMaterialPartDescription",
+  "title": "SubstanceSourceMaterial PartDescription ",
+  "status": "draft",
+  "description": "Cross version extension for SubstanceSourceMaterial.partDescription from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "SubstanceSourceMaterial PartDescription ",
+        "definition": "Cross version extension for SubstanceSourceMaterial.partDescription from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:part",
+        "path": "Extension.extension",
+        "sliceName": "part",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:part.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:part.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "part"
+      },
+      {
+        "id": "Extension.extension:part.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:partLocation",
+        "path": "Extension.extension",
+        "sliceName": "partLocation",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:partLocation.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:partLocation.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "partLocation"
+      },
+      {
+        "id": "Extension.extension:partLocation.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubstanceSourceMaterial.partDescription"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

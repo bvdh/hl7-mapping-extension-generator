@@ -1,0 +1,2487 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-Citation.citedArtifact",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Citation.citedArtifact",
+  "name": "CitationCitedArtifact",
+  "title": "Citation CitedArtifact ",
+  "status": "draft",
+  "description": "Cross version extension for Citation.citedArtifact from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Citation CitedArtifact ",
+        "definition": "Cross version extension for Citation.citedArtifact from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:statusDate",
+        "path": "Extension.extension",
+        "sliceName": "statusDate",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:statusDate.extension:actual",
+        "path": "Extension.extension.extension",
+        "sliceName": "actual",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:statusDate.extension:actual.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:statusDate.extension:actual.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "actual"
+      },
+      {
+        "id": "Extension.extension:statusDate.extension:actual.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:statusDate.extension:period",
+        "path": "Extension.extension.extension",
+        "sliceName": "period",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:statusDate.extension:period.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:statusDate.extension:period.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "period"
+      },
+      {
+        "id": "Extension.extension:statusDate.extension:period.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:statusDate.extension:activity",
+        "path": "Extension.extension.extension",
+        "sliceName": "activity",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:statusDate.extension:activity.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:statusDate.extension:activity.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "activity"
+      },
+      {
+        "id": "Extension.extension:statusDate.extension:activity.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/cited-artifact-status-type|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:statusDate.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:statusDate.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:statusDate.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:statusDate.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:statusDate.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "statusDate"
+      },
+      {
+        "id": "Extension.extension:statusDate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:note",
+        "path": "Extension.extension",
+        "sliceName": "note",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:note.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:note.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "note"
+      },
+      {
+        "id": "Extension.extension:note.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Annotation"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:identifier",
+        "path": "Extension.extension",
+        "sliceName": "identifier",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:identifier.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:identifier.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "identifier"
+      },
+      {
+        "id": "Extension.extension:identifier.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:relatedIdentifier",
+        "path": "Extension.extension",
+        "sliceName": "relatedIdentifier",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:relatedIdentifier.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:relatedIdentifier.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "relatedIdentifier"
+      },
+      {
+        "id": "Extension.extension:relatedIdentifier.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:part",
+        "path": "Extension.extension",
+        "sliceName": "part",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:part.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:part.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:part.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:part.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:part.extension:baseCitation",
+        "path": "Extension.extension.extension",
+        "sliceName": "baseCitation",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:part.extension:baseCitation.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:part.extension:baseCitation.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "baseCitation"
+      },
+      {
+        "id": "Extension.extension:part.extension:baseCitation.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:part.extension:type",
+        "path": "Extension.extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:part.extension:type.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:part.extension:type.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:part.extension:type.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/cited-artifact-part-type|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:part.extension:value",
+        "path": "Extension.extension.extension",
+        "sliceName": "value",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:part.extension:value.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:part.extension:value.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "value"
+      },
+      {
+        "id": "Extension.extension:part.extension:value.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:part.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "part"
+      },
+      {
+        "id": "Extension.extension:part.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:contributorship",
+        "path": "Extension.extension",
+        "sliceName": "contributorship",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:summary",
+        "path": "Extension.extension.extension",
+        "sliceName": "summary",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:summary.extension:style",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "style",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:summary.extension:style.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:summary.extension:style.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "style"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:summary.extension:style.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/contributor-summary-style|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:summary.extension:source",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "source",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:summary.extension:source.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:summary.extension:source.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "source"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:summary.extension:source.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/contributor-summary-source|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:summary.extension:id",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:summary.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:summary.extension:id.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:summary.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:summary.extension:type",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:summary.extension:type.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:summary.extension:type.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:summary.extension:type.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/contributor-summary-type|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:summary.extension:value",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "value",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:summary.extension:value.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:summary.extension:value.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "value"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:summary.extension:value.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:summary.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "summary"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:summary.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry",
+        "path": "Extension.extension.extension",
+        "sliceName": "entry",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:contributionType",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "contributionType",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:contributionType.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:contributionType.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "contributionType"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:contributionType.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/artifact-contribution-type|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:contributionInstance",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "contributionInstance",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:contributionInstance.extension:id",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:contributionInstance.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:contributionInstance.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:contributionInstance.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:contributionInstance.extension:time",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "time",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:contributionInstance.extension:time.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:contributionInstance.extension:time.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "time"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:contributionInstance.extension:time.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:contributionInstance.extension:type",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:contributionInstance.extension:type.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:contributionInstance.extension:type.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:contributionInstance.extension:type.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/artifact-contribution-instance-type|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:contributionInstance.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "contributionInstance"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:contributionInstance.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:contributor",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "contributor",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:contributor.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:contributor.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "contributor"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:contributor.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:role",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "role",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:role.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:role.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "role"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:role.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/contributor-role|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:affiliation",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "affiliation",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:affiliation.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:affiliation.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "affiliation"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:affiliation.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:forenameInitials",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "forenameInitials",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:forenameInitials.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:forenameInitials.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "forenameInitials"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:forenameInitials.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:id",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:id.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:correspondingContact",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "correspondingContact",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:correspondingContact.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:correspondingContact.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "correspondingContact"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:correspondingContact.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:rankingOrder",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "rankingOrder",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:rankingOrder.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:rankingOrder.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "rankingOrder"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.extension:rankingOrder.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "positiveInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "entry"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:entry.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:complete",
+        "path": "Extension.extension.extension",
+        "sliceName": "complete",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:complete.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:complete.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "complete"
+      },
+      {
+        "id": "Extension.extension:contributorship.extension:complete.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:contributorship.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "contributorship"
+      },
+      {
+        "id": "Extension.extension:contributorship.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:abstract",
+        "path": "Extension.extension",
+        "sliceName": "abstract",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:abstract.extension:copyright",
+        "path": "Extension.extension.extension",
+        "sliceName": "copyright",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:abstract.extension:copyright.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:abstract.extension:copyright.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "copyright"
+      },
+      {
+        "id": "Extension.extension:abstract.extension:copyright.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:abstract.extension:language",
+        "path": "Extension.extension.extension",
+        "sliceName": "language",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:abstract.extension:language.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:abstract.extension:language.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "language"
+      },
+      {
+        "id": "Extension.extension:abstract.extension:language.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://hl7.org/fhir/ValueSet/languages|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:abstract.extension:text",
+        "path": "Extension.extension.extension",
+        "sliceName": "text",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:abstract.extension:text.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:abstract.extension:text.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "text"
+      },
+      {
+        "id": "Extension.extension:abstract.extension:text.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:abstract.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:abstract.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:abstract.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:abstract.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:abstract.extension:type",
+        "path": "Extension.extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:abstract.extension:type.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:abstract.extension:type.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:abstract.extension:type.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/cited-artifact-abstract-type|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:abstract.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "abstract"
+      },
+      {
+        "id": "Extension.extension:abstract.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:title",
+        "path": "Extension.extension",
+        "sliceName": "title",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:title.extension:language",
+        "path": "Extension.extension.extension",
+        "sliceName": "language",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:title.extension:language.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:title.extension:language.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "language"
+      },
+      {
+        "id": "Extension.extension:title.extension:language.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://hl7.org/fhir/ValueSet/languages|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:title.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:title.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:title.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:title.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:title.extension:text",
+        "path": "Extension.extension.extension",
+        "sliceName": "text",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:title.extension:text.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:title.extension:text.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "text"
+      },
+      {
+        "id": "Extension.extension:title.extension:text.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:title.extension:type",
+        "path": "Extension.extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:title.extension:type.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:title.extension:type.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:title.extension:type.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/title-type|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:title.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "title"
+      },
+      {
+        "id": "Extension.extension:title.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:classification",
+        "path": "Extension.extension",
+        "sliceName": "classification",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:classification.extension:classifier",
+        "path": "Extension.extension.extension",
+        "sliceName": "classifier",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:classification.extension:classifier.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:classification.extension:classifier.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "classifier"
+      },
+      {
+        "id": "Extension.extension:classification.extension:classifier.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/citation-artifact-classifier|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:classification.extension:artifactAssessment",
+        "path": "Extension.extension.extension",
+        "sliceName": "artifactAssessment",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:classification.extension:artifactAssessment.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:classification.extension:artifactAssessment.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "artifactAssessment"
+      },
+      {
+        "id": "Extension.extension:classification.extension:artifactAssessment.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:classification.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:classification.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:classification.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:classification.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:classification.extension:type",
+        "path": "Extension.extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:classification.extension:type.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:classification.extension:type.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:classification.extension:type.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/cited-artifact-classification-type|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:classification.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "classification"
+      },
+      {
+        "id": "Extension.extension:classification.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:webLocation",
+        "path": "Extension.extension",
+        "sliceName": "webLocation",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:webLocation.extension:classifier",
+        "path": "Extension.extension.extension",
+        "sliceName": "classifier",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:webLocation.extension:classifier.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:webLocation.extension:classifier.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "classifier"
+      },
+      {
+        "id": "Extension.extension:webLocation.extension:classifier.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/artifact-url-classifier|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:webLocation.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:webLocation.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:webLocation.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:webLocation.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:webLocation.extension:url",
+        "path": "Extension.extension.extension",
+        "sliceName": "url",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:webLocation.extension:url.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:webLocation.extension:url.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "url"
+      },
+      {
+        "id": "Extension.extension:webLocation.extension:url.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:webLocation.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "webLocation"
+      },
+      {
+        "id": "Extension.extension:webLocation.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:dateAccessed",
+        "path": "Extension.extension",
+        "sliceName": "dateAccessed",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:dateAccessed.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:dateAccessed.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "dateAccessed"
+      },
+      {
+        "id": "Extension.extension:dateAccessed.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:version",
+        "path": "Extension.extension",
+        "sliceName": "version",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:version.extension:baseCitation",
+        "path": "Extension.extension.extension",
+        "sliceName": "baseCitation",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:version.extension:baseCitation.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:version.extension:baseCitation.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "baseCitation"
+      },
+      {
+        "id": "Extension.extension:version.extension:baseCitation.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:version.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:version.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:version.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:version.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:version.extension:value",
+        "path": "Extension.extension.extension",
+        "sliceName": "value",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:version.extension:value.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:version.extension:value.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "value"
+      },
+      {
+        "id": "Extension.extension:version.extension:value.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:version.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "version"
+      },
+      {
+        "id": "Extension.extension:version.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:publicationForm",
+        "path": "Extension.extension",
+        "sliceName": "publicationForm",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:pageCount",
+        "path": "Extension.extension.extension",
+        "sliceName": "pageCount",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:pageCount.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:pageCount.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "pageCount"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:pageCount.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:copyright",
+        "path": "Extension.extension.extension",
+        "sliceName": "copyright",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:copyright.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:copyright.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "copyright"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:copyright.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:lastPage",
+        "path": "Extension.extension.extension",
+        "sliceName": "lastPage",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:lastPage.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:lastPage.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "lastPage"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:lastPage.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:issue",
+        "path": "Extension.extension.extension",
+        "sliceName": "issue",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:issue.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:issue.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "issue"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:issue.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:publicationDateSeason",
+        "path": "Extension.extension.extension",
+        "sliceName": "publicationDateSeason",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:publicationDateSeason.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:publicationDateSeason.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "publicationDateSeason"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:publicationDateSeason.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:language",
+        "path": "Extension.extension.extension",
+        "sliceName": "language",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:language.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:language.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "language"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:language.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://hl7.org/fhir/ValueSet/languages|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:accessionNumber",
+        "path": "Extension.extension.extension",
+        "sliceName": "accessionNumber",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:accessionNumber.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:accessionNumber.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "accessionNumber"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:accessionNumber.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:volume",
+        "path": "Extension.extension.extension",
+        "sliceName": "volume",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:volume.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:volume.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "volume"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:volume.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:firstPage",
+        "path": "Extension.extension.extension",
+        "sliceName": "firstPage",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:firstPage.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:firstPage.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "firstPage"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:firstPage.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:publicationDateText",
+        "path": "Extension.extension.extension",
+        "sliceName": "publicationDateText",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:publicationDateText.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:publicationDateText.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "publicationDateText"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:publicationDateText.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:publishedIn",
+        "path": "Extension.extension.extension",
+        "sliceName": "publishedIn",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:publishedIn.extension:identifier",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "identifier",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:publishedIn.extension:identifier.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:publishedIn.extension:identifier.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "identifier"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:publishedIn.extension:identifier.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:publishedIn.extension:publisher",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "publisher",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:publishedIn.extension:publisher.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:publishedIn.extension:publisher.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "publisher"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:publishedIn.extension:publisher.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:publishedIn.extension:publisherLocation",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "publisherLocation",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:publishedIn.extension:publisherLocation.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:publishedIn.extension:publisherLocation.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "publisherLocation"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:publishedIn.extension:publisherLocation.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:publishedIn.extension:id",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:publishedIn.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:publishedIn.extension:id.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:publishedIn.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:publishedIn.extension:type",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:publishedIn.extension:type.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:publishedIn.extension:type.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:publishedIn.extension:type.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/published-in-type|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:publishedIn.extension:title",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "title",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:publishedIn.extension:title.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:publishedIn.extension:title.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "title"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:publishedIn.extension:title.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:publishedIn.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "publishedIn"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:publishedIn.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:lastRevisionDate",
+        "path": "Extension.extension.extension",
+        "sliceName": "lastRevisionDate",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:lastRevisionDate.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:lastRevisionDate.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "lastRevisionDate"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:lastRevisionDate.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:pageString",
+        "path": "Extension.extension.extension",
+        "sliceName": "pageString",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:pageString.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:pageString.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "pageString"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:pageString.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:articleDate",
+        "path": "Extension.extension.extension",
+        "sliceName": "articleDate",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:articleDate.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:articleDate.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "articleDate"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:articleDate.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:citedMedium",
+        "path": "Extension.extension.extension",
+        "sliceName": "citedMedium",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:citedMedium.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:citedMedium.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "citedMedium"
+      },
+      {
+        "id": "Extension.extension:publicationForm.extension:citedMedium.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/cited-medium|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:publicationForm.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "publicationForm"
+      },
+      {
+        "id": "Extension.extension:publicationForm.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:currentState",
+        "path": "Extension.extension",
+        "sliceName": "currentState",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:currentState.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:currentState.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "currentState"
+      },
+      {
+        "id": "Extension.extension:currentState.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/cited-artifact-status-type|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:relatesTo",
+        "path": "Extension.extension",
+        "sliceName": "relatesTo",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:relatesTo.extension:citation",
+        "path": "Extension.extension.extension",
+        "sliceName": "citation",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:relatesTo.extension:citation.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:relatesTo.extension:citation.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "citation"
+      },
+      {
+        "id": "Extension.extension:relatesTo.extension:citation.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:relatesTo.extension:resource",
+        "path": "Extension.extension.extension",
+        "sliceName": "resource",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:relatesTo.extension:resource.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:relatesTo.extension:resource.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "resource"
+      },
+      {
+        "id": "Extension.extension:relatesTo.extension:resource.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:relatesTo.extension:display",
+        "path": "Extension.extension.extension",
+        "sliceName": "display",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:relatesTo.extension:display.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:relatesTo.extension:display.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "display"
+      },
+      {
+        "id": "Extension.extension:relatesTo.extension:display.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:relatesTo.extension:document",
+        "path": "Extension.extension.extension",
+        "sliceName": "document",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:relatesTo.extension:document.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:relatesTo.extension:document.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "document"
+      },
+      {
+        "id": "Extension.extension:relatesTo.extension:document.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Attachment"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:relatesTo.extension:classifier",
+        "path": "Extension.extension.extension",
+        "sliceName": "classifier",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:relatesTo.extension:classifier.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:relatesTo.extension:classifier.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "classifier"
+      },
+      {
+        "id": "Extension.extension:relatesTo.extension:classifier.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/citation-artifact-classifier|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:relatesTo.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:relatesTo.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:relatesTo.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:relatesTo.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:relatesTo.extension:label",
+        "path": "Extension.extension.extension",
+        "sliceName": "label",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:relatesTo.extension:label.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:relatesTo.extension:label.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "label"
+      },
+      {
+        "id": "Extension.extension:relatesTo.extension:label.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:relatesTo.extension:type",
+        "path": "Extension.extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:relatesTo.extension:type.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:relatesTo.extension:type.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:relatesTo.extension:type.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/related-artifact-type-all|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:relatesTo.extension:resourceReference",
+        "path": "Extension.extension.extension",
+        "sliceName": "resourceReference",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:relatesTo.extension:resourceReference.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:relatesTo.extension:resourceReference.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "resourceReference"
+      },
+      {
+        "id": "Extension.extension:relatesTo.extension:resourceReference.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:relatesTo.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "relatesTo"
+      },
+      {
+        "id": "Extension.extension:relatesTo.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Citation.citedArtifact"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

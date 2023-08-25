@@ -1,0 +1,581 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-CoverageEligibilityResponse.insurance.item",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-CoverageEligibilityResponse.insurance.item",
+  "name": "CoverageEligibilityResponseInsuranceItem",
+  "title": "CoverageEligibilityResponse Insurance Item ",
+  "status": "draft",
+  "description": "Cross version extension for CoverageEligibilityResponse.insurance.item from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "CoverageEligibilityResponse Insurance Item ",
+        "definition": "Cross version extension for CoverageEligibilityResponse.insurance.item from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:modifier",
+        "path": "Extension.extension",
+        "sliceName": "modifier",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:modifier.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:modifier.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "modifier"
+      },
+      {
+        "id": "Extension.extension:modifier.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/claim-modifiers|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:description",
+        "path": "Extension.extension",
+        "sliceName": "description",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:description.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:description.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:description.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:authorizationSupporting",
+        "path": "Extension.extension",
+        "sliceName": "authorizationSupporting",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:authorizationSupporting.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:authorizationSupporting.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "authorizationSupporting"
+      },
+      {
+        "id": "Extension.extension:authorizationSupporting.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/coverageeligibilityresponse-ex-auth-support|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:productOrService",
+        "path": "Extension.extension",
+        "sliceName": "productOrService",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:productOrService.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:productOrService.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "productOrService"
+      },
+      {
+        "id": "Extension.extension:productOrService.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/service-uscls|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:benefit",
+        "path": "Extension.extension",
+        "sliceName": "benefit",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:benefit.extension:allowed",
+        "path": "Extension.extension.extension",
+        "sliceName": "allowed",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:benefit.extension:allowed.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:benefit.extension:allowed.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "allowed"
+      },
+      {
+        "id": "Extension.extension:benefit.extension:allowed.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          },
+          {
+            "code": "unsignedInt"
+          },
+          {
+            "code": "Money"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:benefit.extension:used",
+        "path": "Extension.extension.extension",
+        "sliceName": "used",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:benefit.extension:used.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:benefit.extension:used.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "used"
+      },
+      {
+        "id": "Extension.extension:benefit.extension:used.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          },
+          {
+            "code": "unsignedInt"
+          },
+          {
+            "code": "Money"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:benefit.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:benefit.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:benefit.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:benefit.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:benefit.extension:type",
+        "path": "Extension.extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:benefit.extension:type.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:benefit.extension:type.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:benefit.extension:type.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/benefit-type|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:benefit.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "benefit"
+      },
+      {
+        "id": "Extension.extension:benefit.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:network",
+        "path": "Extension.extension",
+        "sliceName": "network",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:network.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:network.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "network"
+      },
+      {
+        "id": "Extension.extension:network.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/benefit-network|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:excluded",
+        "path": "Extension.extension",
+        "sliceName": "excluded",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:excluded.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:excluded.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "excluded"
+      },
+      {
+        "id": "Extension.extension:excluded.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:unit",
+        "path": "Extension.extension",
+        "sliceName": "unit",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:unit.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:unit.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "unit"
+      },
+      {
+        "id": "Extension.extension:unit.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/benefit-unit|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:authorizationUrl",
+        "path": "Extension.extension",
+        "sliceName": "authorizationUrl",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:authorizationUrl.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:authorizationUrl.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "authorizationUrl"
+      },
+      {
+        "id": "Extension.extension:authorizationUrl.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:authorizationRequired",
+        "path": "Extension.extension",
+        "sliceName": "authorizationRequired",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:authorizationRequired.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:authorizationRequired.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "authorizationRequired"
+      },
+      {
+        "id": "Extension.extension:authorizationRequired.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:provider",
+        "path": "Extension.extension",
+        "sliceName": "provider",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:provider.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:provider.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "provider"
+      },
+      {
+        "id": "Extension.extension:provider.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:name",
+        "path": "Extension.extension",
+        "sliceName": "name",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:name.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:name.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "name"
+      },
+      {
+        "id": "Extension.extension:name.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:term",
+        "path": "Extension.extension",
+        "sliceName": "term",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:term.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:term.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "term"
+      },
+      {
+        "id": "Extension.extension:term.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/benefit-term|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:category",
+        "path": "Extension.extension",
+        "sliceName": "category",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:category.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:category.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "category"
+      },
+      {
+        "id": "Extension.extension:category.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/ex-benefitcategory|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-CoverageEligibilityResponse.insurance.item"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

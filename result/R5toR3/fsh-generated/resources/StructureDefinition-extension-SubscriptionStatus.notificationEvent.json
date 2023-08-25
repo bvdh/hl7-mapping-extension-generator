@@ -1,0 +1,184 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-SubscriptionStatus.notificationEvent",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionStatus.notificationEvent",
+  "name": "SubscriptionStatusNotificationEvent",
+  "title": "SubscriptionStatus NotificationEvent ",
+  "status": "draft",
+  "description": "Cross version extension for SubscriptionStatus.notificationEvent from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "SubscriptionStatus NotificationEvent ",
+        "definition": "Cross version extension for SubscriptionStatus.notificationEvent from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:eventNumber",
+        "path": "Extension.extension",
+        "sliceName": "eventNumber",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:eventNumber.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:eventNumber.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "eventNumber"
+      },
+      {
+        "id": "Extension.extension:eventNumber.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:focus",
+        "path": "Extension.extension",
+        "sliceName": "focus",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:focus.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:focus.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "focus"
+      },
+      {
+        "id": "Extension.extension:focus.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Resource"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:additionalContext",
+        "path": "Extension.extension",
+        "sliceName": "additionalContext",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:additionalContext.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:additionalContext.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "additionalContext"
+      },
+      {
+        "id": "Extension.extension:additionalContext.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Resource"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:timestamp",
+        "path": "Extension.extension",
+        "sliceName": "timestamp",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:timestamp.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:timestamp.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "timestamp"
+      },
+      {
+        "id": "Extension.extension:timestamp.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "instant"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionStatus.notificationEvent"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

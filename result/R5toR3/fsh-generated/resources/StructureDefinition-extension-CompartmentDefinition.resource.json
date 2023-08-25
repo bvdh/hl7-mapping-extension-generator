@@ -1,0 +1,208 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-CompartmentDefinition.resource",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-CompartmentDefinition.resource",
+  "name": "CompartmentDefinitionResource",
+  "title": "CompartmentDefinition Resource ",
+  "status": "draft",
+  "description": "Cross version extension for CompartmentDefinition.resource from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "CompartmentDefinition",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "CompartmentDefinition Resource ",
+        "definition": "Cross version extension for CompartmentDefinition.resource from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:code",
+        "path": "Extension.extension",
+        "sliceName": "code",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:code.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:code.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:code.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/resource-types|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:startParam",
+        "path": "Extension.extension",
+        "sliceName": "startParam",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:startParam.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:startParam.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "startParam"
+      },
+      {
+        "id": "Extension.extension:startParam.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:param",
+        "path": "Extension.extension",
+        "sliceName": "param",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:param.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:param.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "param"
+      },
+      {
+        "id": "Extension.extension:param.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:documentation",
+        "path": "Extension.extension",
+        "sliceName": "documentation",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:documentation.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:documentation.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "documentation"
+      },
+      {
+        "id": "Extension.extension:documentation.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:endParam",
+        "path": "Extension.extension",
+        "sliceName": "endParam",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:endParam.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:endParam.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "endParam"
+      },
+      {
+        "id": "Extension.extension:endParam.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-CompartmentDefinition.resource"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

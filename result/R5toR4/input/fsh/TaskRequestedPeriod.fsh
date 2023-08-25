@@ -1,0 +1,7 @@
+Extension:   TaskRequestedPeriod
+Id:          extension-Task.requestedPeriod
+Title:       "Task RequestedPeriod "
+Description: "Cross version extension for Task.requestedPeriod from FHIR version 5.0.0 to FHIR version 4.0.1"
+Context:     Task
+* value[x] only Period
+

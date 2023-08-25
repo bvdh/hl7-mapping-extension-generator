@@ -1,0 +1,202 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-ActivityDefinition.useContext",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActivityDefinition.useContext",
+  "name": "ActivityDefinitionUseContext",
+  "title": "ActivityDefinition UseContext ",
+  "status": "draft",
+  "description": "Cross version extension for ActivityDefinition.useContext from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "ActivityDefinition",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "ActivityDefinition UseContext ",
+        "definition": "Cross version extension for ActivityDefinition.useContext from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:usagecontext",
+        "path": "Extension.extension",
+        "sliceName": "usagecontext",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:usagecontext.extension:code",
+        "path": "Extension.extension.extension",
+        "sliceName": "code",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:usagecontext.extension:code.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:usagecontext.extension:code.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:usagecontext.extension:code.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://terminology.hl7.org/ValueSet/usage-context-type"
+        }
+      },
+      {
+        "id": "Extension.extension:usagecontext.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:usagecontext.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:usagecontext.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:usagecontext.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:usagecontext.extension:value",
+        "path": "Extension.extension.extension",
+        "sliceName": "value",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:usagecontext.extension:value.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:usagecontext.extension:value.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "value"
+      },
+      {
+        "id": "Extension.extension:usagecontext.extension:value.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:usagecontext.extension:value.value[x]:valueReference",
+        "path": "Extension.extension.extension.value[x]",
+        "sliceName": "valueReference",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/PlanDefinition",
+              "http://hl7.org/fhir/StructureDefinition/ResearchStudy",
+              "http://hl7.org/fhir/StructureDefinition/HealthcareService",
+              "http://hl7.org/fhir/StructureDefinition/Group",
+              "http://hl7.org/fhir/StructureDefinition/Location",
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:usagecontext.extension:value.value[x]:valueCodeableConcept",
+        "path": "Extension.extension.extension.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/use-context|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:usagecontext.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "usagecontext"
+      },
+      {
+        "id": "Extension.extension:usagecontext.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActivityDefinition.useContext"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

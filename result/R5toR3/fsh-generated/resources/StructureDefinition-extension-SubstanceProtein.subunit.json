@@ -1,0 +1,282 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-SubstanceProtein.subunit",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubstanceProtein.subunit",
+  "name": "SubstanceProteinSubunit",
+  "title": "SubstanceProtein Subunit ",
+  "status": "draft",
+  "description": "Cross version extension for SubstanceProtein.subunit from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "SubstanceProtein Subunit ",
+        "definition": "Cross version extension for SubstanceProtein.subunit from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:sequence",
+        "path": "Extension.extension",
+        "sliceName": "sequence",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:sequence.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:sequence.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "sequence"
+      },
+      {
+        "id": "Extension.extension:sequence.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:cTerminalModification",
+        "path": "Extension.extension",
+        "sliceName": "cTerminalModification",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:cTerminalModification.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:cTerminalModification.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "cTerminalModification"
+      },
+      {
+        "id": "Extension.extension:cTerminalModification.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:length",
+        "path": "Extension.extension",
+        "sliceName": "length",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:length.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:length.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "length"
+      },
+      {
+        "id": "Extension.extension:length.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:nTerminalModification",
+        "path": "Extension.extension",
+        "sliceName": "nTerminalModification",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:nTerminalModification.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:nTerminalModification.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "nTerminalModification"
+      },
+      {
+        "id": "Extension.extension:nTerminalModification.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:nTerminalModificationId",
+        "path": "Extension.extension",
+        "sliceName": "nTerminalModificationId",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:nTerminalModificationId.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:nTerminalModificationId.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "nTerminalModificationId"
+      },
+      {
+        "id": "Extension.extension:nTerminalModificationId.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:subunit",
+        "path": "Extension.extension",
+        "sliceName": "subunit",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:subunit.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:subunit.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "subunit"
+      },
+      {
+        "id": "Extension.extension:subunit.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:cTerminalModificationId",
+        "path": "Extension.extension",
+        "sliceName": "cTerminalModificationId",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:cTerminalModificationId.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:cTerminalModificationId.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "cTerminalModificationId"
+      },
+      {
+        "id": "Extension.extension:cTerminalModificationId.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:sequenceAttachment",
+        "path": "Extension.extension",
+        "sliceName": "sequenceAttachment",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:sequenceAttachment.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:sequenceAttachment.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "sequenceAttachment"
+      },
+      {
+        "id": "Extension.extension:sequenceAttachment.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Attachment"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubstanceProtein.subunit"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

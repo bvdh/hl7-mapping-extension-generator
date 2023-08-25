@@ -1,0 +1,7 @@
+Extension:   CompartmentDefinitionImplicitRules
+Id:          extension-CompartmentDefinition.implicitRules
+Title:       "CompartmentDefinition ImplicitRules "
+Description: "Cross version extension for CompartmentDefinition.implicitRules from FHIR version 4.0.1 to FHIR version 5.0.0"
+Context:     CompartmentDefinition
+* value[x] only uri
+

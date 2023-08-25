@@ -1,0 +1,444 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-CoverageEligibilityRequest.item",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-CoverageEligibilityRequest.item",
+  "name": "CoverageEligibilityRequestItem",
+  "title": "CoverageEligibilityRequest Item ",
+  "status": "draft",
+  "description": "Cross version extension for CoverageEligibilityRequest.item from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "CoverageEligibilityRequest Item ",
+        "definition": "Cross version extension for CoverageEligibilityRequest.item from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:unitPrice",
+        "path": "Extension.extension",
+        "sliceName": "unitPrice",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:unitPrice.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:unitPrice.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "unitPrice"
+      },
+      {
+        "id": "Extension.extension:unitPrice.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Money"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:quantity",
+        "path": "Extension.extension",
+        "sliceName": "quantity",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:quantity.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:quantity.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "quantity"
+      },
+      {
+        "id": "Extension.extension:quantity.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:provider",
+        "path": "Extension.extension",
+        "sliceName": "provider",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:provider.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:provider.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "provider"
+      },
+      {
+        "id": "Extension.extension:provider.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:modifier",
+        "path": "Extension.extension",
+        "sliceName": "modifier",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:modifier.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:modifier.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "modifier"
+      },
+      {
+        "id": "Extension.extension:modifier.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/claim-modifiers|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:diagnosis",
+        "path": "Extension.extension",
+        "sliceName": "diagnosis",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:diagnosis.extension:diagnosis",
+        "path": "Extension.extension.extension",
+        "sliceName": "diagnosis",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:diagnosis.extension:diagnosis.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:diagnosis.extension:diagnosis.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "diagnosis"
+      },
+      {
+        "id": "Extension.extension:diagnosis.extension:diagnosis.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:diagnosis.extension:diagnosis.value[x]:valueReference",
+        "path": "Extension.extension.extension.value[x]",
+        "sliceName": "valueReference",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Condition"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:diagnosis.extension:diagnosis.value[x]:valueCodeableConcept",
+        "path": "Extension.extension.extension.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/icd-10|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:diagnosis.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:diagnosis.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:diagnosis.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:diagnosis.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:diagnosis.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "diagnosis"
+      },
+      {
+        "id": "Extension.extension:diagnosis.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:supportingInfoSequence",
+        "path": "Extension.extension",
+        "sliceName": "supportingInfoSequence",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:supportingInfoSequence.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:supportingInfoSequence.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "supportingInfoSequence"
+      },
+      {
+        "id": "Extension.extension:supportingInfoSequence.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "positiveInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:productOrService",
+        "path": "Extension.extension",
+        "sliceName": "productOrService",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:productOrService.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:productOrService.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "productOrService"
+      },
+      {
+        "id": "Extension.extension:productOrService.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/service-uscls|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:detail",
+        "path": "Extension.extension",
+        "sliceName": "detail",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:detail.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:detail.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "detail"
+      },
+      {
+        "id": "Extension.extension:detail.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Resource"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:category",
+        "path": "Extension.extension",
+        "sliceName": "category",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:category.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:category.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "category"
+      },
+      {
+        "id": "Extension.extension:category.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/ex-benefitcategory|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:facility",
+        "path": "Extension.extension",
+        "sliceName": "facility",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:facility.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:facility.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "facility"
+      },
+      {
+        "id": "Extension.extension:facility.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Location",
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-CoverageEligibilityRequest.item"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

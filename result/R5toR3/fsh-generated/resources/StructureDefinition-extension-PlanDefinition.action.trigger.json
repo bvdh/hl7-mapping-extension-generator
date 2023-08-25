@@ -1,0 +1,1393 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-PlanDefinition.action.trigger",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PlanDefinition.action.trigger",
+  "name": "PlanDefinitionActionTrigger",
+  "title": "PlanDefinition Action Trigger ",
+  "status": "draft",
+  "description": "Cross version extension for PlanDefinition.action.trigger from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "PlanDefinition.action",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "PlanDefinition Action Trigger ",
+        "definition": "Cross version extension for PlanDefinition.action.trigger from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition",
+        "path": "Extension.extension",
+        "sliceName": "triggerdefinition",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:condition",
+        "path": "Extension.extension.extension",
+        "sliceName": "condition",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:condition.extension:expression",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "expression",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:condition.extension:expression.extension:reference",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "reference",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:condition.extension:expression.extension:reference.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:condition.extension:expression.extension:reference.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:condition.extension:expression.extension:reference.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:condition.extension:expression.extension:expression",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "expression",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:condition.extension:expression.extension:expression.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:condition.extension:expression.extension:expression.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "expression"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:condition.extension:expression.extension:expression.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:condition.extension:expression.extension:name",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "name",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:condition.extension:expression.extension:name.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:condition.extension:expression.extension:name.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "name"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:condition.extension:expression.extension:name.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:condition.extension:expression.extension:description",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "description",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:condition.extension:expression.extension:description.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:condition.extension:expression.extension:description.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:condition.extension:expression.extension:description.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:condition.extension:expression.extension:language",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "language",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:condition.extension:expression.extension:language.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:condition.extension:expression.extension:language.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "language"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:condition.extension:expression.extension:language.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/expression-language|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:condition.extension:expression.extension:id",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:condition.extension:expression.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:condition.extension:expression.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:condition.extension:expression.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:condition.extension:expression.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "expression"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:condition.extension:expression.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:condition.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "condition"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:condition.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:code",
+        "path": "Extension.extension.extension",
+        "sliceName": "code",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:code.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:code.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:code.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data",
+        "path": "Extension.extension.extension",
+        "sliceName": "data",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "datarequirement",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:valueFilter",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "valueFilter",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:valueFilter.extension:comparator",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "comparator",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:valueFilter.extension:comparator.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:valueFilter.extension:comparator.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "comparator"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:valueFilter.extension:comparator.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/value-filter-comparator|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:valueFilter.extension:path",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "path",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:valueFilter.extension:path.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:valueFilter.extension:path.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "path"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:valueFilter.extension:path.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:valueFilter.extension:searchParam",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "searchParam",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:valueFilter.extension:searchParam.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:valueFilter.extension:searchParam.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "searchParam"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:valueFilter.extension:searchParam.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:valueFilter.extension:id",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:valueFilter.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:valueFilter.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:valueFilter.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:valueFilter.extension:value",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "value",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:valueFilter.extension:value.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:valueFilter.extension:value.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "value"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:valueFilter.extension:value.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "Duration"
+          },
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:valueFilter.extension:element",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "element",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:valueFilter.extension:element.extension:id",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:valueFilter.extension:element.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:valueFilter.extension:element.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:valueFilter.extension:element.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:valueFilter.extension:element.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "element"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:valueFilter.extension:element.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:valueFilter.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "valueFilter"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:valueFilter.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:mustSupport",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "mustSupport",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:mustSupport.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:mustSupport.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "mustSupport"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:mustSupport.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:subject",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "subject",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:subject.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:subject.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "subject"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:subject.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:subject.value[x]:valueReference",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "sliceName": "valueReference",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Group"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:subject.value[x]:valueCodeableConcept",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/participant-resource-types|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:profile",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "profile",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:profile.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:profile.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "profile"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:profile.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:limit",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "limit",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:limit.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:limit.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "limit"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:limit.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "positiveInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:id",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:sort",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "sort",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:sort.extension:path",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "path",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:sort.extension:path.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:sort.extension:path.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "path"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:sort.extension:path.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:sort.extension:id",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:sort.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:sort.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:sort.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:sort.extension:direction",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "direction",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:sort.extension:direction.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:sort.extension:direction.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "direction"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:sort.extension:direction.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/sort-direction|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:sort.extension:element",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "element",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:sort.extension:element.extension:id",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:sort.extension:element.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:sort.extension:element.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:sort.extension:element.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:sort.extension:element.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "element"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:sort.extension:element.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:sort.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "sort"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:sort.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:type",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:type.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:type.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:type.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/fhir-types|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:codeFilter",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "codeFilter",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:codeFilter.extension:path",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "path",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:codeFilter.extension:path.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:codeFilter.extension:path.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "path"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:codeFilter.extension:path.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:codeFilter.extension:code",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "code",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:codeFilter.extension:code.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:codeFilter.extension:code.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:codeFilter.extension:code.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:codeFilter.extension:valueSet",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "valueSet",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:codeFilter.extension:valueSet.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:codeFilter.extension:valueSet.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "valueSet"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:codeFilter.extension:valueSet.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:codeFilter.extension:searchParam",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "searchParam",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:codeFilter.extension:searchParam.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:codeFilter.extension:searchParam.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "searchParam"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:codeFilter.extension:searchParam.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:codeFilter.extension:id",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:codeFilter.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:codeFilter.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:codeFilter.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:codeFilter.extension:element",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "element",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:codeFilter.extension:element.extension:id",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:codeFilter.extension:element.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:codeFilter.extension:element.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:codeFilter.extension:element.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:codeFilter.extension:element.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "element"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:codeFilter.extension:element.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:codeFilter.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "codeFilter"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:codeFilter.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:dateFilter",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "dateFilter",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:dateFilter.extension:path",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "path",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:dateFilter.extension:path.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:dateFilter.extension:path.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "path"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:dateFilter.extension:path.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:dateFilter.extension:searchParam",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "searchParam",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:dateFilter.extension:searchParam.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:dateFilter.extension:searchParam.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "searchParam"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:dateFilter.extension:searchParam.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:dateFilter.extension:id",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:dateFilter.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:dateFilter.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:dateFilter.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:dateFilter.extension:value",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "value",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:dateFilter.extension:value.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:dateFilter.extension:value.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "value"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:dateFilter.extension:value.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "Duration"
+          },
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:dateFilter.extension:element",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "element",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:dateFilter.extension:element.extension:id",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:dateFilter.extension:element.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:dateFilter.extension:element.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:dateFilter.extension:element.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:dateFilter.extension:element.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "element"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:dateFilter.extension:element.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:dateFilter.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "dateFilter"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.extension:dateFilter.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "datarequirement"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.extension:datarequirement.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "data"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:data.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:timing",
+        "path": "Extension.extension.extension",
+        "sliceName": "timing",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:timing.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:timing.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "timing"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:timing.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "date"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "Reference"
+          },
+          {
+            "code": "Timing"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:timing.value[x]:valueReference",
+        "path": "Extension.extension.extension.value[x]",
+        "sliceName": "valueReference",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Schedule"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:name",
+        "path": "Extension.extension.extension",
+        "sliceName": "name",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:name.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:name.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "name"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:name.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:subscriptionTopic",
+        "path": "Extension.extension.extension",
+        "sliceName": "subscriptionTopic",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:subscriptionTopic.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:subscriptionTopic.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "subscriptionTopic"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:subscriptionTopic.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:type",
+        "path": "Extension.extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:type.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:type.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.extension:type.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/trigger-type|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "triggerdefinition"
+      },
+      {
+        "id": "Extension.extension:triggerdefinition.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PlanDefinition.action.trigger"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

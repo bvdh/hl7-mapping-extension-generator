@@ -1,0 +1,57 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-Medication.ingredient.isActive",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Medication.ingredient.isActive",
+  "name": "MedicationIngredientIsActive",
+  "title": "Medication Ingredient IsActive ",
+  "status": "draft",
+  "description": "Cross version extension for Medication.ingredient.isActive from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "Medication.ingredient",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Medication Ingredient IsActive ",
+        "definition": "Cross version extension for Medication.ingredient.isActive from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Medication.ingredient.isActive"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      }
+    ]
+  }
+}

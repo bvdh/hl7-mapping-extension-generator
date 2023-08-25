@@ -1,0 +1,129 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-Account.coverage",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Account.coverage",
+  "name": "AccountCoverage",
+  "title": "Account Coverage ",
+  "status": "draft",
+  "description": "Cross version extension for Account.coverage from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "Account",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Account Coverage ",
+        "definition": "Cross version extension for Account.coverage from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:coverage",
+        "path": "Extension.extension",
+        "sliceName": "coverage",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:coverage.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:coverage.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "coverage"
+      },
+      {
+        "id": "Extension.extension:coverage.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Coverage"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:priority",
+        "path": "Extension.extension",
+        "sliceName": "priority",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:priority.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:priority.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "priority"
+      },
+      {
+        "id": "Extension.extension:priority.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "positiveInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Account.coverage"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

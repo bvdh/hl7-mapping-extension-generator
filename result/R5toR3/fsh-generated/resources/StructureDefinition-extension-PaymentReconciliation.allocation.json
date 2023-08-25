@@ -1,0 +1,451 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-PaymentReconciliation.allocation",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PaymentReconciliation.allocation",
+  "name": "PaymentReconciliationAllocation",
+  "title": "PaymentReconciliation Allocation ",
+  "status": "draft",
+  "description": "Cross version extension for PaymentReconciliation.allocation from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "PaymentReconciliation",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "PaymentReconciliation Allocation ",
+        "definition": "Cross version extension for PaymentReconciliation.allocation from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:date",
+        "path": "Extension.extension",
+        "sliceName": "date",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:date.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:date.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "date"
+      },
+      {
+        "id": "Extension.extension:date.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:identifier",
+        "path": "Extension.extension",
+        "sliceName": "identifier",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:identifier.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:identifier.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "identifier"
+      },
+      {
+        "id": "Extension.extension:identifier.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:submitter",
+        "path": "Extension.extension",
+        "sliceName": "submitter",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:submitter.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:submitter.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "submitter"
+      },
+      {
+        "id": "Extension.extension:submitter.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:amount",
+        "path": "Extension.extension",
+        "sliceName": "amount",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:amount.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:amount.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "amount"
+      },
+      {
+        "id": "Extension.extension:amount.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Money"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:encounter",
+        "path": "Extension.extension",
+        "sliceName": "encounter",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:encounter.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:encounter.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "encounter"
+      },
+      {
+        "id": "Extension.extension:encounter.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Encounter"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:predecessor",
+        "path": "Extension.extension",
+        "sliceName": "predecessor",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:predecessor.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:predecessor.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "predecessor"
+      },
+      {
+        "id": "Extension.extension:predecessor.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:type.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/payment-type|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:target",
+        "path": "Extension.extension",
+        "sliceName": "target",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:target.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:target.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "target"
+      },
+      {
+        "id": "Extension.extension:target.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Claim",
+              "http://hl7.org/fhir/StructureDefinition/Account",
+              "http://hl7.org/fhir/StructureDefinition/ChargeItem",
+              "http://hl7.org/fhir/StructureDefinition/Encounter",
+              "http://hl7.org/fhir/StructureDefinition/Contract"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:payee",
+        "path": "Extension.extension",
+        "sliceName": "payee",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:payee.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:payee.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "payee"
+      },
+      {
+        "id": "Extension.extension:payee.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:response",
+        "path": "Extension.extension",
+        "sliceName": "response",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:response.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:response.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "response"
+      },
+      {
+        "id": "Extension.extension:response.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/ClaimResponse"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:responsible",
+        "path": "Extension.extension",
+        "sliceName": "responsible",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:responsible.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:responsible.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "responsible"
+      },
+      {
+        "id": "Extension.extension:responsible.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:targetItem",
+        "path": "Extension.extension",
+        "sliceName": "targetItem",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:targetItem.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:targetItem.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "targetItem"
+      },
+      {
+        "id": "Extension.extension:targetItem.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "positiveInt"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:account",
+        "path": "Extension.extension",
+        "sliceName": "account",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:account.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:account.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "account"
+      },
+      {
+        "id": "Extension.extension:account.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Account"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PaymentReconciliation.allocation"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

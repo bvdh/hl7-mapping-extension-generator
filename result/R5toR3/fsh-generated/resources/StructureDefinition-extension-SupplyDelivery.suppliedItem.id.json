@@ -1,0 +1,57 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-SupplyDelivery.suppliedItem.id",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-SupplyDelivery.suppliedItem.id",
+  "name": "SupplyDeliverySuppliedItemId",
+  "title": "SupplyDelivery SuppliedItem Id ",
+  "status": "draft",
+  "description": "Cross version extension for SupplyDelivery.suppliedItem.id from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "SupplyDelivery.suppliedItem",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "SupplyDelivery SuppliedItem Id ",
+        "definition": "Cross version extension for SupplyDelivery.suppliedItem.id from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-SupplyDelivery.suppliedItem.id"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      }
+    ]
+  }
+}

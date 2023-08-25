@@ -1,0 +1,328 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-StructureMap.group.rule.target",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-StructureMap.group.rule.target",
+  "name": "StructureMapGroupRuleTarget",
+  "title": "StructureMap Group Rule Target ",
+  "status": "draft",
+  "description": "Cross version extension for StructureMap.group.rule.target from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "StructureMap.group.rule",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "StructureMap Group Rule Target ",
+        "definition": "Cross version extension for StructureMap.group.rule.target from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:listMode",
+        "path": "Extension.extension",
+        "sliceName": "listMode",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:listMode.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:listMode.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "listMode"
+      },
+      {
+        "id": "Extension.extension:listMode.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/map-target-list-mode|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:listRuleId",
+        "path": "Extension.extension",
+        "sliceName": "listRuleId",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:listRuleId.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:listRuleId.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "listRuleId"
+      },
+      {
+        "id": "Extension.extension:listRuleId.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:transform",
+        "path": "Extension.extension",
+        "sliceName": "transform",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:transform.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:transform.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "transform"
+      },
+      {
+        "id": "Extension.extension:transform.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/map-transform|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:parameter",
+        "path": "Extension.extension",
+        "sliceName": "parameter",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:parameter.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:parameter.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:parameter.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:parameter.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:parameter.extension:value",
+        "path": "Extension.extension.extension",
+        "sliceName": "value",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:parameter.extension:value.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:parameter.extension:value.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "value"
+      },
+      {
+        "id": "Extension.extension:parameter.extension:value.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "date"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "decimal"
+          },
+          {
+            "code": "id"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "time"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:parameter.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "parameter"
+      },
+      {
+        "id": "Extension.extension:parameter.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:context",
+        "path": "Extension.extension",
+        "sliceName": "context",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:context.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:context.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "context"
+      },
+      {
+        "id": "Extension.extension:context.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:variable",
+        "path": "Extension.extension",
+        "sliceName": "variable",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:variable.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:variable.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "variable"
+      },
+      {
+        "id": "Extension.extension:variable.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:element",
+        "path": "Extension.extension",
+        "sliceName": "element",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:element.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:element.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "element"
+      },
+      {
+        "id": "Extension.extension:element.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-StructureMap.group.rule.target"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

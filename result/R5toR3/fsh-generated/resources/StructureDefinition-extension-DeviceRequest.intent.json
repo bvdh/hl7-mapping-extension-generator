@@ -1,0 +1,61 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-DeviceRequest.intent",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceRequest.intent",
+  "name": "DeviceRequestIntent",
+  "title": "DeviceRequest Intent ",
+  "status": "draft",
+  "description": "Cross version extension for DeviceRequest.intent from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "DeviceRequest",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "DeviceRequest Intent ",
+        "definition": "Cross version extension for DeviceRequest.intent from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceRequest.intent"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/request-intent|5.0.0"
+        }
+      }
+    ]
+  }
+}

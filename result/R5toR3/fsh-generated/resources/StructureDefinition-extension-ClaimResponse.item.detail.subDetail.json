@@ -1,0 +1,152 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-ClaimResponse.item.detail.subDetail",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.item.detail.subDetail",
+  "name": "ClaimResponseItemDetailSubDetail",
+  "title": "ClaimResponse Item Detail SubDetail ",
+  "status": "draft",
+  "description": "Cross version extension for ClaimResponse.item.detail.subDetail from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "ClaimResponse.item.detail",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "ClaimResponse Item Detail SubDetail ",
+        "definition": "Cross version extension for ClaimResponse.item.detail.subDetail from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:subDetailSequence",
+        "path": "Extension.extension",
+        "sliceName": "subDetailSequence",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:subDetailSequence.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:subDetailSequence.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "subDetailSequence"
+      },
+      {
+        "id": "Extension.extension:subDetailSequence.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "positiveInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:traceNumber",
+        "path": "Extension.extension",
+        "sliceName": "traceNumber",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:traceNumber.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:traceNumber.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "traceNumber"
+      },
+      {
+        "id": "Extension.extension:traceNumber.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:noteNumber",
+        "path": "Extension.extension",
+        "sliceName": "noteNumber",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:noteNumber.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:noteNumber.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "noteNumber"
+      },
+      {
+        "id": "Extension.extension:noteNumber.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "positiveInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.item.detail.subDetail"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

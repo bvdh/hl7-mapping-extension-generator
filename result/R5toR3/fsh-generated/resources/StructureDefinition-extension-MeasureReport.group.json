@@ -1,0 +1,1043 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-MeasureReport.group",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.group",
+  "name": "MeasureReportGroup",
+  "title": "MeasureReport Group ",
+  "status": "draft",
+  "description": "Cross version extension for MeasureReport.group from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "MeasureReport",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "MeasureReport Group ",
+        "definition": "Cross version extension for MeasureReport.group from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:code",
+        "path": "Extension.extension",
+        "sliceName": "code",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:code.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:code.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:code.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/measure-group-example|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:linkId",
+        "path": "Extension.extension",
+        "sliceName": "linkId",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:linkId.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:linkId.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "linkId"
+      },
+      {
+        "id": "Extension.extension:linkId.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:subject",
+        "path": "Extension.extension",
+        "sliceName": "subject",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:subject.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:subject.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "subject"
+      },
+      {
+        "id": "Extension.extension:subject.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/CareTeam",
+              "http://hl7.org/fhir/StructureDefinition/Device",
+              "http://hl7.org/fhir/StructureDefinition/Group",
+              "http://hl7.org/fhir/StructureDefinition/HealthcareService",
+              "http://hl7.org/fhir/StructureDefinition/Location",
+              "http://hl7.org/fhir/StructureDefinition/Organization",
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:stratifier",
+        "path": "Extension.extension",
+        "sliceName": "stratifier",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:code",
+        "path": "Extension.extension.extension",
+        "sliceName": "code",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:code.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:code.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:code.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/measure-stratifier-example|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:linkId",
+        "path": "Extension.extension.extension",
+        "sliceName": "linkId",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:linkId.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:linkId.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "linkId"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:linkId.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum",
+        "path": "Extension.extension.extension",
+        "sliceName": "stratum",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:component",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "component",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:component.extension:code",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "code",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:component.extension:code.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:component.extension:code.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:component.extension:code.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/measure-stratifier-example|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:component.extension:linkId",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "linkId",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:component.extension:linkId.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:component.extension:linkId.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "linkId"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:component.extension:linkId.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:component.extension:id",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:component.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:component.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:component.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:component.extension:value",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "value",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:component.extension:value.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:component.extension:value.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "value"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:component.extension:value.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:component.extension:value.value[x]:valueCodeableConcept",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/measurereport-stratifier-value-example|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:component.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "component"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:component.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:id",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:id.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:measureScore",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "measureScore",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:measureScore.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:measureScore.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "measureScore"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:measureScore.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Duration"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Range"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:value",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "value",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:value.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:value.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "value"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:value.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:value.value[x]:valueCodeableConcept",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/measurereport-stratifier-value-example|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:population",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "population",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:population.extension:linkId",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "linkId",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:population.extension:linkId.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:population.extension:linkId.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "linkId"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:population.extension:linkId.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:population.extension:code",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "code",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:population.extension:code.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:population.extension:code.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:population.extension:code.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/measure-population|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:population.extension:subjects",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "subjects",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:population.extension:subjects.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:population.extension:subjects.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "subjects"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:population.extension:subjects.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Group"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:population.extension:count",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "count",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:population.extension:count.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:population.extension:count.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "count"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:population.extension:count.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:population.extension:subjectResults",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "subjectResults",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:population.extension:subjectResults.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:population.extension:subjectResults.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "subjectResults"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:population.extension:subjectResults.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/List"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:population.extension:subjectReport",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "subjectReport",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:population.extension:subjectReport.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:population.extension:subjectReport.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "subjectReport"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:population.extension:subjectReport.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/MeasureReport"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:population.extension:id",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:population.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:population.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:population.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:population.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "population"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.extension:population.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "stratum"
+      },
+      {
+        "id": "Extension.extension:stratifier.extension:stratum.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:stratifier.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "stratifier"
+      },
+      {
+        "id": "Extension.extension:stratifier.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:measureScore",
+        "path": "Extension.extension",
+        "sliceName": "measureScore",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:measureScore.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:measureScore.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "measureScore"
+      },
+      {
+        "id": "Extension.extension:measureScore.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Duration"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Range"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:population",
+        "path": "Extension.extension",
+        "sliceName": "population",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:population.extension:linkId",
+        "path": "Extension.extension.extension",
+        "sliceName": "linkId",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:population.extension:linkId.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:population.extension:linkId.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "linkId"
+      },
+      {
+        "id": "Extension.extension:population.extension:linkId.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:population.extension:code",
+        "path": "Extension.extension.extension",
+        "sliceName": "code",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:population.extension:code.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:population.extension:code.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:population.extension:code.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/measure-population|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:population.extension:subjects",
+        "path": "Extension.extension.extension",
+        "sliceName": "subjects",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:population.extension:subjects.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:population.extension:subjects.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "subjects"
+      },
+      {
+        "id": "Extension.extension:population.extension:subjects.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Group"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:population.extension:count",
+        "path": "Extension.extension.extension",
+        "sliceName": "count",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:population.extension:count.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:population.extension:count.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "count"
+      },
+      {
+        "id": "Extension.extension:population.extension:count.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:population.extension:subjectResults",
+        "path": "Extension.extension.extension",
+        "sliceName": "subjectResults",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:population.extension:subjectResults.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:population.extension:subjectResults.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "subjectResults"
+      },
+      {
+        "id": "Extension.extension:population.extension:subjectResults.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/List"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:population.extension:subjectReport",
+        "path": "Extension.extension.extension",
+        "sliceName": "subjectReport",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:population.extension:subjectReport.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:population.extension:subjectReport.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "subjectReport"
+      },
+      {
+        "id": "Extension.extension:population.extension:subjectReport.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/MeasureReport"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:population.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:population.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:population.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:population.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:population.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "population"
+      },
+      {
+        "id": "Extension.extension:population.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.group"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

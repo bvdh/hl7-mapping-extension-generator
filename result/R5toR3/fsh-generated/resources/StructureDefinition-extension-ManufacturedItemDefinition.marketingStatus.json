@@ -1,0 +1,221 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-ManufacturedItemDefinition.marketingStatus",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ManufacturedItemDefinition.marketingStatus",
+  "name": "ManufacturedItemDefinitionMarketingStatus",
+  "title": "ManufacturedItemDefinition MarketingStatus ",
+  "status": "draft",
+  "description": "Cross version extension for ManufacturedItemDefinition.marketingStatus from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "ManufacturedItemDefinition MarketingStatus ",
+        "definition": "Cross version extension for ManufacturedItemDefinition.marketingStatus from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:marketingstatus",
+        "path": "Extension.extension",
+        "sliceName": "marketingstatus",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:marketingstatus.extension:country",
+        "path": "Extension.extension.extension",
+        "sliceName": "country",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:marketingstatus.extension:country.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:marketingstatus.extension:country.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "country"
+      },
+      {
+        "id": "Extension.extension:marketingstatus.extension:country.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:marketingstatus.extension:dateRange",
+        "path": "Extension.extension.extension",
+        "sliceName": "dateRange",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:marketingstatus.extension:dateRange.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:marketingstatus.extension:dateRange.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "dateRange"
+      },
+      {
+        "id": "Extension.extension:marketingstatus.extension:dateRange.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:marketingstatus.extension:jurisdiction",
+        "path": "Extension.extension.extension",
+        "sliceName": "jurisdiction",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:marketingstatus.extension:jurisdiction.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:marketingstatus.extension:jurisdiction.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "jurisdiction"
+      },
+      {
+        "id": "Extension.extension:marketingstatus.extension:jurisdiction.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:marketingstatus.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:marketingstatus.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:marketingstatus.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:marketingstatus.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:marketingstatus.extension:restoreDate",
+        "path": "Extension.extension.extension",
+        "sliceName": "restoreDate",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:marketingstatus.extension:restoreDate.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:marketingstatus.extension:restoreDate.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "restoreDate"
+      },
+      {
+        "id": "Extension.extension:marketingstatus.extension:restoreDate.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:marketingstatus.extension:status",
+        "path": "Extension.extension.extension",
+        "sliceName": "status",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:marketingstatus.extension:status.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:marketingstatus.extension:status.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "status"
+      },
+      {
+        "id": "Extension.extension:marketingstatus.extension:status.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:marketingstatus.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "marketingstatus"
+      },
+      {
+        "id": "Extension.extension:marketingstatus.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ManufacturedItemDefinition.marketingStatus"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-Consent.provision.data",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.provision.data",
+  "name": "ConsentProvisionData",
+  "title": "Consent Provision Data ",
+  "status": "draft",
+  "description": "Cross version extension for Consent.provision.data from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Consent Provision Data ",
+        "definition": "Cross version extension for Consent.provision.data from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:reference",
+        "path": "Extension.extension",
+        "sliceName": "reference",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:reference.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:reference.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:reference.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Resource"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:meaning",
+        "path": "Extension.extension",
+        "sliceName": "meaning",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:meaning.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:meaning.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "meaning"
+      },
+      {
+        "id": "Extension.extension:meaning.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/consent-data-meaning|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.provision.data"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

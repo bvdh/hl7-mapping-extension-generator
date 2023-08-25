@@ -1,0 +1,247 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-DeviceDefinition.udiDeviceIdentifier",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceDefinition.udiDeviceIdentifier",
+  "name": "DeviceDefinitionUdiDeviceIdentifier",
+  "title": "DeviceDefinition UdiDeviceIdentifier ",
+  "status": "draft",
+  "description": "Cross version extension for DeviceDefinition.udiDeviceIdentifier from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "DeviceDefinition UdiDeviceIdentifier ",
+        "definition": "Cross version extension for DeviceDefinition.udiDeviceIdentifier from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:deviceIdentifier",
+        "path": "Extension.extension",
+        "sliceName": "deviceIdentifier",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:deviceIdentifier.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:deviceIdentifier.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "deviceIdentifier"
+      },
+      {
+        "id": "Extension.extension:deviceIdentifier.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:marketDistribution",
+        "path": "Extension.extension",
+        "sliceName": "marketDistribution",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:marketDistribution.extension:marketPeriod",
+        "path": "Extension.extension.extension",
+        "sliceName": "marketPeriod",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:marketDistribution.extension:marketPeriod.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:marketDistribution.extension:marketPeriod.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "marketPeriod"
+      },
+      {
+        "id": "Extension.extension:marketDistribution.extension:marketPeriod.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:marketDistribution.extension:subJurisdiction",
+        "path": "Extension.extension.extension",
+        "sliceName": "subJurisdiction",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:marketDistribution.extension:subJurisdiction.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:marketDistribution.extension:subJurisdiction.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "subJurisdiction"
+      },
+      {
+        "id": "Extension.extension:marketDistribution.extension:subJurisdiction.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:marketDistribution.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:marketDistribution.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:marketDistribution.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:marketDistribution.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:marketDistribution.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "marketDistribution"
+      },
+      {
+        "id": "Extension.extension:marketDistribution.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:jurisdiction",
+        "path": "Extension.extension",
+        "sliceName": "jurisdiction",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:jurisdiction.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:jurisdiction.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "jurisdiction"
+      },
+      {
+        "id": "Extension.extension:jurisdiction.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:issuer",
+        "path": "Extension.extension",
+        "sliceName": "issuer",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:issuer.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:issuer.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "issuer"
+      },
+      {
+        "id": "Extension.extension:issuer.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceDefinition.udiDeviceIdentifier"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

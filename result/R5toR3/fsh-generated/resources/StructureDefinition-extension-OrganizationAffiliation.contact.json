@@ -1,0 +1,254 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-OrganizationAffiliation.contact",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-OrganizationAffiliation.contact",
+  "name": "OrganizationAffiliationContact",
+  "title": "OrganizationAffiliation Contact ",
+  "status": "draft",
+  "description": "Cross version extension for OrganizationAffiliation.contact from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "OrganizationAffiliation Contact ",
+        "definition": "Cross version extension for OrganizationAffiliation.contact from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:extendedcontactdetail",
+        "path": "Extension.extension",
+        "sliceName": "extendedcontactdetail",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:extendedcontactdetail.extension:period",
+        "path": "Extension.extension.extension",
+        "sliceName": "period",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:extendedcontactdetail.extension:period.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:extendedcontactdetail.extension:period.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "period"
+      },
+      {
+        "id": "Extension.extension:extendedcontactdetail.extension:period.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:extendedcontactdetail.extension:address",
+        "path": "Extension.extension.extension",
+        "sliceName": "address",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:extendedcontactdetail.extension:address.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:extendedcontactdetail.extension:address.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "address"
+      },
+      {
+        "id": "Extension.extension:extendedcontactdetail.extension:address.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Address"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:extendedcontactdetail.extension:purpose",
+        "path": "Extension.extension.extension",
+        "sliceName": "purpose",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:extendedcontactdetail.extension:purpose.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:extendedcontactdetail.extension:purpose.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "purpose"
+      },
+      {
+        "id": "Extension.extension:extendedcontactdetail.extension:purpose.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://terminology.hl7.org/ValueSet/contactentity-type"
+        }
+      },
+      {
+        "id": "Extension.extension:extendedcontactdetail.extension:organization",
+        "path": "Extension.extension.extension",
+        "sliceName": "organization",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:extendedcontactdetail.extension:organization.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:extendedcontactdetail.extension:organization.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "organization"
+      },
+      {
+        "id": "Extension.extension:extendedcontactdetail.extension:organization.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:extendedcontactdetail.extension:name",
+        "path": "Extension.extension.extension",
+        "sliceName": "name",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:extendedcontactdetail.extension:name.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:extendedcontactdetail.extension:name.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "name"
+      },
+      {
+        "id": "Extension.extension:extendedcontactdetail.extension:name.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "HumanName"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:extendedcontactdetail.extension:telecom",
+        "path": "Extension.extension.extension",
+        "sliceName": "telecom",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:extendedcontactdetail.extension:telecom.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:extendedcontactdetail.extension:telecom.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "telecom"
+      },
+      {
+        "id": "Extension.extension:extendedcontactdetail.extension:telecom.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "ContactPoint"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:extendedcontactdetail.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:extendedcontactdetail.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:extendedcontactdetail.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:extendedcontactdetail.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:extendedcontactdetail.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "extendedcontactdetail"
+      },
+      {
+        "id": "Extension.extension:extendedcontactdetail.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-OrganizationAffiliation.contact"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

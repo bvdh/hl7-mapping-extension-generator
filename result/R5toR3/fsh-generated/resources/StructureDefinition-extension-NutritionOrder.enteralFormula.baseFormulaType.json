@@ -1,0 +1,143 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-NutritionOrder.enteralFormula.baseFormulaType",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.enteralFormula.baseFormulaType",
+  "name": "NutritionOrderEnteralFormulaBaseFormulaType",
+  "title": "NutritionOrder EnteralFormula BaseFormulaType ",
+  "status": "draft",
+  "description": "Cross version extension for NutritionOrder.enteralFormula.baseFormulaType from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "NutritionOrder.enteralFormula",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "NutritionOrder EnteralFormula BaseFormulaType ",
+        "definition": "Cross version extension for NutritionOrder.enteralFormula.baseFormulaType from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:codeablereference",
+        "path": "Extension.extension",
+        "sliceName": "codeablereference",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:codeablereference.extension:reference",
+        "path": "Extension.extension.extension",
+        "sliceName": "reference",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:codeablereference.extension:reference.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:codeablereference.extension:reference.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:codeablereference.extension:reference.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:codeablereference.extension:concept",
+        "path": "Extension.extension.extension",
+        "sliceName": "concept",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:codeablereference.extension:concept.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:codeablereference.extension:concept.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "concept"
+      },
+      {
+        "id": "Extension.extension:codeablereference.extension:concept.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:codeablereference.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:codeablereference.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:codeablereference.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:codeablereference.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:codeablereference.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "codeablereference"
+      },
+      {
+        "id": "Extension.extension:codeablereference.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.enteralFormula.baseFormulaType"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

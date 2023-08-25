@@ -1,0 +1,487 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-NutritionOrder.oralDiet",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.oralDiet",
+  "name": "NutritionOrderOralDiet",
+  "title": "NutritionOrder OralDiet ",
+  "status": "draft",
+  "description": "Cross version extension for NutritionOrder.oralDiet from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "NutritionOrder",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "NutritionOrder OralDiet ",
+        "definition": "Cross version extension for NutritionOrder.oralDiet from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:schedule",
+        "path": "Extension.extension",
+        "sliceName": "schedule",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:schedule.extension:asNeeded",
+        "path": "Extension.extension.extension",
+        "sliceName": "asNeeded",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:schedule.extension:asNeeded.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:schedule.extension:asNeeded.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "asNeeded"
+      },
+      {
+        "id": "Extension.extension:schedule.extension:asNeeded.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:schedule.extension:timing",
+        "path": "Extension.extension.extension",
+        "sliceName": "timing",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:schedule.extension:timing.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:schedule.extension:timing.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "timing"
+      },
+      {
+        "id": "Extension.extension:schedule.extension:timing.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Timing"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:schedule.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:schedule.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:schedule.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:schedule.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:schedule.extension:asNeededFor",
+        "path": "Extension.extension.extension",
+        "sliceName": "asNeededFor",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:schedule.extension:asNeededFor.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:schedule.extension:asNeededFor.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "asNeededFor"
+      },
+      {
+        "id": "Extension.extension:schedule.extension:asNeededFor.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/medication-as-needed-reason|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:schedule.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "schedule"
+      },
+      {
+        "id": "Extension.extension:schedule.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:nutrient",
+        "path": "Extension.extension",
+        "sliceName": "nutrient",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:nutrient.extension:amount",
+        "path": "Extension.extension.extension",
+        "sliceName": "amount",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:nutrient.extension:amount.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:nutrient.extension:amount.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "amount"
+      },
+      {
+        "id": "Extension.extension:nutrient.extension:amount.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:nutrient.extension:modifier",
+        "path": "Extension.extension.extension",
+        "sliceName": "modifier",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:nutrient.extension:modifier.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:nutrient.extension:modifier.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "modifier"
+      },
+      {
+        "id": "Extension.extension:nutrient.extension:modifier.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/nutrient-code|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:nutrient.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:nutrient.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:nutrient.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:nutrient.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:nutrient.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "nutrient"
+      },
+      {
+        "id": "Extension.extension:nutrient.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:instruction",
+        "path": "Extension.extension",
+        "sliceName": "instruction",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:instruction.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:instruction.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "instruction"
+      },
+      {
+        "id": "Extension.extension:instruction.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:texture",
+        "path": "Extension.extension",
+        "sliceName": "texture",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:texture.extension:foodType",
+        "path": "Extension.extension.extension",
+        "sliceName": "foodType",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:texture.extension:foodType.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:texture.extension:foodType.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "foodType"
+      },
+      {
+        "id": "Extension.extension:texture.extension:foodType.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/modified-foodtype|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:texture.extension:modifier",
+        "path": "Extension.extension.extension",
+        "sliceName": "modifier",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:texture.extension:modifier.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:texture.extension:modifier.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "modifier"
+      },
+      {
+        "id": "Extension.extension:texture.extension:modifier.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/texture-code|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:texture.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:texture.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:texture.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:texture.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:texture.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "texture"
+      },
+      {
+        "id": "Extension.extension:texture.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:fluidConsistencyType",
+        "path": "Extension.extension",
+        "sliceName": "fluidConsistencyType",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:fluidConsistencyType.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:fluidConsistencyType.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "fluidConsistencyType"
+      },
+      {
+        "id": "Extension.extension:fluidConsistencyType.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/consistency-type|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:type.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/diet-type|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.oralDiet"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

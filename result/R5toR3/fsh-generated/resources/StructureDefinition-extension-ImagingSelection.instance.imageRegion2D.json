@@ -1,0 +1,130 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-ImagingSelection.instance.imageRegion2D",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ImagingSelection.instance.imageRegion2D",
+  "name": "ImagingSelectionInstanceImageRegion2D",
+  "title": "ImagingSelection Instance ImageRegion2D ",
+  "status": "draft",
+  "description": "Cross version extension for ImagingSelection.instance.imageRegion2D from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "ImagingSelection Instance ImageRegion2D ",
+        "definition": "Cross version extension for ImagingSelection.instance.imageRegion2D from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:coordinate",
+        "path": "Extension.extension",
+        "sliceName": "coordinate",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:coordinate.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:coordinate.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "coordinate"
+      },
+      {
+        "id": "Extension.extension:coordinate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:regionType",
+        "path": "Extension.extension",
+        "sliceName": "regionType",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:regionType.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:regionType.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "regionType"
+      },
+      {
+        "id": "Extension.extension:regionType.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/imagingselection-2dgraphictype|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ImagingSelection.instance.imageRegion2D"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

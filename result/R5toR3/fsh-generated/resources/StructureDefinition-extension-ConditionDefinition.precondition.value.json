@@ -1,0 +1,60 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-ConditionDefinition.precondition.value",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ConditionDefinition.precondition.value",
+  "name": "ConditionDefinitionPreconditionValue",
+  "title": "ConditionDefinition Precondition Value[x] ",
+  "status": "draft",
+  "description": "Cross version extension for ConditionDefinition.precondition.value[x] from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "ConditionDefinition Precondition Value[x] ",
+        "definition": "Cross version extension for ConditionDefinition.precondition.value[x] from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ConditionDefinition.precondition.value"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Quantity"
+          }
+        ]
+      }
+    ]
+  }
+}

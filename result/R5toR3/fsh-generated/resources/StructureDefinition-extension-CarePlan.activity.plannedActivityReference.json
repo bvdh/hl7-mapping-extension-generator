@@ -1,0 +1,68 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-CarePlan.activity.plannedActivityReference",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-CarePlan.activity.plannedActivityReference",
+  "name": "CarePlanActivityPlannedActivityReference",
+  "title": "CarePlan Activity PlannedActivityReference ",
+  "status": "draft",
+  "description": "Cross version extension for CarePlan.activity.plannedActivityReference from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "CarePlan.activity",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "CarePlan Activity PlannedActivityReference ",
+        "definition": "Cross version extension for CarePlan.activity.plannedActivityReference from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-CarePlan.activity.plannedActivityReference"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Appointment",
+              "http://hl7.org/fhir/StructureDefinition/CommunicationRequest",
+              "http://hl7.org/fhir/StructureDefinition/DeviceRequest",
+              "http://hl7.org/fhir/StructureDefinition/MedicationRequest",
+              "http://hl7.org/fhir/StructureDefinition/NutritionOrder",
+              "http://hl7.org/fhir/StructureDefinition/Task",
+              "http://hl7.org/fhir/StructureDefinition/VisionPrescription",
+              "http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation",
+              "http://hl7.org/fhir/StructureDefinition/SupplyRequest"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

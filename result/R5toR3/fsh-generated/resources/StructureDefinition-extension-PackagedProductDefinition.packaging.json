@@ -1,0 +1,704 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-PackagedProductDefinition.packaging",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.packaging",
+  "name": "PackagedProductDefinitionPackaging",
+  "title": "PackagedProductDefinition Packaging ",
+  "status": "draft",
+  "description": "Cross version extension for PackagedProductDefinition.packaging from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "PackagedProductDefinition Packaging ",
+        "definition": "Cross version extension for PackagedProductDefinition.packaging from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:identifier",
+        "path": "Extension.extension",
+        "sliceName": "identifier",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:identifier.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:identifier.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "identifier"
+      },
+      {
+        "id": "Extension.extension:identifier.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:quantity",
+        "path": "Extension.extension",
+        "sliceName": "quantity",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:quantity.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:quantity.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "quantity"
+      },
+      {
+        "id": "Extension.extension:quantity.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:componentPart",
+        "path": "Extension.extension",
+        "sliceName": "componentPart",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:componentPart.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:componentPart.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "componentPart"
+      },
+      {
+        "id": "Extension.extension:componentPart.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:shelfLifeStorage",
+        "path": "Extension.extension",
+        "sliceName": "shelfLifeStorage",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:shelfLifeStorage.extension:productshelflife",
+        "path": "Extension.extension.extension",
+        "sliceName": "productshelflife",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:shelfLifeStorage.extension:productshelflife.extension:period",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "period",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:shelfLifeStorage.extension:productshelflife.extension:period.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:shelfLifeStorage.extension:productshelflife.extension:period.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "period"
+      },
+      {
+        "id": "Extension.extension:shelfLifeStorage.extension:productshelflife.extension:period.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          },
+          {
+            "code": "Duration"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:shelfLifeStorage.extension:productshelflife.extension:specialPrecautionsForStorage",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "specialPrecautionsForStorage",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:shelfLifeStorage.extension:productshelflife.extension:specialPrecautionsForStorage.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:shelfLifeStorage.extension:productshelflife.extension:specialPrecautionsForStorage.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "specialPrecautionsForStorage"
+      },
+      {
+        "id": "Extension.extension:shelfLifeStorage.extension:productshelflife.extension:specialPrecautionsForStorage.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:shelfLifeStorage.extension:productshelflife.extension:id",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:shelfLifeStorage.extension:productshelflife.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:shelfLifeStorage.extension:productshelflife.extension:id.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:shelfLifeStorage.extension:productshelflife.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:shelfLifeStorage.extension:productshelflife.extension:type",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:shelfLifeStorage.extension:productshelflife.extension:type.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:shelfLifeStorage.extension:productshelflife.extension:type.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:shelfLifeStorage.extension:productshelflife.extension:type.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:shelfLifeStorage.extension:productshelflife.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "productshelflife"
+      },
+      {
+        "id": "Extension.extension:shelfLifeStorage.extension:productshelflife.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:shelfLifeStorage.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "shelfLifeStorage"
+      },
+      {
+        "id": "Extension.extension:shelfLifeStorage.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:material",
+        "path": "Extension.extension",
+        "sliceName": "material",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:material.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:material.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "material"
+      },
+      {
+        "id": "Extension.extension:material.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/package-material|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:containedItem",
+        "path": "Extension.extension",
+        "sliceName": "containedItem",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:containedItem.extension:item",
+        "path": "Extension.extension.extension",
+        "sliceName": "item",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:containedItem.extension:item.extension:codeablereference",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "codeablereference",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:containedItem.extension:item.extension:codeablereference.extension:reference",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "reference",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:containedItem.extension:item.extension:codeablereference.extension:reference.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:containedItem.extension:item.extension:codeablereference.extension:reference.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:containedItem.extension:item.extension:codeablereference.extension:reference.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:containedItem.extension:item.extension:codeablereference.extension:concept",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "concept",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:containedItem.extension:item.extension:codeablereference.extension:concept.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:containedItem.extension:item.extension:codeablereference.extension:concept.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "concept"
+      },
+      {
+        "id": "Extension.extension:containedItem.extension:item.extension:codeablereference.extension:concept.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:containedItem.extension:item.extension:codeablereference.extension:id",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:containedItem.extension:item.extension:codeablereference.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:containedItem.extension:item.extension:codeablereference.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:containedItem.extension:item.extension:codeablereference.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:containedItem.extension:item.extension:codeablereference.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "codeablereference"
+      },
+      {
+        "id": "Extension.extension:containedItem.extension:item.extension:codeablereference.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:containedItem.extension:item.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "item"
+      },
+      {
+        "id": "Extension.extension:containedItem.extension:item.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:containedItem.extension:amount",
+        "path": "Extension.extension.extension",
+        "sliceName": "amount",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:containedItem.extension:amount.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:containedItem.extension:amount.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "amount"
+      },
+      {
+        "id": "Extension.extension:containedItem.extension:amount.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:containedItem.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:containedItem.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:containedItem.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:containedItem.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:containedItem.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "containedItem"
+      },
+      {
+        "id": "Extension.extension:containedItem.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:property",
+        "path": "Extension.extension",
+        "sliceName": "property",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:property.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:property.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:property.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:property.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:property.extension:type",
+        "path": "Extension.extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:property.extension:type.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:property.extension:type.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:property.extension:type.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/product-characteristic-codes|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:property.extension:value",
+        "path": "Extension.extension.extension",
+        "sliceName": "value",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:property.extension:value.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:property.extension:value.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "value"
+      },
+      {
+        "id": "Extension.extension:property.extension:value.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "date"
+          },
+          {
+            "code": "Attachment"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:property.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "property"
+      },
+      {
+        "id": "Extension.extension:property.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:type.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/packaging-type|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:alternateMaterial",
+        "path": "Extension.extension",
+        "sliceName": "alternateMaterial",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:alternateMaterial.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:alternateMaterial.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "alternateMaterial"
+      },
+      {
+        "id": "Extension.extension:alternateMaterial.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/package-material|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:manufacturer",
+        "path": "Extension.extension",
+        "sliceName": "manufacturer",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:manufacturer.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:manufacturer.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "manufacturer"
+      },
+      {
+        "id": "Extension.extension:manufacturer.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.packaging"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

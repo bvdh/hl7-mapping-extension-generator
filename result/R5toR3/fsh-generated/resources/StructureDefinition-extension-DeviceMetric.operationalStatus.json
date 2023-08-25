@@ -1,0 +1,61 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-DeviceMetric.operationalStatus",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceMetric.operationalStatus",
+  "name": "DeviceMetricOperationalStatus",
+  "title": "DeviceMetric OperationalStatus ",
+  "status": "draft",
+  "description": "Cross version extension for DeviceMetric.operationalStatus from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "DeviceMetric",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "DeviceMetric OperationalStatus ",
+        "definition": "Cross version extension for DeviceMetric.operationalStatus from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceMetric.operationalStatus"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/metric-operational-status|5.0.0"
+        }
+      }
+    ]
+  }
+}

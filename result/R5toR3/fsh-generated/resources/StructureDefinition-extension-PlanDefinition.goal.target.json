@@ -1,0 +1,174 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-PlanDefinition.goal.target",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PlanDefinition.goal.target",
+  "name": "PlanDefinitionGoalTarget",
+  "title": "PlanDefinition Goal Target ",
+  "status": "draft",
+  "description": "Cross version extension for PlanDefinition.goal.target from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "PlanDefinition.goal",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "PlanDefinition Goal Target ",
+        "definition": "Cross version extension for PlanDefinition.goal.target from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:measure",
+        "path": "Extension.extension",
+        "sliceName": "measure",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:measure.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:measure.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "measure"
+      },
+      {
+        "id": "Extension.extension:measure.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/observation-codes|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:due",
+        "path": "Extension.extension",
+        "sliceName": "due",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:due.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:due.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "due"
+      },
+      {
+        "id": "Extension.extension:due.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Duration"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:detail",
+        "path": "Extension.extension",
+        "sliceName": "detail",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:detail.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:detail.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "detail"
+      },
+      {
+        "id": "Extension.extension:detail.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Ratio"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PlanDefinition.goal.target"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

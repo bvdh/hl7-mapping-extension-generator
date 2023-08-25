@@ -1,0 +1,240 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-RiskAssessment.prediction",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-RiskAssessment.prediction",
+  "name": "RiskAssessmentPrediction",
+  "title": "RiskAssessment Prediction ",
+  "status": "draft",
+  "description": "Cross version extension for RiskAssessment.prediction from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "RiskAssessment",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "RiskAssessment Prediction ",
+        "definition": "Cross version extension for RiskAssessment.prediction from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:relativeRisk",
+        "path": "Extension.extension",
+        "sliceName": "relativeRisk",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:relativeRisk.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:relativeRisk.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "relativeRisk"
+      },
+      {
+        "id": "Extension.extension:relativeRisk.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:qualitativeRisk",
+        "path": "Extension.extension",
+        "sliceName": "qualitativeRisk",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:qualitativeRisk.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:qualitativeRisk.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "qualitativeRisk"
+      },
+      {
+        "id": "Extension.extension:qualitativeRisk.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/risk-probability|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:probability",
+        "path": "Extension.extension",
+        "sliceName": "probability",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:probability.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:probability.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "probability"
+      },
+      {
+        "id": "Extension.extension:probability.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "decimal"
+          },
+          {
+            "code": "Range"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:rationale",
+        "path": "Extension.extension",
+        "sliceName": "rationale",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:rationale.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:rationale.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "rationale"
+      },
+      {
+        "id": "Extension.extension:rationale.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:when",
+        "path": "Extension.extension",
+        "sliceName": "when",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:when.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:when.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "when"
+      },
+      {
+        "id": "Extension.extension:when.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Range"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:outcome",
+        "path": "Extension.extension",
+        "sliceName": "outcome",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:outcome.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:outcome.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "outcome"
+      },
+      {
+        "id": "Extension.extension:outcome.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-RiskAssessment.prediction"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

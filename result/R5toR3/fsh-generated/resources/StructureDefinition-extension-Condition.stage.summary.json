@@ -1,0 +1,61 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-Condition.stage.summary",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Condition.stage.summary",
+  "name": "ConditionStageSummary",
+  "title": "Condition Stage Summary ",
+  "status": "draft",
+  "description": "Cross version extension for Condition.stage.summary from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "Condition.stage",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Condition Stage Summary ",
+        "definition": "Cross version extension for Condition.stage.summary from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Condition.stage.summary"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/condition-stage|5.0.0"
+        }
+      }
+    ]
+  }
+}

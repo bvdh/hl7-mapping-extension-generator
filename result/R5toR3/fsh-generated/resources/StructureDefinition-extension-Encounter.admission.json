@@ -1,0 +1,250 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-Encounter.admission",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.admission",
+  "name": "EncounterAdmission",
+  "title": "Encounter Admission ",
+  "status": "draft",
+  "description": "Cross version extension for Encounter.admission from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "Encounter",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Encounter Admission ",
+        "definition": "Cross version extension for Encounter.admission from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:reAdmission",
+        "path": "Extension.extension",
+        "sliceName": "reAdmission",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:reAdmission.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:reAdmission.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "reAdmission"
+      },
+      {
+        "id": "Extension.extension:reAdmission.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0092"
+        }
+      },
+      {
+        "id": "Extension.extension:origin",
+        "path": "Extension.extension",
+        "sliceName": "origin",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:origin.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:origin.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "origin"
+      },
+      {
+        "id": "Extension.extension:origin.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Location",
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:destination",
+        "path": "Extension.extension",
+        "sliceName": "destination",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:destination.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:destination.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "destination"
+      },
+      {
+        "id": "Extension.extension:destination.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Location",
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:preAdmissionIdentifier",
+        "path": "Extension.extension",
+        "sliceName": "preAdmissionIdentifier",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:preAdmissionIdentifier.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:preAdmissionIdentifier.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "preAdmissionIdentifier"
+      },
+      {
+        "id": "Extension.extension:preAdmissionIdentifier.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:dischargeDisposition",
+        "path": "Extension.extension",
+        "sliceName": "dischargeDisposition",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:dischargeDisposition.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:dischargeDisposition.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "dischargeDisposition"
+      },
+      {
+        "id": "Extension.extension:dischargeDisposition.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/encounter-discharge-disposition|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:admitSource",
+        "path": "Extension.extension",
+        "sliceName": "admitSource",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:admitSource.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:admitSource.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "admitSource"
+      },
+      {
+        "id": "Extension.extension:admitSource.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://hl7.org/fhir/ValueSet/encounter-admit-source|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.admission"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+Extension:   RequestGroupActionRequiredBehavior
+Id:          extension-RequestGroup.action.requiredBehavior
+Title:       "RequestGroup Action RequiredBehavior "
+Description: "Cross version extension for RequestGroup.action.requiredBehavior from FHIR version 4.0.1 to FHIR version 3.0.1"
+Context:     RequestGroup.action
+* value[x] only code
+* valueCode from CrossVersion-ActionRequiredBehavior (required)
+

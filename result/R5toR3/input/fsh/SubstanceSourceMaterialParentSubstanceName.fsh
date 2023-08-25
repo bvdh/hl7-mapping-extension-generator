@@ -1,0 +1,6 @@
+Extension:   SubstanceSourceMaterialParentSubstanceName
+Id:          extension-SubstanceSourceMaterial.parentSubstanceName
+Title:       "SubstanceSourceMaterial ParentSubstanceName "
+Description: "Cross version extension for SubstanceSourceMaterial.parentSubstanceName from FHIR version 5.0.0 to FHIR version 3.0.1"
+* value[x] only string
+

@@ -1,0 +1,525 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-Specimen.collection",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection",
+  "name": "SpecimenCollection",
+  "title": "Specimen Collection ",
+  "status": "draft",
+  "description": "Cross version extension for Specimen.collection from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "Specimen",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Specimen Collection ",
+        "definition": "Cross version extension for Specimen.collection from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:duration",
+        "path": "Extension.extension",
+        "sliceName": "duration",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:duration.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:duration.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "duration"
+      },
+      {
+        "id": "Extension.extension:duration.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Duration"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:bodySite",
+        "path": "Extension.extension",
+        "sliceName": "bodySite",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:bodySite.extension:codeablereference",
+        "path": "Extension.extension.extension",
+        "sliceName": "codeablereference",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:bodySite.extension:codeablereference.extension:reference",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "reference",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:bodySite.extension:codeablereference.extension:reference.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:bodySite.extension:codeablereference.extension:reference.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:bodySite.extension:codeablereference.extension:reference.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:bodySite.extension:codeablereference.extension:concept",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "concept",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:bodySite.extension:codeablereference.extension:concept.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:bodySite.extension:codeablereference.extension:concept.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "concept"
+      },
+      {
+        "id": "Extension.extension:bodySite.extension:codeablereference.extension:concept.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:bodySite.extension:codeablereference.extension:id",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:bodySite.extension:codeablereference.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:bodySite.extension:codeablereference.extension:id.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:bodySite.extension:codeablereference.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:bodySite.extension:codeablereference.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "codeablereference"
+      },
+      {
+        "id": "Extension.extension:bodySite.extension:codeablereference.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:bodySite.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "bodySite"
+      },
+      {
+        "id": "Extension.extension:bodySite.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:quantity",
+        "path": "Extension.extension",
+        "sliceName": "quantity",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:quantity.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:quantity.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "quantity"
+      },
+      {
+        "id": "Extension.extension:quantity.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:method",
+        "path": "Extension.extension",
+        "sliceName": "method",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:method.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:method.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "method"
+      },
+      {
+        "id": "Extension.extension:method.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/specimen-collection-method|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:fastingStatus",
+        "path": "Extension.extension",
+        "sliceName": "fastingStatus",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:fastingStatus.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:fastingStatus.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "fastingStatus"
+      },
+      {
+        "id": "Extension.extension:fastingStatus.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Duration"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:fastingStatus.value[x]:valueCodeableConcept",
+        "path": "Extension.extension.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0916"
+        }
+      },
+      {
+        "id": "Extension.extension:collected",
+        "path": "Extension.extension",
+        "sliceName": "collected",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:collected.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:collected.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "collected"
+      },
+      {
+        "id": "Extension.extension:collected.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:procedure",
+        "path": "Extension.extension",
+        "sliceName": "procedure",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:procedure.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:procedure.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "procedure"
+      },
+      {
+        "id": "Extension.extension:procedure.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Procedure"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:device",
+        "path": "Extension.extension",
+        "sliceName": "device",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:device.extension:codeablereference",
+        "path": "Extension.extension.extension",
+        "sliceName": "codeablereference",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:device.extension:codeablereference.extension:reference",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "reference",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:device.extension:codeablereference.extension:reference.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:device.extension:codeablereference.extension:reference.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:device.extension:codeablereference.extension:reference.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:device.extension:codeablereference.extension:concept",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "concept",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:device.extension:codeablereference.extension:concept.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:device.extension:codeablereference.extension:concept.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "concept"
+      },
+      {
+        "id": "Extension.extension:device.extension:codeablereference.extension:concept.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:device.extension:codeablereference.extension:id",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:device.extension:codeablereference.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:device.extension:codeablereference.extension:id.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:device.extension:codeablereference.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:device.extension:codeablereference.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "codeablereference"
+      },
+      {
+        "id": "Extension.extension:device.extension:codeablereference.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:device.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "device"
+      },
+      {
+        "id": "Extension.extension:device.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:collector",
+        "path": "Extension.extension",
+        "sliceName": "collector",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:collector.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:collector.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "collector"
+      },
+      {
+        "id": "Extension.extension:collector.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

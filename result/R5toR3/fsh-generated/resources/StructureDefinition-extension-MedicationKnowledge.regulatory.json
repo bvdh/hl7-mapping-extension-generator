@@ -1,0 +1,319 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-MedicationKnowledge.regulatory",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationKnowledge.regulatory",
+  "name": "MedicationKnowledgeRegulatory",
+  "title": "MedicationKnowledge Regulatory ",
+  "status": "draft",
+  "description": "Cross version extension for MedicationKnowledge.regulatory from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "MedicationKnowledge Regulatory ",
+        "definition": "Cross version extension for MedicationKnowledge.regulatory from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:schedule",
+        "path": "Extension.extension",
+        "sliceName": "schedule",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:schedule.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:schedule.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "schedule"
+      },
+      {
+        "id": "Extension.extension:schedule.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:substitution",
+        "path": "Extension.extension",
+        "sliceName": "substitution",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:substitution.extension:allowed",
+        "path": "Extension.extension.extension",
+        "sliceName": "allowed",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:substitution.extension:allowed.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:substitution.extension:allowed.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "allowed"
+      },
+      {
+        "id": "Extension.extension:substitution.extension:allowed.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:substitution.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:substitution.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:substitution.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:substitution.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:substitution.extension:type",
+        "path": "Extension.extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:substitution.extension:type.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:substitution.extension:type.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:substitution.extension:type.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:substitution.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "substitution"
+      },
+      {
+        "id": "Extension.extension:substitution.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:maxDispense",
+        "path": "Extension.extension",
+        "sliceName": "maxDispense",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:maxDispense.extension:period",
+        "path": "Extension.extension.extension",
+        "sliceName": "period",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:maxDispense.extension:period.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:maxDispense.extension:period.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "period"
+      },
+      {
+        "id": "Extension.extension:maxDispense.extension:period.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Duration"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:maxDispense.extension:quantity",
+        "path": "Extension.extension.extension",
+        "sliceName": "quantity",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:maxDispense.extension:quantity.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:maxDispense.extension:quantity.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "quantity"
+      },
+      {
+        "id": "Extension.extension:maxDispense.extension:quantity.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:maxDispense.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:maxDispense.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:maxDispense.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:maxDispense.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:maxDispense.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "maxDispense"
+      },
+      {
+        "id": "Extension.extension:maxDispense.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:regulatoryAuthority",
+        "path": "Extension.extension",
+        "sliceName": "regulatoryAuthority",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:regulatoryAuthority.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:regulatoryAuthority.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "regulatoryAuthority"
+      },
+      {
+        "id": "Extension.extension:regulatoryAuthority.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationKnowledge.regulatory"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

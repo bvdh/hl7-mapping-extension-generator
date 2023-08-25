@@ -1,0 +1,182 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-SpecimenDefinition.typeTested.handling",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-SpecimenDefinition.typeTested.handling",
+  "name": "SpecimenDefinitionTypeTestedHandling",
+  "title": "SpecimenDefinition TypeTested Handling ",
+  "status": "draft",
+  "description": "Cross version extension for SpecimenDefinition.typeTested.handling from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "SpecimenDefinition TypeTested Handling ",
+        "definition": "Cross version extension for SpecimenDefinition.typeTested.handling from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:temperatureRange",
+        "path": "Extension.extension",
+        "sliceName": "temperatureRange",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:temperatureRange.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:temperatureRange.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "temperatureRange"
+      },
+      {
+        "id": "Extension.extension:temperatureRange.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Range"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:instruction",
+        "path": "Extension.extension",
+        "sliceName": "instruction",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:instruction.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:instruction.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "instruction"
+      },
+      {
+        "id": "Extension.extension:instruction.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:temperatureQualifier",
+        "path": "Extension.extension",
+        "sliceName": "temperatureQualifier",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:temperatureQualifier.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:temperatureQualifier.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "temperatureQualifier"
+      },
+      {
+        "id": "Extension.extension:temperatureQualifier.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/handling-condition|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:maxDuration",
+        "path": "Extension.extension",
+        "sliceName": "maxDuration",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:maxDuration.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:maxDuration.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "maxDuration"
+      },
+      {
+        "id": "Extension.extension:maxDuration.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Duration"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-SpecimenDefinition.typeTested.handling"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

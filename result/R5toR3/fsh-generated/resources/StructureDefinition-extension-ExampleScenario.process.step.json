@@ -1,0 +1,476 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-ExampleScenario.process.step",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ExampleScenario.process.step",
+  "name": "ExampleScenarioProcessStep",
+  "title": "ExampleScenario Process Step ",
+  "status": "draft",
+  "description": "Cross version extension for ExampleScenario.process.step from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "ExampleScenario Process Step ",
+        "definition": "Cross version extension for ExampleScenario.process.step from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:number",
+        "path": "Extension.extension",
+        "sliceName": "number",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:number.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:number.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "number"
+      },
+      {
+        "id": "Extension.extension:number.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:workflow",
+        "path": "Extension.extension",
+        "sliceName": "workflow",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:workflow.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:workflow.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "workflow"
+      },
+      {
+        "id": "Extension.extension:workflow.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:alternative",
+        "path": "Extension.extension",
+        "sliceName": "alternative",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:alternative.extension:description",
+        "path": "Extension.extension.extension",
+        "sliceName": "description",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:alternative.extension:description.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:alternative.extension:description.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:alternative.extension:description.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:alternative.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:alternative.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:alternative.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:alternative.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:alternative.extension:title",
+        "path": "Extension.extension.extension",
+        "sliceName": "title",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:alternative.extension:title.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:alternative.extension:title.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "title"
+      },
+      {
+        "id": "Extension.extension:alternative.extension:title.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:alternative.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "alternative"
+      },
+      {
+        "id": "Extension.extension:alternative.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:operation",
+        "path": "Extension.extension",
+        "sliceName": "operation",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:operation.extension:receiver",
+        "path": "Extension.extension.extension",
+        "sliceName": "receiver",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:operation.extension:receiver.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:operation.extension:receiver.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "receiver"
+      },
+      {
+        "id": "Extension.extension:operation.extension:receiver.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:operation.extension:initiator",
+        "path": "Extension.extension.extension",
+        "sliceName": "initiator",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:operation.extension:initiator.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:operation.extension:initiator.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "initiator"
+      },
+      {
+        "id": "Extension.extension:operation.extension:initiator.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:operation.extension:description",
+        "path": "Extension.extension.extension",
+        "sliceName": "description",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:operation.extension:description.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:operation.extension:description.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:operation.extension:description.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:operation.extension:receiverActive",
+        "path": "Extension.extension.extension",
+        "sliceName": "receiverActive",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:operation.extension:receiverActive.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:operation.extension:receiverActive.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "receiverActive"
+      },
+      {
+        "id": "Extension.extension:operation.extension:receiverActive.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:operation.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:operation.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:operation.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:operation.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:operation.extension:type",
+        "path": "Extension.extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:operation.extension:type.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:operation.extension:type.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:operation.extension:type.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/testscript-operation-codes|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:operation.extension:title",
+        "path": "Extension.extension.extension",
+        "sliceName": "title",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:operation.extension:title.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:operation.extension:title.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "title"
+      },
+      {
+        "id": "Extension.extension:operation.extension:title.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:operation.extension:initiatorActive",
+        "path": "Extension.extension.extension",
+        "sliceName": "initiatorActive",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:operation.extension:initiatorActive.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:operation.extension:initiatorActive.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "initiatorActive"
+      },
+      {
+        "id": "Extension.extension:operation.extension:initiatorActive.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:operation.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "operation"
+      },
+      {
+        "id": "Extension.extension:operation.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:pause",
+        "path": "Extension.extension",
+        "sliceName": "pause",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:pause.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:pause.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "pause"
+      },
+      {
+        "id": "Extension.extension:pause.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ExampleScenario.process.step"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

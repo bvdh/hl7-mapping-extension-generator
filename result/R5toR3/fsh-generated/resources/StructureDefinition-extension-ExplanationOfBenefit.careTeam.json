@@ -1,0 +1,217 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-ExplanationOfBenefit.careTeam",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ExplanationOfBenefit.careTeam",
+  "name": "ExplanationOfBenefitCareTeam",
+  "title": "ExplanationOfBenefit CareTeam ",
+  "status": "draft",
+  "description": "Cross version extension for ExplanationOfBenefit.careTeam from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "ExplanationOfBenefit",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "ExplanationOfBenefit CareTeam ",
+        "definition": "Cross version extension for ExplanationOfBenefit.careTeam from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:sequence",
+        "path": "Extension.extension",
+        "sliceName": "sequence",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:sequence.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:sequence.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "sequence"
+      },
+      {
+        "id": "Extension.extension:sequence.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "positiveInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:specialty",
+        "path": "Extension.extension",
+        "sliceName": "specialty",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:specialty.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:specialty.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "specialty"
+      },
+      {
+        "id": "Extension.extension:specialty.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/provider-qualification|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:role",
+        "path": "Extension.extension",
+        "sliceName": "role",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:role.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:role.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "role"
+      },
+      {
+        "id": "Extension.extension:role.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/claim-careteamrole|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:provider",
+        "path": "Extension.extension",
+        "sliceName": "provider",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:provider.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:provider.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "provider"
+      },
+      {
+        "id": "Extension.extension:provider.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:responsible",
+        "path": "Extension.extension",
+        "sliceName": "responsible",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:responsible.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:responsible.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "responsible"
+      },
+      {
+        "id": "Extension.extension:responsible.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ExplanationOfBenefit.careTeam"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

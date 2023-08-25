@@ -1,0 +1,739 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-Appointment.recurrenceTemplate",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Appointment.recurrenceTemplate",
+  "name": "AppointmentRecurrenceTemplate",
+  "title": "Appointment RecurrenceTemplate ",
+  "status": "draft",
+  "description": "Cross version extension for Appointment.recurrenceTemplate from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "Appointment",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Appointment RecurrenceTemplate ",
+        "definition": "Cross version extension for Appointment.recurrenceTemplate from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:occurrenceDate",
+        "path": "Extension.extension",
+        "sliceName": "occurrenceDate",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:occurrenceDate.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:occurrenceDate.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "occurrenceDate"
+      },
+      {
+        "id": "Extension.extension:occurrenceDate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:yearlyTemplate",
+        "path": "Extension.extension",
+        "sliceName": "yearlyTemplate",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:yearlyTemplate.extension:yearInterval",
+        "path": "Extension.extension.extension",
+        "sliceName": "yearInterval",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:yearlyTemplate.extension:yearInterval.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:yearlyTemplate.extension:yearInterval.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "yearInterval"
+      },
+      {
+        "id": "Extension.extension:yearlyTemplate.extension:yearInterval.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "positiveInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:yearlyTemplate.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:yearlyTemplate.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:yearlyTemplate.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:yearlyTemplate.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:yearlyTemplate.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "yearlyTemplate"
+      },
+      {
+        "id": "Extension.extension:yearlyTemplate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:monthlyTemplate",
+        "path": "Extension.extension",
+        "sliceName": "monthlyTemplate",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:monthlyTemplate.extension:nthWeekOfMonth",
+        "path": "Extension.extension.extension",
+        "sliceName": "nthWeekOfMonth",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:monthlyTemplate.extension:nthWeekOfMonth.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:monthlyTemplate.extension:nthWeekOfMonth.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "nthWeekOfMonth"
+      },
+      {
+        "id": "Extension.extension:monthlyTemplate.extension:nthWeekOfMonth.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/week-of-month|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:monthlyTemplate.extension:dayOfWeek",
+        "path": "Extension.extension.extension",
+        "sliceName": "dayOfWeek",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:monthlyTemplate.extension:dayOfWeek.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:monthlyTemplate.extension:dayOfWeek.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "dayOfWeek"
+      },
+      {
+        "id": "Extension.extension:monthlyTemplate.extension:dayOfWeek.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/days-of-week|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:monthlyTemplate.extension:dayOfMonth",
+        "path": "Extension.extension.extension",
+        "sliceName": "dayOfMonth",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:monthlyTemplate.extension:dayOfMonth.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:monthlyTemplate.extension:dayOfMonth.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "dayOfMonth"
+      },
+      {
+        "id": "Extension.extension:monthlyTemplate.extension:dayOfMonth.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "positiveInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:monthlyTemplate.extension:monthInterval",
+        "path": "Extension.extension.extension",
+        "sliceName": "monthInterval",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:monthlyTemplate.extension:monthInterval.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:monthlyTemplate.extension:monthInterval.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "monthInterval"
+      },
+      {
+        "id": "Extension.extension:monthlyTemplate.extension:monthInterval.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "positiveInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:monthlyTemplate.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:monthlyTemplate.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:monthlyTemplate.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:monthlyTemplate.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:monthlyTemplate.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "monthlyTemplate"
+      },
+      {
+        "id": "Extension.extension:monthlyTemplate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:timezone",
+        "path": "Extension.extension",
+        "sliceName": "timezone",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:timezone.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:timezone.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "timezone"
+      },
+      {
+        "id": "Extension.extension:timezone.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/timezones|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:excludingRecurrenceId",
+        "path": "Extension.extension",
+        "sliceName": "excludingRecurrenceId",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:excludingRecurrenceId.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:excludingRecurrenceId.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "excludingRecurrenceId"
+      },
+      {
+        "id": "Extension.extension:excludingRecurrenceId.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "positiveInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:lastOccurrenceDate",
+        "path": "Extension.extension",
+        "sliceName": "lastOccurrenceDate",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:lastOccurrenceDate.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:lastOccurrenceDate.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "lastOccurrenceDate"
+      },
+      {
+        "id": "Extension.extension:lastOccurrenceDate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:occurrenceCount",
+        "path": "Extension.extension",
+        "sliceName": "occurrenceCount",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:occurrenceCount.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:occurrenceCount.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "occurrenceCount"
+      },
+      {
+        "id": "Extension.extension:occurrenceCount.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "positiveInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:excludingDate",
+        "path": "Extension.extension",
+        "sliceName": "excludingDate",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:excludingDate.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:excludingDate.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "excludingDate"
+      },
+      {
+        "id": "Extension.extension:excludingDate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:weeklyTemplate",
+        "path": "Extension.extension",
+        "sliceName": "weeklyTemplate",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:weeklyTemplate.extension:sunday",
+        "path": "Extension.extension.extension",
+        "sliceName": "sunday",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:weeklyTemplate.extension:sunday.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:weeklyTemplate.extension:sunday.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "sunday"
+      },
+      {
+        "id": "Extension.extension:weeklyTemplate.extension:sunday.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:weeklyTemplate.extension:saturday",
+        "path": "Extension.extension.extension",
+        "sliceName": "saturday",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:weeklyTemplate.extension:saturday.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:weeklyTemplate.extension:saturday.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "saturday"
+      },
+      {
+        "id": "Extension.extension:weeklyTemplate.extension:saturday.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:weeklyTemplate.extension:tuesday",
+        "path": "Extension.extension.extension",
+        "sliceName": "tuesday",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:weeklyTemplate.extension:tuesday.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:weeklyTemplate.extension:tuesday.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "tuesday"
+      },
+      {
+        "id": "Extension.extension:weeklyTemplate.extension:tuesday.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:weeklyTemplate.extension:weekInterval",
+        "path": "Extension.extension.extension",
+        "sliceName": "weekInterval",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:weeklyTemplate.extension:weekInterval.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:weeklyTemplate.extension:weekInterval.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "weekInterval"
+      },
+      {
+        "id": "Extension.extension:weeklyTemplate.extension:weekInterval.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "positiveInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:weeklyTemplate.extension:friday",
+        "path": "Extension.extension.extension",
+        "sliceName": "friday",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:weeklyTemplate.extension:friday.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:weeklyTemplate.extension:friday.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "friday"
+      },
+      {
+        "id": "Extension.extension:weeklyTemplate.extension:friday.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:weeklyTemplate.extension:wednesday",
+        "path": "Extension.extension.extension",
+        "sliceName": "wednesday",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:weeklyTemplate.extension:wednesday.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:weeklyTemplate.extension:wednesday.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "wednesday"
+      },
+      {
+        "id": "Extension.extension:weeklyTemplate.extension:wednesday.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:weeklyTemplate.extension:thursday",
+        "path": "Extension.extension.extension",
+        "sliceName": "thursday",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:weeklyTemplate.extension:thursday.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:weeklyTemplate.extension:thursday.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "thursday"
+      },
+      {
+        "id": "Extension.extension:weeklyTemplate.extension:thursday.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:weeklyTemplate.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:weeklyTemplate.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:weeklyTemplate.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:weeklyTemplate.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:weeklyTemplate.extension:monday",
+        "path": "Extension.extension.extension",
+        "sliceName": "monday",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:weeklyTemplate.extension:monday.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:weeklyTemplate.extension:monday.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "monday"
+      },
+      {
+        "id": "Extension.extension:weeklyTemplate.extension:monday.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:weeklyTemplate.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "weeklyTemplate"
+      },
+      {
+        "id": "Extension.extension:weeklyTemplate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:recurrenceType",
+        "path": "Extension.extension",
+        "sliceName": "recurrenceType",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:recurrenceType.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:recurrenceType.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "recurrenceType"
+      },
+      {
+        "id": "Extension.extension:recurrenceType.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://hl7.org/fhir/ValueSet/appointment-recurrrence-type|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Appointment.recurrenceTemplate"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

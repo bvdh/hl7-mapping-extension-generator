@@ -1,0 +1,384 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-MedicationRequest.dispenseRequest",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.dispenseRequest",
+  "name": "MedicationRequestDispenseRequest",
+  "title": "MedicationRequest DispenseRequest ",
+  "status": "draft",
+  "description": "Cross version extension for MedicationRequest.dispenseRequest from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "MedicationRequest",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "MedicationRequest DispenseRequest ",
+        "definition": "Cross version extension for MedicationRequest.dispenseRequest from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:validityPeriod",
+        "path": "Extension.extension",
+        "sliceName": "validityPeriod",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:validityPeriod.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:validityPeriod.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "validityPeriod"
+      },
+      {
+        "id": "Extension.extension:validityPeriod.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:dispenserInstruction",
+        "path": "Extension.extension",
+        "sliceName": "dispenserInstruction",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:dispenserInstruction.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:dispenserInstruction.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "dispenserInstruction"
+      },
+      {
+        "id": "Extension.extension:dispenserInstruction.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Annotation"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:dispenser",
+        "path": "Extension.extension",
+        "sliceName": "dispenser",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:dispenser.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:dispenser.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "dispenser"
+      },
+      {
+        "id": "Extension.extension:dispenser.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:dispenseInterval",
+        "path": "Extension.extension",
+        "sliceName": "dispenseInterval",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:dispenseInterval.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:dispenseInterval.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "dispenseInterval"
+      },
+      {
+        "id": "Extension.extension:dispenseInterval.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Duration"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:quantity",
+        "path": "Extension.extension",
+        "sliceName": "quantity",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:quantity.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:quantity.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "quantity"
+      },
+      {
+        "id": "Extension.extension:quantity.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:numberOfRepeatsAllowed",
+        "path": "Extension.extension",
+        "sliceName": "numberOfRepeatsAllowed",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:numberOfRepeatsAllowed.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:numberOfRepeatsAllowed.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "numberOfRepeatsAllowed"
+      },
+      {
+        "id": "Extension.extension:numberOfRepeatsAllowed.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "unsignedInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:initialFill",
+        "path": "Extension.extension",
+        "sliceName": "initialFill",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:initialFill.extension:duration",
+        "path": "Extension.extension.extension",
+        "sliceName": "duration",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:initialFill.extension:duration.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:initialFill.extension:duration.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "duration"
+      },
+      {
+        "id": "Extension.extension:initialFill.extension:duration.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Duration"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:initialFill.extension:quantity",
+        "path": "Extension.extension.extension",
+        "sliceName": "quantity",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:initialFill.extension:quantity.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:initialFill.extension:quantity.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "quantity"
+      },
+      {
+        "id": "Extension.extension:initialFill.extension:quantity.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:initialFill.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:initialFill.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:initialFill.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:initialFill.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:initialFill.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "initialFill"
+      },
+      {
+        "id": "Extension.extension:initialFill.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:doseAdministrationAid",
+        "path": "Extension.extension",
+        "sliceName": "doseAdministrationAid",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:doseAdministrationAid.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:doseAdministrationAid.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "doseAdministrationAid"
+      },
+      {
+        "id": "Extension.extension:doseAdministrationAid.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/medication-dose-aid|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:expectedSupplyDuration",
+        "path": "Extension.extension",
+        "sliceName": "expectedSupplyDuration",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:expectedSupplyDuration.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:expectedSupplyDuration.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "expectedSupplyDuration"
+      },
+      {
+        "id": "Extension.extension:expectedSupplyDuration.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Duration"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.dispenseRequest"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

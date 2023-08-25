@@ -1,0 +1,541 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-SubstancePolymer.repeat",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubstancePolymer.repeat",
+  "name": "SubstancePolymerRepeat",
+  "title": "SubstancePolymer Repeat ",
+  "status": "draft",
+  "description": "Cross version extension for SubstancePolymer.repeat from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "SubstancePolymer Repeat ",
+        "definition": "Cross version extension for SubstancePolymer.repeat from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:repeatUnit",
+        "path": "Extension.extension",
+        "sliceName": "repeatUnit",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:structuralRepresentation",
+        "path": "Extension.extension.extension",
+        "sliceName": "structuralRepresentation",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:structuralRepresentation.extension:attachment",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "attachment",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:structuralRepresentation.extension:attachment.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:structuralRepresentation.extension:attachment.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "attachment"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:structuralRepresentation.extension:attachment.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Attachment"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:structuralRepresentation.extension:format",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "format",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:structuralRepresentation.extension:format.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:structuralRepresentation.extension:format.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "format"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:structuralRepresentation.extension:format.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:structuralRepresentation.extension:id",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:structuralRepresentation.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:structuralRepresentation.extension:id.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:structuralRepresentation.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:structuralRepresentation.extension:type",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:structuralRepresentation.extension:type.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:structuralRepresentation.extension:type.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:structuralRepresentation.extension:type.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:structuralRepresentation.extension:representation",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "representation",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:structuralRepresentation.extension:representation.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:structuralRepresentation.extension:representation.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "representation"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:structuralRepresentation.extension:representation.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:structuralRepresentation.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "structuralRepresentation"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:structuralRepresentation.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:unit",
+        "path": "Extension.extension.extension",
+        "sliceName": "unit",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:unit.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:unit.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "unit"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:unit.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:amount",
+        "path": "Extension.extension.extension",
+        "sliceName": "amount",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:amount.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:amount.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "amount"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:amount.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:orientation",
+        "path": "Extension.extension.extension",
+        "sliceName": "orientation",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:orientation.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:orientation.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "orientation"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:orientation.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:degreeOfPolymerisation",
+        "path": "Extension.extension.extension",
+        "sliceName": "degreeOfPolymerisation",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:degreeOfPolymerisation.extension:average",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "average",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:degreeOfPolymerisation.extension:average.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:degreeOfPolymerisation.extension:average.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "average"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:degreeOfPolymerisation.extension:average.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:degreeOfPolymerisation.extension:high",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "high",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:degreeOfPolymerisation.extension:high.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:degreeOfPolymerisation.extension:high.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "high"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:degreeOfPolymerisation.extension:high.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:degreeOfPolymerisation.extension:low",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "low",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:degreeOfPolymerisation.extension:low.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:degreeOfPolymerisation.extension:low.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "low"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:degreeOfPolymerisation.extension:low.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:degreeOfPolymerisation.extension:id",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:degreeOfPolymerisation.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:degreeOfPolymerisation.extension:id.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:degreeOfPolymerisation.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:degreeOfPolymerisation.extension:type",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:degreeOfPolymerisation.extension:type.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:degreeOfPolymerisation.extension:type.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:degreeOfPolymerisation.extension:type.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:degreeOfPolymerisation.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "degreeOfPolymerisation"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:degreeOfPolymerisation.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:repeatUnit.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "repeatUnit"
+      },
+      {
+        "id": "Extension.extension:repeatUnit.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:repeatUnitAmountType",
+        "path": "Extension.extension",
+        "sliceName": "repeatUnitAmountType",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:repeatUnitAmountType.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:repeatUnitAmountType.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "repeatUnitAmountType"
+      },
+      {
+        "id": "Extension.extension:repeatUnitAmountType.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:averageMolecularFormula",
+        "path": "Extension.extension",
+        "sliceName": "averageMolecularFormula",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:averageMolecularFormula.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:averageMolecularFormula.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "averageMolecularFormula"
+      },
+      {
+        "id": "Extension.extension:averageMolecularFormula.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubstancePolymer.repeat"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

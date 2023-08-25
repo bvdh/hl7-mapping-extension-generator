@@ -1,0 +1,362 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-MedicinalProductDefinition.name",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicinalProductDefinition.name",
+  "name": "MedicinalProductDefinitionName",
+  "title": "MedicinalProductDefinition Name ",
+  "status": "draft",
+  "description": "Cross version extension for MedicinalProductDefinition.name from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "MedicinalProductDefinition Name ",
+        "definition": "Cross version extension for MedicinalProductDefinition.name from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:part",
+        "path": "Extension.extension",
+        "sliceName": "part",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:part.extension:part",
+        "path": "Extension.extension.extension",
+        "sliceName": "part",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:part.extension:part.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:part.extension:part.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "part"
+      },
+      {
+        "id": "Extension.extension:part.extension:part.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:part.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:part.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:part.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:part.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:part.extension:type",
+        "path": "Extension.extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:part.extension:type.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:part.extension:type.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:part.extension:type.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/medicinal-product-name-part-type|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:part.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "part"
+      },
+      {
+        "id": "Extension.extension:part.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:usage",
+        "path": "Extension.extension",
+        "sliceName": "usage",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:usage.extension:country",
+        "path": "Extension.extension.extension",
+        "sliceName": "country",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:usage.extension:country.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:usage.extension:country.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "country"
+      },
+      {
+        "id": "Extension.extension:usage.extension:country.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/country|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:usage.extension:jurisdiction",
+        "path": "Extension.extension.extension",
+        "sliceName": "jurisdiction",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:usage.extension:jurisdiction.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:usage.extension:jurisdiction.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "jurisdiction"
+      },
+      {
+        "id": "Extension.extension:usage.extension:jurisdiction.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:usage.extension:language",
+        "path": "Extension.extension.extension",
+        "sliceName": "language",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:usage.extension:language.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:usage.extension:language.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "language"
+      },
+      {
+        "id": "Extension.extension:usage.extension:language.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/all-languages|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:usage.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:usage.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:usage.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:usage.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:usage.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "usage"
+      },
+      {
+        "id": "Extension.extension:usage.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:type.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/medicinal-product-name-type|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:productName",
+        "path": "Extension.extension",
+        "sliceName": "productName",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:productName.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:productName.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "productName"
+      },
+      {
+        "id": "Extension.extension:productName.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicinalProductDefinition.name"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

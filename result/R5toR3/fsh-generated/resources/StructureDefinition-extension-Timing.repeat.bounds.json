@@ -1,0 +1,63 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-Timing.repeat.bounds",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Timing.repeat.bounds",
+  "name": "TimingRepeatBounds",
+  "title": "Timing Repeat Bounds[x] ",
+  "status": "draft",
+  "description": "Cross version extension for Timing.repeat.bounds[x] from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "Timing.repeat",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Timing Repeat Bounds[x] ",
+        "definition": "Cross version extension for Timing.repeat.bounds[x] from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Timing.repeat.bounds"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "Duration"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Range"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+Extension:   TestPlanDate
+Id:          extension-TestPlan.date
+Title:       "TestPlan Date "
+Description: "Cross version extension for TestPlan.date from FHIR version 5.0.0 to FHIR version 3.0.1"
+* value[x] only dateTime
+
