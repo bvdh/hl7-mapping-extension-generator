@@ -1,0 +1,619 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-SubstanceSourceMaterial.organism",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubstanceSourceMaterial.organism",
+  "name": "SubstanceSourceMaterialOrganism",
+  "title": "SubstanceSourceMaterial Organism ",
+  "status": "draft",
+  "description": "Cross version extension for SubstanceSourceMaterial.organism from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "SubstanceSourceMaterial Organism ",
+        "definition": "Cross version extension for SubstanceSourceMaterial.organism from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:hybrid",
+        "path": "Extension.extension",
+        "sliceName": "hybrid",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:hybrid.extension:maternalOrganismName",
+        "path": "Extension.extension.extension",
+        "sliceName": "maternalOrganismName",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:hybrid.extension:maternalOrganismName.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:hybrid.extension:maternalOrganismName.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "maternalOrganismName"
+      },
+      {
+        "id": "Extension.extension:hybrid.extension:maternalOrganismName.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:hybrid.extension:maternalOrganismId",
+        "path": "Extension.extension.extension",
+        "sliceName": "maternalOrganismId",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:hybrid.extension:maternalOrganismId.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:hybrid.extension:maternalOrganismId.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "maternalOrganismId"
+      },
+      {
+        "id": "Extension.extension:hybrid.extension:maternalOrganismId.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:hybrid.extension:paternalOrganismId",
+        "path": "Extension.extension.extension",
+        "sliceName": "paternalOrganismId",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:hybrid.extension:paternalOrganismId.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:hybrid.extension:paternalOrganismId.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "paternalOrganismId"
+      },
+      {
+        "id": "Extension.extension:hybrid.extension:paternalOrganismId.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:hybrid.extension:hybridType",
+        "path": "Extension.extension.extension",
+        "sliceName": "hybridType",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:hybrid.extension:hybridType.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:hybrid.extension:hybridType.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "hybridType"
+      },
+      {
+        "id": "Extension.extension:hybrid.extension:hybridType.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:hybrid.extension:paternalOrganismName",
+        "path": "Extension.extension.extension",
+        "sliceName": "paternalOrganismName",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:hybrid.extension:paternalOrganismName.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:hybrid.extension:paternalOrganismName.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "paternalOrganismName"
+      },
+      {
+        "id": "Extension.extension:hybrid.extension:paternalOrganismName.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:hybrid.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:hybrid.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:hybrid.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:hybrid.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:hybrid.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "hybrid"
+      },
+      {
+        "id": "Extension.extension:hybrid.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:intraspecificType",
+        "path": "Extension.extension",
+        "sliceName": "intraspecificType",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:intraspecificType.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:intraspecificType.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "intraspecificType"
+      },
+      {
+        "id": "Extension.extension:intraspecificType.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:species",
+        "path": "Extension.extension",
+        "sliceName": "species",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:species.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:species.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "species"
+      },
+      {
+        "id": "Extension.extension:species.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:genus",
+        "path": "Extension.extension",
+        "sliceName": "genus",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:genus.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:genus.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "genus"
+      },
+      {
+        "id": "Extension.extension:genus.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:author",
+        "path": "Extension.extension",
+        "sliceName": "author",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:author.extension:authorType",
+        "path": "Extension.extension.extension",
+        "sliceName": "authorType",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:author.extension:authorType.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:author.extension:authorType.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "authorType"
+      },
+      {
+        "id": "Extension.extension:author.extension:authorType.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:author.extension:authorDescription",
+        "path": "Extension.extension.extension",
+        "sliceName": "authorDescription",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:author.extension:authorDescription.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:author.extension:authorDescription.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "authorDescription"
+      },
+      {
+        "id": "Extension.extension:author.extension:authorDescription.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:author.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:author.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:author.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:author.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:author.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "author"
+      },
+      {
+        "id": "Extension.extension:author.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:organismGeneral",
+        "path": "Extension.extension",
+        "sliceName": "organismGeneral",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:organismGeneral.extension:phylum",
+        "path": "Extension.extension.extension",
+        "sliceName": "phylum",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:organismGeneral.extension:phylum.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:organismGeneral.extension:phylum.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "phylum"
+      },
+      {
+        "id": "Extension.extension:organismGeneral.extension:phylum.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:organismGeneral.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:organismGeneral.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:organismGeneral.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:organismGeneral.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:organismGeneral.extension:kingdom",
+        "path": "Extension.extension.extension",
+        "sliceName": "kingdom",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:organismGeneral.extension:kingdom.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:organismGeneral.extension:kingdom.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "kingdom"
+      },
+      {
+        "id": "Extension.extension:organismGeneral.extension:kingdom.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:organismGeneral.extension:class",
+        "path": "Extension.extension.extension",
+        "sliceName": "class",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:organismGeneral.extension:class.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:organismGeneral.extension:class.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "class"
+      },
+      {
+        "id": "Extension.extension:organismGeneral.extension:class.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:organismGeneral.extension:order",
+        "path": "Extension.extension.extension",
+        "sliceName": "order",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:organismGeneral.extension:order.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:organismGeneral.extension:order.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "order"
+      },
+      {
+        "id": "Extension.extension:organismGeneral.extension:order.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:organismGeneral.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "organismGeneral"
+      },
+      {
+        "id": "Extension.extension:organismGeneral.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:family",
+        "path": "Extension.extension",
+        "sliceName": "family",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:family.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:family.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "family"
+      },
+      {
+        "id": "Extension.extension:family.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:intraspecificDescription",
+        "path": "Extension.extension",
+        "sliceName": "intraspecificDescription",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:intraspecificDescription.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:intraspecificDescription.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "intraspecificDescription"
+      },
+      {
+        "id": "Extension.extension:intraspecificDescription.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubstanceSourceMaterial.organism"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+Extension:   SubstanceNucleicAcidSubunitLinkageConnectivity
+Id:          extension-SubstanceNucleicAcid.subunit.linkage.connectivity
+Title:       "SubstanceNucleicAcid Subunit Linkage Connectivity "
+Description: "Cross version extension for SubstanceNucleicAcid.subunit.linkage.connectivity from FHIR version 5.0.0 to FHIR version 4.0.1"
+Context:     SubstanceNucleicAcid.subunit.linkage
+* value[x] only string
+

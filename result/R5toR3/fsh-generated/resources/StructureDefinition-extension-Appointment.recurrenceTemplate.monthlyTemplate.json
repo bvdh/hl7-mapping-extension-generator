@@ -1,0 +1,186 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-Appointment.recurrenceTemplate.monthlyTemplate",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Appointment.recurrenceTemplate.monthlyTemplate",
+  "name": "AppointmentRecurrenceTemplateMonthlyTemplate",
+  "title": "Appointment RecurrenceTemplate MonthlyTemplate ",
+  "status": "draft",
+  "description": "Cross version extension for Appointment.recurrenceTemplate.monthlyTemplate from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Appointment RecurrenceTemplate MonthlyTemplate ",
+        "definition": "Cross version extension for Appointment.recurrenceTemplate.monthlyTemplate from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:nthWeekOfMonth",
+        "path": "Extension.extension",
+        "sliceName": "nthWeekOfMonth",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:nthWeekOfMonth.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:nthWeekOfMonth.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "nthWeekOfMonth"
+      },
+      {
+        "id": "Extension.extension:nthWeekOfMonth.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/week-of-month|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:dayOfWeek",
+        "path": "Extension.extension",
+        "sliceName": "dayOfWeek",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:dayOfWeek.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:dayOfWeek.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "dayOfWeek"
+      },
+      {
+        "id": "Extension.extension:dayOfWeek.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/days-of-week|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:dayOfMonth",
+        "path": "Extension.extension",
+        "sliceName": "dayOfMonth",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:dayOfMonth.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:dayOfMonth.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "dayOfMonth"
+      },
+      {
+        "id": "Extension.extension:dayOfMonth.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "positiveInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:monthInterval",
+        "path": "Extension.extension",
+        "sliceName": "monthInterval",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:monthInterval.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:monthInterval.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "monthInterval"
+      },
+      {
+        "id": "Extension.extension:monthInterval.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "positiveInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Appointment.recurrenceTemplate.monthlyTemplate"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

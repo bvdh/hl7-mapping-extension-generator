@@ -1,0 +1,204 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-SubstanceSourceMaterial.organism.hybrid",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubstanceSourceMaterial.organism.hybrid",
+  "name": "SubstanceSourceMaterialOrganismHybrid",
+  "title": "SubstanceSourceMaterial Organism Hybrid ",
+  "status": "draft",
+  "description": "Cross version extension for SubstanceSourceMaterial.organism.hybrid from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "SubstanceSourceMaterial Organism Hybrid ",
+        "definition": "Cross version extension for SubstanceSourceMaterial.organism.hybrid from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:maternalOrganismName",
+        "path": "Extension.extension",
+        "sliceName": "maternalOrganismName",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:maternalOrganismName.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:maternalOrganismName.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "maternalOrganismName"
+      },
+      {
+        "id": "Extension.extension:maternalOrganismName.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:maternalOrganismId",
+        "path": "Extension.extension",
+        "sliceName": "maternalOrganismId",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:maternalOrganismId.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:maternalOrganismId.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "maternalOrganismId"
+      },
+      {
+        "id": "Extension.extension:maternalOrganismId.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:paternalOrganismId",
+        "path": "Extension.extension",
+        "sliceName": "paternalOrganismId",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:paternalOrganismId.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:paternalOrganismId.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "paternalOrganismId"
+      },
+      {
+        "id": "Extension.extension:paternalOrganismId.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:hybridType",
+        "path": "Extension.extension",
+        "sliceName": "hybridType",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:hybridType.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:hybridType.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "hybridType"
+      },
+      {
+        "id": "Extension.extension:hybridType.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:paternalOrganismName",
+        "path": "Extension.extension",
+        "sliceName": "paternalOrganismName",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:paternalOrganismName.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:paternalOrganismName.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "paternalOrganismName"
+      },
+      {
+        "id": "Extension.extension:paternalOrganismName.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubstanceSourceMaterial.organism.hybrid"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

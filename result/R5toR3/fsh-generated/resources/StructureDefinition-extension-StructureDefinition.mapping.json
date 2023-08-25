@@ -1,0 +1,178 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-StructureDefinition.mapping",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-StructureDefinition.mapping",
+  "name": "StructureDefinitionMapping",
+  "title": "StructureDefinition Mapping ",
+  "status": "draft",
+  "description": "Cross version extension for StructureDefinition.mapping from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "StructureDefinition",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "StructureDefinition Mapping ",
+        "definition": "Cross version extension for StructureDefinition.mapping from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:identity",
+        "path": "Extension.extension",
+        "sliceName": "identity",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:identity.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:identity.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "identity"
+      },
+      {
+        "id": "Extension.extension:identity.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:name",
+        "path": "Extension.extension",
+        "sliceName": "name",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:name.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:name.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "name"
+      },
+      {
+        "id": "Extension.extension:name.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:comment",
+        "path": "Extension.extension",
+        "sliceName": "comment",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:comment.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:comment.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "comment"
+      },
+      {
+        "id": "Extension.extension:comment.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:uri",
+        "path": "Extension.extension",
+        "sliceName": "uri",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:uri.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:uri.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "uri"
+      },
+      {
+        "id": "Extension.extension:uri.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-StructureDefinition.mapping"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

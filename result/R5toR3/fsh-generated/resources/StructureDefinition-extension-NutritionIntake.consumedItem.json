@@ -1,0 +1,350 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-NutritionIntake.consumedItem",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionIntake.consumedItem",
+  "name": "NutritionIntakeConsumedItem",
+  "title": "NutritionIntake ConsumedItem ",
+  "status": "draft",
+  "description": "Cross version extension for NutritionIntake.consumedItem from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "NutritionIntake ConsumedItem ",
+        "definition": "Cross version extension for NutritionIntake.consumedItem from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:schedule",
+        "path": "Extension.extension",
+        "sliceName": "schedule",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:schedule.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:schedule.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "schedule"
+      },
+      {
+        "id": "Extension.extension:schedule.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Timing"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:amount",
+        "path": "Extension.extension",
+        "sliceName": "amount",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:amount.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:amount.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "amount"
+      },
+      {
+        "id": "Extension.extension:amount.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:rate",
+        "path": "Extension.extension",
+        "sliceName": "rate",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:rate.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:rate.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "rate"
+      },
+      {
+        "id": "Extension.extension:rate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:notConsumedReason",
+        "path": "Extension.extension",
+        "sliceName": "notConsumedReason",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:notConsumedReason.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:notConsumedReason.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "notConsumedReason"
+      },
+      {
+        "id": "Extension.extension:notConsumedReason.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/not-consumed-reason|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:notConsumed",
+        "path": "Extension.extension",
+        "sliceName": "notConsumed",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:notConsumed.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:notConsumed.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "notConsumed"
+      },
+      {
+        "id": "Extension.extension:notConsumed.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:nutritionProduct",
+        "path": "Extension.extension",
+        "sliceName": "nutritionProduct",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:nutritionProduct.extension:codeablereference",
+        "path": "Extension.extension.extension",
+        "sliceName": "codeablereference",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:nutritionProduct.extension:codeablereference.extension:reference",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "reference",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:nutritionProduct.extension:codeablereference.extension:reference.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:nutritionProduct.extension:codeablereference.extension:reference.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:nutritionProduct.extension:codeablereference.extension:reference.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:nutritionProduct.extension:codeablereference.extension:concept",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "concept",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:nutritionProduct.extension:codeablereference.extension:concept.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:nutritionProduct.extension:codeablereference.extension:concept.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "concept"
+      },
+      {
+        "id": "Extension.extension:nutritionProduct.extension:codeablereference.extension:concept.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:nutritionProduct.extension:codeablereference.extension:id",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:nutritionProduct.extension:codeablereference.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:nutritionProduct.extension:codeablereference.extension:id.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:nutritionProduct.extension:codeablereference.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:nutritionProduct.extension:codeablereference.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "codeablereference"
+      },
+      {
+        "id": "Extension.extension:nutritionProduct.extension:codeablereference.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:nutritionProduct.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "nutritionProduct"
+      },
+      {
+        "id": "Extension.extension:nutritionProduct.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:type.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/edible-substance-type|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionIntake.consumedItem"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

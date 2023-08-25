@@ -1,0 +1,504 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-BodyStructure.includedStructure",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure",
+  "name": "BodyStructureIncludedStructure",
+  "title": "BodyStructure IncludedStructure ",
+  "status": "draft",
+  "description": "Cross version extension for BodyStructure.includedStructure from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "BodyStructure IncludedStructure ",
+        "definition": "Cross version extension for BodyStructure.includedStructure from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation",
+        "path": "Extension.extension",
+        "sliceName": "bodyLandmarkOrientation",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:clockFacePosition",
+        "path": "Extension.extension.extension",
+        "sliceName": "clockFacePosition",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:clockFacePosition.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:clockFacePosition.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "clockFacePosition"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:clockFacePosition.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/bodystructure-bodylandmarkorientation-clockface-position|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:surfaceOrientation",
+        "path": "Extension.extension.extension",
+        "sliceName": "surfaceOrientation",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:surfaceOrientation.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:surfaceOrientation.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "surfaceOrientation"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:surfaceOrientation.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://hl7.org/fhir/ValueSet/bodystructure-relative-location|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark",
+        "path": "Extension.extension.extension",
+        "sliceName": "distanceFromLandmark",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:id",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:id.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:value",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "value",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:value.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:value.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "value"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:value.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "device",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device.extension:codeablereference",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "codeablereference",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device.extension:codeablereference.extension:reference",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "reference",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device.extension:codeablereference.extension:reference.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device.extension:codeablereference.extension:reference.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device.extension:codeablereference.extension:reference.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device.extension:codeablereference.extension:concept",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "concept",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device.extension:codeablereference.extension:concept.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device.extension:codeablereference.extension:concept.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "concept"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device.extension:codeablereference.extension:concept.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device.extension:codeablereference.extension:id",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device.extension:codeablereference.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device.extension:codeablereference.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device.extension:codeablereference.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device.extension:codeablereference.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "codeablereference"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device.extension:codeablereference.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "device"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "distanceFromLandmark"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:landmarkDescription",
+        "path": "Extension.extension.extension",
+        "sliceName": "landmarkDescription",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:landmarkDescription.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:landmarkDescription.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "landmarkDescription"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:landmarkDescription.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/body-site|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "bodyLandmarkOrientation"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:qualifier",
+        "path": "Extension.extension",
+        "sliceName": "qualifier",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:qualifier.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:qualifier.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "qualifier"
+      },
+      {
+        "id": "Extension.extension:qualifier.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/bodystructure-relative-location|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:spatialReference",
+        "path": "Extension.extension",
+        "sliceName": "spatialReference",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:spatialReference.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:spatialReference.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "spatialReference"
+      },
+      {
+        "id": "Extension.extension:spatialReference.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:laterality",
+        "path": "Extension.extension",
+        "sliceName": "laterality",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:laterality.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:laterality.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "laterality"
+      },
+      {
+        "id": "Extension.extension:laterality.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/bodystructure-relative-location|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:structure",
+        "path": "Extension.extension",
+        "sliceName": "structure",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:structure.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:structure.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "structure"
+      },
+      {
+        "id": "Extension.extension:structure.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/body-site|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-RequestOrchestration.action.relatedAction",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-RequestOrchestration.action.relatedAction",
+  "name": "RequestOrchestrationActionRelatedAction",
+  "title": "RequestOrchestration Action RelatedAction ",
+  "status": "draft",
+  "description": "Cross version extension for RequestOrchestration.action.relatedAction from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "RequestOrchestration Action RelatedAction ",
+        "definition": "Cross version extension for RequestOrchestration.action.relatedAction from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:targetId",
+        "path": "Extension.extension",
+        "sliceName": "targetId",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:targetId.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:targetId.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "targetId"
+      },
+      {
+        "id": "Extension.extension:targetId.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:offset",
+        "path": "Extension.extension",
+        "sliceName": "offset",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:offset.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:offset.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "offset"
+      },
+      {
+        "id": "Extension.extension:offset.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Duration"
+          },
+          {
+            "code": "Range"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:endRelationship",
+        "path": "Extension.extension",
+        "sliceName": "endRelationship",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:endRelationship.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:endRelationship.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "endRelationship"
+      },
+      {
+        "id": "Extension.extension:endRelationship.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/action-relationship-type|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:relationship",
+        "path": "Extension.extension",
+        "sliceName": "relationship",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:relationship.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:relationship.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "relationship"
+      },
+      {
+        "id": "Extension.extension:relationship.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/action-relationship-type|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-RequestOrchestration.action.relatedAction"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

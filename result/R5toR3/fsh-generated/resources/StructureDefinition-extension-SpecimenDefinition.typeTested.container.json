@@ -1,0 +1,369 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-SpecimenDefinition.typeTested.container",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-SpecimenDefinition.typeTested.container",
+  "name": "SpecimenDefinitionTypeTestedContainer",
+  "title": "SpecimenDefinition TypeTested Container ",
+  "status": "draft",
+  "description": "Cross version extension for SpecimenDefinition.typeTested.container from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "SpecimenDefinition TypeTested Container ",
+        "definition": "Cross version extension for SpecimenDefinition.typeTested.container from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:cap",
+        "path": "Extension.extension",
+        "sliceName": "cap",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:cap.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:cap.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "cap"
+      },
+      {
+        "id": "Extension.extension:cap.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/container-cap|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:material",
+        "path": "Extension.extension",
+        "sliceName": "material",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:material.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:material.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "material"
+      },
+      {
+        "id": "Extension.extension:material.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/container-material|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:minimumVolume",
+        "path": "Extension.extension",
+        "sliceName": "minimumVolume",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:minimumVolume.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:minimumVolume.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "minimumVolume"
+      },
+      {
+        "id": "Extension.extension:minimumVolume.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          },
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:description",
+        "path": "Extension.extension",
+        "sliceName": "description",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:description.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:description.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:description.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:type.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/specimen-container-type|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:additive",
+        "path": "Extension.extension",
+        "sliceName": "additive",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:additive.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:additive.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:additive.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:additive.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:additive.extension:additive",
+        "path": "Extension.extension.extension",
+        "sliceName": "additive",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:additive.extension:additive.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:additive.extension:additive.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "additive"
+      },
+      {
+        "id": "Extension.extension:additive.extension:additive.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:additive.extension:additive.value[x]:valueCodeableConcept",
+        "path": "Extension.extension.extension.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0371"
+        }
+      },
+      {
+        "id": "Extension.extension:additive.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "additive"
+      },
+      {
+        "id": "Extension.extension:additive.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:capacity",
+        "path": "Extension.extension",
+        "sliceName": "capacity",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:capacity.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:capacity.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "capacity"
+      },
+      {
+        "id": "Extension.extension:capacity.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:preparation",
+        "path": "Extension.extension",
+        "sliceName": "preparation",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:preparation.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:preparation.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "preparation"
+      },
+      {
+        "id": "Extension.extension:preparation.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-SpecimenDefinition.typeTested.container"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

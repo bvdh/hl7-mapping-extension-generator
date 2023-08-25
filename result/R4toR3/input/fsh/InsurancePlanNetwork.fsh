@@ -1,0 +1,7 @@
+Extension:   InsurancePlanNetwork
+Id:          extension-InsurancePlan.network
+Title:       "InsurancePlan Network "
+Description: "Cross version extension for InsurancePlan.network from FHIR version 4.0.1 to FHIR version 3.0.1"
+* value[x] only Reference
+* valueReference only Reference( Organization)
+

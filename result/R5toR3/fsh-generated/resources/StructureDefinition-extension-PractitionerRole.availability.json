@@ -1,0 +1,423 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-PractitionerRole.availability",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PractitionerRole.availability",
+  "name": "PractitionerRoleAvailability",
+  "title": "PractitionerRole Availability ",
+  "status": "draft",
+  "description": "Cross version extension for PractitionerRole.availability from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "PractitionerRole",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "PractitionerRole Availability ",
+        "definition": "Cross version extension for PractitionerRole.availability from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:availability",
+        "path": "Extension.extension",
+        "sliceName": "availability",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:availability.extension:notAvailableTime",
+        "path": "Extension.extension.extension",
+        "sliceName": "notAvailableTime",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:availability.extension:notAvailableTime.extension:description",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "description",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:availability.extension:notAvailableTime.extension:description.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:availability.extension:notAvailableTime.extension:description.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:availability.extension:notAvailableTime.extension:description.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:availability.extension:notAvailableTime.extension:during",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "during",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:availability.extension:notAvailableTime.extension:during.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:availability.extension:notAvailableTime.extension:during.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "during"
+      },
+      {
+        "id": "Extension.extension:availability.extension:notAvailableTime.extension:during.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:availability.extension:notAvailableTime.extension:id",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:availability.extension:notAvailableTime.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:availability.extension:notAvailableTime.extension:id.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:availability.extension:notAvailableTime.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:availability.extension:notAvailableTime.extension:element",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "element",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:availability.extension:notAvailableTime.extension:element.extension:id",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:availability.extension:notAvailableTime.extension:element.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:availability.extension:notAvailableTime.extension:element.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:availability.extension:notAvailableTime.extension:element.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:availability.extension:notAvailableTime.extension:element.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "element"
+      },
+      {
+        "id": "Extension.extension:availability.extension:notAvailableTime.extension:element.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:availability.extension:notAvailableTime.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "notAvailableTime"
+      },
+      {
+        "id": "Extension.extension:availability.extension:notAvailableTime.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:availability.extension:availableTime",
+        "path": "Extension.extension.extension",
+        "sliceName": "availableTime",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:availability.extension:availableTime.extension:allDay",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "allDay",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:availability.extension:availableTime.extension:allDay.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:availability.extension:availableTime.extension:allDay.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "allDay"
+      },
+      {
+        "id": "Extension.extension:availability.extension:availableTime.extension:allDay.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:availability.extension:availableTime.extension:availableEndTime",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "availableEndTime",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:availability.extension:availableTime.extension:availableEndTime.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:availability.extension:availableTime.extension:availableEndTime.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "availableEndTime"
+      },
+      {
+        "id": "Extension.extension:availability.extension:availableTime.extension:availableEndTime.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "time"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:availability.extension:availableTime.extension:id",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:availability.extension:availableTime.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:availability.extension:availableTime.extension:id.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:availability.extension:availableTime.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:availability.extension:availableTime.extension:daysOfWeek",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "daysOfWeek",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:availability.extension:availableTime.extension:daysOfWeek.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:availability.extension:availableTime.extension:daysOfWeek.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "daysOfWeek"
+      },
+      {
+        "id": "Extension.extension:availability.extension:availableTime.extension:daysOfWeek.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/days-of-week|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:availability.extension:availableTime.extension:availableStartTime",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "availableStartTime",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:availability.extension:availableTime.extension:availableStartTime.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:availability.extension:availableTime.extension:availableStartTime.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "availableStartTime"
+      },
+      {
+        "id": "Extension.extension:availability.extension:availableTime.extension:availableStartTime.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "time"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:availability.extension:availableTime.extension:element",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "element",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:availability.extension:availableTime.extension:element.extension:id",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:availability.extension:availableTime.extension:element.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:availability.extension:availableTime.extension:element.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:availability.extension:availableTime.extension:element.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:availability.extension:availableTime.extension:element.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "element"
+      },
+      {
+        "id": "Extension.extension:availability.extension:availableTime.extension:element.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:availability.extension:availableTime.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "availableTime"
+      },
+      {
+        "id": "Extension.extension:availability.extension:availableTime.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:availability.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:availability.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:availability.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:availability.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:availability.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "availability"
+      },
+      {
+        "id": "Extension.extension:availability.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PractitionerRole.availability"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

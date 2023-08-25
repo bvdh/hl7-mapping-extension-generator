@@ -1,0 +1,519 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-VisionPrescription.lensSpecification",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-VisionPrescription.lensSpecification",
+  "name": "VisionPrescriptionLensSpecification",
+  "title": "VisionPrescription LensSpecification ",
+  "status": "draft",
+  "description": "Cross version extension for VisionPrescription.lensSpecification from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "VisionPrescription",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "VisionPrescription LensSpecification ",
+        "definition": "Cross version extension for VisionPrescription.lensSpecification from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:add",
+        "path": "Extension.extension",
+        "sliceName": "add",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:add.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:add.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "add"
+      },
+      {
+        "id": "Extension.extension:add.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:note",
+        "path": "Extension.extension",
+        "sliceName": "note",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:note.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:note.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "note"
+      },
+      {
+        "id": "Extension.extension:note.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Annotation"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:product",
+        "path": "Extension.extension",
+        "sliceName": "product",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:product.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:product.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "product"
+      },
+      {
+        "id": "Extension.extension:product.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/vision-product|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:backCurve",
+        "path": "Extension.extension",
+        "sliceName": "backCurve",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:backCurve.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:backCurve.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "backCurve"
+      },
+      {
+        "id": "Extension.extension:backCurve.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:color",
+        "path": "Extension.extension",
+        "sliceName": "color",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:color.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:color.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "color"
+      },
+      {
+        "id": "Extension.extension:color.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:axis",
+        "path": "Extension.extension",
+        "sliceName": "axis",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:axis.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:axis.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "axis"
+      },
+      {
+        "id": "Extension.extension:axis.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:eye",
+        "path": "Extension.extension",
+        "sliceName": "eye",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:eye.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:eye.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "eye"
+      },
+      {
+        "id": "Extension.extension:eye.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/vision-eye-codes|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:duration",
+        "path": "Extension.extension",
+        "sliceName": "duration",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:duration.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:duration.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "duration"
+      },
+      {
+        "id": "Extension.extension:duration.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:diameter",
+        "path": "Extension.extension",
+        "sliceName": "diameter",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:diameter.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:diameter.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "diameter"
+      },
+      {
+        "id": "Extension.extension:diameter.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:sphere",
+        "path": "Extension.extension",
+        "sliceName": "sphere",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:sphere.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:sphere.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "sphere"
+      },
+      {
+        "id": "Extension.extension:sphere.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:cylinder",
+        "path": "Extension.extension",
+        "sliceName": "cylinder",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:cylinder.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:cylinder.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "cylinder"
+      },
+      {
+        "id": "Extension.extension:cylinder.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:power",
+        "path": "Extension.extension",
+        "sliceName": "power",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:power.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:power.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "power"
+      },
+      {
+        "id": "Extension.extension:power.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:brand",
+        "path": "Extension.extension",
+        "sliceName": "brand",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:brand.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:brand.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "brand"
+      },
+      {
+        "id": "Extension.extension:brand.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:prism",
+        "path": "Extension.extension",
+        "sliceName": "prism",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:prism.extension:amount",
+        "path": "Extension.extension.extension",
+        "sliceName": "amount",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:prism.extension:amount.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:prism.extension:amount.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "amount"
+      },
+      {
+        "id": "Extension.extension:prism.extension:amount.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:prism.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:prism.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:prism.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:prism.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:prism.extension:base",
+        "path": "Extension.extension.extension",
+        "sliceName": "base",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:prism.extension:base.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:prism.extension:base.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "base"
+      },
+      {
+        "id": "Extension.extension:prism.extension:base.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/vision-base-codes|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:prism.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "prism"
+      },
+      {
+        "id": "Extension.extension:prism.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-VisionPrescription.lensSpecification"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

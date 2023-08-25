@@ -1,0 +1,156 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-AdministrableProductDefinition.routeOfAdministration.targetSpecies.withdrawalPeriod",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-AdministrableProductDefinition.routeOfAdministration.targetSpecies.withdrawalPeriod",
+  "name": "AdministrableProductDefinitionRouteOfAdministrationTargetSpeciesWithdrawalPeriod",
+  "title": "AdministrableProductDefinition RouteOfAdministration TargetSpecies WithdrawalPeriod ",
+  "status": "draft",
+  "description": "Cross version extension for AdministrableProductDefinition.routeOfAdministration.targetSpecies.withdrawalPeriod from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "AdministrableProductDefinition RouteOfAdministration TargetSpecies WithdrawalPeriod ",
+        "definition": "Cross version extension for AdministrableProductDefinition.routeOfAdministration.targetSpecies.withdrawalPeriod from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:supportingInformation",
+        "path": "Extension.extension",
+        "sliceName": "supportingInformation",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:supportingInformation.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:supportingInformation.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "supportingInformation"
+      },
+      {
+        "id": "Extension.extension:supportingInformation.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:tissue",
+        "path": "Extension.extension",
+        "sliceName": "tissue",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:tissue.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:tissue.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "tissue"
+      },
+      {
+        "id": "Extension.extension:tissue.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/animal-tissue-type|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:value",
+        "path": "Extension.extension",
+        "sliceName": "value",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:value.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:value.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "value"
+      },
+      {
+        "id": "Extension.extension:value.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-AdministrableProductDefinition.routeOfAdministration.targetSpecies.withdrawalPeriod"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

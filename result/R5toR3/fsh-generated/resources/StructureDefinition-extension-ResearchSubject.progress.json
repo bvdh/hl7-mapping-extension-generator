@@ -1,0 +1,246 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-ResearchSubject.progress",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchSubject.progress",
+  "name": "ResearchSubjectProgress",
+  "title": "ResearchSubject Progress ",
+  "status": "draft",
+  "description": "Cross version extension for ResearchSubject.progress from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "ResearchSubject",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "ResearchSubject Progress ",
+        "definition": "Cross version extension for ResearchSubject.progress from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:reason",
+        "path": "Extension.extension",
+        "sliceName": "reason",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:reason.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:reason.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "reason"
+      },
+      {
+        "id": "Extension.extension:reason.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://terminology.hl7.org/ValueSet/state-change-reason"
+        }
+      },
+      {
+        "id": "Extension.extension:milestone",
+        "path": "Extension.extension",
+        "sliceName": "milestone",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:milestone.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:milestone.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "milestone"
+      },
+      {
+        "id": "Extension.extension:milestone.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/research-subject-milestone|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:endDate",
+        "path": "Extension.extension",
+        "sliceName": "endDate",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:endDate.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:endDate.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "endDate"
+      },
+      {
+        "id": "Extension.extension:endDate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:subjectState",
+        "path": "Extension.extension",
+        "sliceName": "subjectState",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:subjectState.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:subjectState.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "subjectState"
+      },
+      {
+        "id": "Extension.extension:subjectState.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/research-subject-state|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:type.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/research-subject-state-type|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:startDate",
+        "path": "Extension.extension",
+        "sliceName": "startDate",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:startDate.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:startDate.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "startDate"
+      },
+      {
+        "id": "Extension.extension:startDate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchSubject.progress"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

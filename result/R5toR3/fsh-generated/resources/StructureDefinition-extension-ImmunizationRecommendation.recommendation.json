@@ -1,0 +1,485 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-ImmunizationRecommendation.recommendation",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ImmunizationRecommendation.recommendation",
+  "name": "ImmunizationRecommendationRecommendation",
+  "title": "ImmunizationRecommendation Recommendation ",
+  "status": "draft",
+  "description": "Cross version extension for ImmunizationRecommendation.recommendation from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "ImmunizationRecommendation",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "ImmunizationRecommendation Recommendation ",
+        "definition": "Cross version extension for ImmunizationRecommendation.recommendation from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:supportingImmunization",
+        "path": "Extension.extension",
+        "sliceName": "supportingImmunization",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:supportingImmunization.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:supportingImmunization.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "supportingImmunization"
+      },
+      {
+        "id": "Extension.extension:supportingImmunization.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Immunization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:forecastReason",
+        "path": "Extension.extension",
+        "sliceName": "forecastReason",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:forecastReason.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:forecastReason.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "forecastReason"
+      },
+      {
+        "id": "Extension.extension:forecastReason.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/immunization-recommendation-reason|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:forecastStatus",
+        "path": "Extension.extension",
+        "sliceName": "forecastStatus",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:forecastStatus.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:forecastStatus.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "forecastStatus"
+      },
+      {
+        "id": "Extension.extension:forecastStatus.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/immunization-recommendation-status|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:description",
+        "path": "Extension.extension",
+        "sliceName": "description",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:description.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:description.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:description.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:supportingPatientInformation",
+        "path": "Extension.extension",
+        "sliceName": "supportingPatientInformation",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:supportingPatientInformation.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:supportingPatientInformation.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "supportingPatientInformation"
+      },
+      {
+        "id": "Extension.extension:supportingPatientInformation.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Resource"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:seriesDoses",
+        "path": "Extension.extension",
+        "sliceName": "seriesDoses",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:seriesDoses.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:seriesDoses.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "seriesDoses"
+      },
+      {
+        "id": "Extension.extension:seriesDoses.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:doseNumber",
+        "path": "Extension.extension",
+        "sliceName": "doseNumber",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:doseNumber.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:doseNumber.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "doseNumber"
+      },
+      {
+        "id": "Extension.extension:doseNumber.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:contraindicatedVaccineCode",
+        "path": "Extension.extension",
+        "sliceName": "contraindicatedVaccineCode",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:contraindicatedVaccineCode.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:contraindicatedVaccineCode.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "contraindicatedVaccineCode"
+      },
+      {
+        "id": "Extension.extension:contraindicatedVaccineCode.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/vaccine-code|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:series",
+        "path": "Extension.extension",
+        "sliceName": "series",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:series.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:series.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "series"
+      },
+      {
+        "id": "Extension.extension:series.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:targetDisease",
+        "path": "Extension.extension",
+        "sliceName": "targetDisease",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:targetDisease.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:targetDisease.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "targetDisease"
+      },
+      {
+        "id": "Extension.extension:targetDisease.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/immunization-target-disease|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:vaccineCode",
+        "path": "Extension.extension",
+        "sliceName": "vaccineCode",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:vaccineCode.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:vaccineCode.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "vaccineCode"
+      },
+      {
+        "id": "Extension.extension:vaccineCode.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/vaccine-code|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:dateCriterion",
+        "path": "Extension.extension",
+        "sliceName": "dateCriterion",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:dateCriterion.extension:code",
+        "path": "Extension.extension.extension",
+        "sliceName": "code",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:dateCriterion.extension:code.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:dateCriterion.extension:code.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:dateCriterion.extension:code.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/immunization-recommendation-date-criterion|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:dateCriterion.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:dateCriterion.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:dateCriterion.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:dateCriterion.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:dateCriterion.extension:value",
+        "path": "Extension.extension.extension",
+        "sliceName": "value",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:dateCriterion.extension:value.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:dateCriterion.extension:value.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "value"
+      },
+      {
+        "id": "Extension.extension:dateCriterion.extension:value.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:dateCriterion.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "dateCriterion"
+      },
+      {
+        "id": "Extension.extension:dateCriterion.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ImmunizationRecommendation.recommendation"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

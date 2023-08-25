@@ -1,0 +1,126 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-DeviceDefinition.udiDeviceIdentifier.marketDistribution",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceDefinition.udiDeviceIdentifier.marketDistribution",
+  "name": "DeviceDefinitionUdiDeviceIdentifierMarketDistribution",
+  "title": "DeviceDefinition UdiDeviceIdentifier MarketDistribution ",
+  "status": "draft",
+  "description": "Cross version extension for DeviceDefinition.udiDeviceIdentifier.marketDistribution from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "DeviceDefinition UdiDeviceIdentifier MarketDistribution ",
+        "definition": "Cross version extension for DeviceDefinition.udiDeviceIdentifier.marketDistribution from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:marketPeriod",
+        "path": "Extension.extension",
+        "sliceName": "marketPeriod",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:marketPeriod.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:marketPeriod.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "marketPeriod"
+      },
+      {
+        "id": "Extension.extension:marketPeriod.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:subJurisdiction",
+        "path": "Extension.extension",
+        "sliceName": "subJurisdiction",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:subJurisdiction.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:subJurisdiction.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "subJurisdiction"
+      },
+      {
+        "id": "Extension.extension:subJurisdiction.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceDefinition.udiDeviceIdentifier.marketDistribution"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

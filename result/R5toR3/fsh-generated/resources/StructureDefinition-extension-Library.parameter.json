@@ -1,0 +1,281 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-Library.parameter",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Library.parameter",
+  "name": "LibraryParameter",
+  "title": "Library Parameter ",
+  "status": "draft",
+  "description": "Cross version extension for Library.parameter from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "Library",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Library Parameter ",
+        "definition": "Cross version extension for Library.parameter from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:parameterdefinition",
+        "path": "Extension.extension",
+        "sliceName": "parameterdefinition",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:parameterdefinition.extension:min",
+        "path": "Extension.extension.extension",
+        "sliceName": "min",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:parameterdefinition.extension:min.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:parameterdefinition.extension:min.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "min"
+      },
+      {
+        "id": "Extension.extension:parameterdefinition.extension:min.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:parameterdefinition.extension:max",
+        "path": "Extension.extension.extension",
+        "sliceName": "max",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:parameterdefinition.extension:max.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:parameterdefinition.extension:max.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "max"
+      },
+      {
+        "id": "Extension.extension:parameterdefinition.extension:max.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:parameterdefinition.extension:use",
+        "path": "Extension.extension.extension",
+        "sliceName": "use",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:parameterdefinition.extension:use.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:parameterdefinition.extension:use.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "use"
+      },
+      {
+        "id": "Extension.extension:parameterdefinition.extension:use.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/operation-parameter-use|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:parameterdefinition.extension:profile",
+        "path": "Extension.extension.extension",
+        "sliceName": "profile",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:parameterdefinition.extension:profile.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:parameterdefinition.extension:profile.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "profile"
+      },
+      {
+        "id": "Extension.extension:parameterdefinition.extension:profile.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:parameterdefinition.extension:documentation",
+        "path": "Extension.extension.extension",
+        "sliceName": "documentation",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:parameterdefinition.extension:documentation.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:parameterdefinition.extension:documentation.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "documentation"
+      },
+      {
+        "id": "Extension.extension:parameterdefinition.extension:documentation.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:parameterdefinition.extension:name",
+        "path": "Extension.extension.extension",
+        "sliceName": "name",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:parameterdefinition.extension:name.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:parameterdefinition.extension:name.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "name"
+      },
+      {
+        "id": "Extension.extension:parameterdefinition.extension:name.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:parameterdefinition.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:parameterdefinition.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:parameterdefinition.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:parameterdefinition.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:parameterdefinition.extension:type",
+        "path": "Extension.extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:parameterdefinition.extension:type.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:parameterdefinition.extension:type.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:parameterdefinition.extension:type.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/fhir-types|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:parameterdefinition.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "parameterdefinition"
+      },
+      {
+        "id": "Extension.extension:parameterdefinition.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Library.parameter"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+Extension:   StructureMapImplicitRules
+Id:          extension-StructureMap.implicitRules
+Title:       "StructureMap ImplicitRules "
+Description: "Cross version extension for StructureMap.implicitRules from FHIR version 5.0.0 to FHIR version 3.0.1"
+Context:     StructureMap
+* value[x] only uri
+

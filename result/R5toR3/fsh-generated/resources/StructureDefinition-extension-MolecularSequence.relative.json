@@ -1,0 +1,550 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-MolecularSequence.relative",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MolecularSequence.relative",
+  "name": "MolecularSequenceRelative",
+  "title": "MolecularSequence Relative ",
+  "status": "draft",
+  "description": "Cross version extension for MolecularSequence.relative from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "MolecularSequence Relative ",
+        "definition": "Cross version extension for MolecularSequence.relative from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:startingSequence",
+        "path": "Extension.extension",
+        "sliceName": "startingSequence",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:sequence",
+        "path": "Extension.extension.extension",
+        "sliceName": "sequence",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:sequence.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:sequence.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "sequence"
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:sequence.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:orientation",
+        "path": "Extension.extension.extension",
+        "sliceName": "orientation",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:orientation.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:orientation.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "orientation"
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:orientation.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/orientation-type|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:strand",
+        "path": "Extension.extension.extension",
+        "sliceName": "strand",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:strand.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:strand.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "strand"
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:strand.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/strand-type|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:genomeAssembly",
+        "path": "Extension.extension.extension",
+        "sliceName": "genomeAssembly",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:genomeAssembly.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:genomeAssembly.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "genomeAssembly"
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:genomeAssembly.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://loinc.org/LL1040-6/"
+        }
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:windowStart",
+        "path": "Extension.extension.extension",
+        "sliceName": "windowStart",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:windowStart.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:windowStart.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "windowStart"
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:windowStart.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:chromosome",
+        "path": "Extension.extension.extension",
+        "sliceName": "chromosome",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:chromosome.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:chromosome.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "chromosome"
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:chromosome.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://loinc.org/LL2938-0/|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:windowEnd",
+        "path": "Extension.extension.extension",
+        "sliceName": "windowEnd",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:windowEnd.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:windowEnd.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "windowEnd"
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:windowEnd.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:startingSequence.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "startingSequence"
+      },
+      {
+        "id": "Extension.extension:startingSequence.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:edit",
+        "path": "Extension.extension",
+        "sliceName": "edit",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:edit.extension:replacedSequence",
+        "path": "Extension.extension.extension",
+        "sliceName": "replacedSequence",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:edit.extension:replacedSequence.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:edit.extension:replacedSequence.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "replacedSequence"
+      },
+      {
+        "id": "Extension.extension:edit.extension:replacedSequence.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:edit.extension:replacementSequence",
+        "path": "Extension.extension.extension",
+        "sliceName": "replacementSequence",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:edit.extension:replacementSequence.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:edit.extension:replacementSequence.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "replacementSequence"
+      },
+      {
+        "id": "Extension.extension:edit.extension:replacementSequence.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:edit.extension:start",
+        "path": "Extension.extension.extension",
+        "sliceName": "start",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:edit.extension:start.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:edit.extension:start.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "start"
+      },
+      {
+        "id": "Extension.extension:edit.extension:start.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:edit.extension:end",
+        "path": "Extension.extension.extension",
+        "sliceName": "end",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:edit.extension:end.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:edit.extension:end.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "end"
+      },
+      {
+        "id": "Extension.extension:edit.extension:end.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:edit.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:edit.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:edit.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:edit.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:edit.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "edit"
+      },
+      {
+        "id": "Extension.extension:edit.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:sequenceRange",
+        "path": "Extension.extension",
+        "sliceName": "sequenceRange",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:sequenceRange.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:sequenceRange.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "sequenceRange"
+      },
+      {
+        "id": "Extension.extension:sequenceRange.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Range"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:coordinateSystem",
+        "path": "Extension.extension",
+        "sliceName": "coordinateSystem",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:coordinateSystem.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:coordinateSystem.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "coordinateSystem"
+      },
+      {
+        "id": "Extension.extension:coordinateSystem.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://loinc.org/LL5323-2/"
+        }
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:ordinalPosition",
+        "path": "Extension.extension",
+        "sliceName": "ordinalPosition",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:ordinalPosition.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:ordinalPosition.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "ordinalPosition"
+      },
+      {
+        "id": "Extension.extension:ordinalPosition.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MolecularSequence.relative"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

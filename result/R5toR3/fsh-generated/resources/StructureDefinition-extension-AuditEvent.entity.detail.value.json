@@ -1,0 +1,87 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-AuditEvent.entity.detail.value",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-AuditEvent.entity.detail.value",
+  "name": "AuditEventEntityDetailValue",
+  "title": "AuditEvent Entity Detail Value[x] ",
+  "status": "draft",
+  "description": "Cross version extension for AuditEvent.entity.detail.value[x] from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "AuditEvent.entity.detail",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "AuditEvent Entity Detail Value[x] ",
+        "definition": "Cross version extension for AuditEvent.entity.detail.value[x] from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-AuditEvent.entity.detail.value"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "base64Binary"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Ratio"
+          }
+        ]
+      }
+    ]
+  }
+}

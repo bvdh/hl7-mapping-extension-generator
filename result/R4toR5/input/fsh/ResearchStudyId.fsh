@@ -1,0 +1,7 @@
+Extension:   ResearchStudyId
+Id:          extension-ResearchStudy.id
+Title:       "ResearchStudy Id "
+Description: "Cross version extension for ResearchStudy.id from FHIR version 4.0.1 to FHIR version 5.0.0"
+Context:     ResearchStudy
+* value[x] only string
+

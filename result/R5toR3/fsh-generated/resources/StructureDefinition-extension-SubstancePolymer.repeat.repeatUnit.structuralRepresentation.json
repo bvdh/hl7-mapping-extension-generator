@@ -1,0 +1,178 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-SubstancePolymer.repeat.repeatUnit.structuralRepresentation",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubstancePolymer.repeat.repeatUnit.structuralRepresentation",
+  "name": "SubstancePolymerRepeatRepeatUnitStructuralRepresentation",
+  "title": "SubstancePolymer Repeat RepeatUnit StructuralRepresentation ",
+  "status": "draft",
+  "description": "Cross version extension for SubstancePolymer.repeat.repeatUnit.structuralRepresentation from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "SubstancePolymer Repeat RepeatUnit StructuralRepresentation ",
+        "definition": "Cross version extension for SubstancePolymer.repeat.repeatUnit.structuralRepresentation from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:attachment",
+        "path": "Extension.extension",
+        "sliceName": "attachment",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:attachment.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:attachment.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "attachment"
+      },
+      {
+        "id": "Extension.extension:attachment.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Attachment"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:format",
+        "path": "Extension.extension",
+        "sliceName": "format",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:format.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:format.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "format"
+      },
+      {
+        "id": "Extension.extension:format.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:type.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:representation",
+        "path": "Extension.extension",
+        "sliceName": "representation",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:representation.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:representation.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "representation"
+      },
+      {
+        "id": "Extension.extension:representation.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubstancePolymer.repeat.repeatUnit.structuralRepresentation"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

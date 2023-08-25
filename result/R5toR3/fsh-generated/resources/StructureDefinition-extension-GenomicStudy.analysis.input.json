@@ -1,0 +1,162 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-GenomicStudy.analysis.input",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-GenomicStudy.analysis.input",
+  "name": "GenomicStudyAnalysisInput",
+  "title": "GenomicStudy Analysis Input ",
+  "status": "draft",
+  "description": "Cross version extension for GenomicStudy.analysis.input from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "GenomicStudy Analysis Input ",
+        "definition": "Cross version extension for GenomicStudy.analysis.input from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:file",
+        "path": "Extension.extension",
+        "sliceName": "file",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:file.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:file.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "file"
+      },
+      {
+        "id": "Extension.extension:file.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/DocumentReference"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:type.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/genomicstudy-dataformat|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:generatedBy",
+        "path": "Extension.extension",
+        "sliceName": "generatedBy",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:generatedBy.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:generatedBy.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "generatedBy"
+      },
+      {
+        "id": "Extension.extension:generatedBy.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Identifier"
+          },
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-GenomicStudy.analysis.input"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

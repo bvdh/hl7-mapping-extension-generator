@@ -1,0 +1,667 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-Ingredient.substance",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Ingredient.substance",
+  "name": "IngredientSubstance",
+  "title": "Ingredient Substance ",
+  "status": "draft",
+  "description": "Cross version extension for Ingredient.substance from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Ingredient Substance ",
+        "definition": "Cross version extension for Ingredient.substance from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:code",
+        "path": "Extension.extension",
+        "sliceName": "code",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:code.extension:codeablereference",
+        "path": "Extension.extension.extension",
+        "sliceName": "codeablereference",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:code.extension:codeablereference.extension:reference",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "reference",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:code.extension:codeablereference.extension:reference.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:code.extension:codeablereference.extension:reference.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:code.extension:codeablereference.extension:reference.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:code.extension:codeablereference.extension:concept",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "concept",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:code.extension:codeablereference.extension:concept.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:code.extension:codeablereference.extension:concept.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "concept"
+      },
+      {
+        "id": "Extension.extension:code.extension:codeablereference.extension:concept.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:code.extension:codeablereference.extension:id",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:code.extension:codeablereference.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:code.extension:codeablereference.extension:id.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:code.extension:codeablereference.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:code.extension:codeablereference.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "codeablereference"
+      },
+      {
+        "id": "Extension.extension:code.extension:codeablereference.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:code.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:code.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:strength",
+        "path": "Extension.extension",
+        "sliceName": "strength",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:strength.extension:presentation",
+        "path": "Extension.extension.extension",
+        "sliceName": "presentation",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:strength.extension:presentation.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:strength.extension:presentation.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "presentation"
+      },
+      {
+        "id": "Extension.extension:strength.extension:presentation.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Ratio"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:strength.extension:country",
+        "path": "Extension.extension.extension",
+        "sliceName": "country",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:strength.extension:country.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:strength.extension:country.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "country"
+      },
+      {
+        "id": "Extension.extension:strength.extension:country.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/country|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:strength.extension:textPresentation",
+        "path": "Extension.extension.extension",
+        "sliceName": "textPresentation",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:strength.extension:textPresentation.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:strength.extension:textPresentation.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "textPresentation"
+      },
+      {
+        "id": "Extension.extension:strength.extension:textPresentation.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:strength.extension:referenceStrength",
+        "path": "Extension.extension.extension",
+        "sliceName": "referenceStrength",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:strength.extension:referenceStrength.extension:country",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "country",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:strength.extension:referenceStrength.extension:country.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:strength.extension:referenceStrength.extension:country.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "country"
+      },
+      {
+        "id": "Extension.extension:strength.extension:referenceStrength.extension:country.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/country|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:strength.extension:referenceStrength.extension:strength",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "strength",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:strength.extension:referenceStrength.extension:strength.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:strength.extension:referenceStrength.extension:strength.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "strength"
+      },
+      {
+        "id": "Extension.extension:strength.extension:referenceStrength.extension:strength.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Ratio"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:strength.extension:referenceStrength.extension:substance",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "substance",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:strength.extension:referenceStrength.extension:substance.extension:codeablereference",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "codeablereference",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:strength.extension:referenceStrength.extension:substance.extension:codeablereference.extension:reference",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "reference",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:strength.extension:referenceStrength.extension:substance.extension:codeablereference.extension:reference.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:strength.extension:referenceStrength.extension:substance.extension:codeablereference.extension:reference.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:strength.extension:referenceStrength.extension:substance.extension:codeablereference.extension:reference.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:strength.extension:referenceStrength.extension:substance.extension:codeablereference.extension:concept",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "concept",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:strength.extension:referenceStrength.extension:substance.extension:codeablereference.extension:concept.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:strength.extension:referenceStrength.extension:substance.extension:codeablereference.extension:concept.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "concept"
+      },
+      {
+        "id": "Extension.extension:strength.extension:referenceStrength.extension:substance.extension:codeablereference.extension:concept.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:strength.extension:referenceStrength.extension:substance.extension:codeablereference.extension:id",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:strength.extension:referenceStrength.extension:substance.extension:codeablereference.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:strength.extension:referenceStrength.extension:substance.extension:codeablereference.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:strength.extension:referenceStrength.extension:substance.extension:codeablereference.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:strength.extension:referenceStrength.extension:substance.extension:codeablereference.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "codeablereference"
+      },
+      {
+        "id": "Extension.extension:strength.extension:referenceStrength.extension:substance.extension:codeablereference.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:strength.extension:referenceStrength.extension:substance.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "substance"
+      },
+      {
+        "id": "Extension.extension:strength.extension:referenceStrength.extension:substance.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:strength.extension:referenceStrength.extension:id",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:strength.extension:referenceStrength.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:strength.extension:referenceStrength.extension:id.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:strength.extension:referenceStrength.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:strength.extension:referenceStrength.extension:measurementPoint",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "measurementPoint",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:strength.extension:referenceStrength.extension:measurementPoint.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:strength.extension:referenceStrength.extension:measurementPoint.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "measurementPoint"
+      },
+      {
+        "id": "Extension.extension:strength.extension:referenceStrength.extension:measurementPoint.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:strength.extension:referenceStrength.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "referenceStrength"
+      },
+      {
+        "id": "Extension.extension:strength.extension:referenceStrength.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:strength.extension:textConcentration",
+        "path": "Extension.extension.extension",
+        "sliceName": "textConcentration",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:strength.extension:textConcentration.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:strength.extension:textConcentration.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "textConcentration"
+      },
+      {
+        "id": "Extension.extension:strength.extension:textConcentration.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:strength.extension:concentration",
+        "path": "Extension.extension.extension",
+        "sliceName": "concentration",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:strength.extension:concentration.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:strength.extension:concentration.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "concentration"
+      },
+      {
+        "id": "Extension.extension:strength.extension:concentration.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Ratio"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:strength.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:strength.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:strength.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:strength.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:strength.extension:measurementPoint",
+        "path": "Extension.extension.extension",
+        "sliceName": "measurementPoint",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:strength.extension:measurementPoint.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:strength.extension:measurementPoint.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "measurementPoint"
+      },
+      {
+        "id": "Extension.extension:strength.extension:measurementPoint.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:strength.extension:basis",
+        "path": "Extension.extension.extension",
+        "sliceName": "basis",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:strength.extension:basis.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:strength.extension:basis.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "basis"
+      },
+      {
+        "id": "Extension.extension:strength.extension:basis.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:strength.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "strength"
+      },
+      {
+        "id": "Extension.extension:strength.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Ingredient.substance"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,271 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-AdverseEvent.suspectEntity",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.suspectEntity",
+  "name": "AdverseEventSuspectEntity",
+  "title": "AdverseEvent SuspectEntity ",
+  "status": "draft",
+  "description": "Cross version extension for AdverseEvent.suspectEntity from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "AdverseEvent",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "AdverseEvent SuspectEntity ",
+        "definition": "Cross version extension for AdverseEvent.suspectEntity from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:instance",
+        "path": "Extension.extension",
+        "sliceName": "instance",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:instance.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:instance.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "instance"
+      },
+      {
+        "id": "Extension.extension:instance.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:instance.value[x]:valueReference",
+        "path": "Extension.extension.value[x]",
+        "sliceName": "valueReference",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Immunization",
+              "http://hl7.org/fhir/StructureDefinition/Procedure",
+              "http://hl7.org/fhir/StructureDefinition/Substance",
+              "http://hl7.org/fhir/StructureDefinition/Medication",
+              "http://hl7.org/fhir/StructureDefinition/MedicationAdministration",
+              "http://hl7.org/fhir/StructureDefinition/MedicationStatement",
+              "http://hl7.org/fhir/StructureDefinition/Device",
+              "http://hl7.org/fhir/StructureDefinition/ResearchStudy"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:causality",
+        "path": "Extension.extension",
+        "sliceName": "causality",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:causality.extension:assessmentMethod",
+        "path": "Extension.extension.extension",
+        "sliceName": "assessmentMethod",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:causality.extension:assessmentMethod.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:causality.extension:assessmentMethod.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "assessmentMethod"
+      },
+      {
+        "id": "Extension.extension:causality.extension:assessmentMethod.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/adverse-event-causality-method|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:causality.extension:author",
+        "path": "Extension.extension.extension",
+        "sliceName": "author",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:causality.extension:author.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:causality.extension:author.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "author"
+      },
+      {
+        "id": "Extension.extension:causality.extension:author.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+              "http://hl7.org/fhir/StructureDefinition/ResearchSubject"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:causality.extension:entityRelatedness",
+        "path": "Extension.extension.extension",
+        "sliceName": "entityRelatedness",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:causality.extension:entityRelatedness.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:causality.extension:entityRelatedness.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "entityRelatedness"
+      },
+      {
+        "id": "Extension.extension:causality.extension:entityRelatedness.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/adverse-event-causality-assess|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:causality.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:causality.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:causality.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:causality.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:causality.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "causality"
+      },
+      {
+        "id": "Extension.extension:causality.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.suspectEntity"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

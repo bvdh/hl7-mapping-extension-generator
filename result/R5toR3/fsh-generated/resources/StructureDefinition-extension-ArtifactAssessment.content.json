@@ -1,0 +1,636 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-ArtifactAssessment.content",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ArtifactAssessment.content",
+  "name": "ArtifactAssessmentContent",
+  "title": "ArtifactAssessment Content ",
+  "status": "draft",
+  "description": "Cross version extension for ArtifactAssessment.content from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "ArtifactAssessment Content ",
+        "definition": "Cross version extension for ArtifactAssessment.content from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:summary",
+        "path": "Extension.extension",
+        "sliceName": "summary",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:summary.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:summary.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "summary"
+      },
+      {
+        "id": "Extension.extension:summary.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:path",
+        "path": "Extension.extension",
+        "sliceName": "path",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:path.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:path.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "path"
+      },
+      {
+        "id": "Extension.extension:path.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:quantity",
+        "path": "Extension.extension",
+        "sliceName": "quantity",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:quantity.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:quantity.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "quantity"
+      },
+      {
+        "id": "Extension.extension:quantity.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:relatedArtifact",
+        "path": "Extension.extension",
+        "sliceName": "relatedArtifact",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact",
+        "path": "Extension.extension.extension",
+        "sliceName": "relatedartifact",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:publicationStatus",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "publicationStatus",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:publicationStatus.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:publicationStatus.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "publicationStatus"
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:publicationStatus.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/publication-status|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:citation",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "citation",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:citation.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:citation.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "citation"
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:citation.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:resource",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "resource",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:resource.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:resource.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "resource"
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:resource.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:document",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "document",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:document.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:document.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "document"
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:document.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Attachment"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:display",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "display",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:display.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:display.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "display"
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:display.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:classifier",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "classifier",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:classifier.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:classifier.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "classifier"
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:classifier.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/citation-artifact-classifier|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:id",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:id.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:label",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "label",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:label.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:label.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "label"
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:label.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:type",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:type.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:type.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:type.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/related-artifact-type|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:publicationDate",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "publicationDate",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:publicationDate.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:publicationDate.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "publicationDate"
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:publicationDate.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:resourceReference",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "resourceReference",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:resourceReference.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:resourceReference.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "resourceReference"
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.extension:resourceReference.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Resource"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "relatedartifact"
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.extension:relatedartifact.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "relatedArtifact"
+      },
+      {
+        "id": "Extension.extension:relatedArtifact.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:author",
+        "path": "Extension.extension",
+        "sliceName": "author",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:author.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:author.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "author"
+      },
+      {
+        "id": "Extension.extension:author.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+              "http://hl7.org/fhir/StructureDefinition/Organization",
+              "http://hl7.org/fhir/StructureDefinition/Device"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:classifier",
+        "path": "Extension.extension",
+        "sliceName": "classifier",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:classifier.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:classifier.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "classifier"
+      },
+      {
+        "id": "Extension.extension:classifier.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/certainty-rating|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:freeToShare",
+        "path": "Extension.extension",
+        "sliceName": "freeToShare",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:freeToShare.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:freeToShare.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "freeToShare"
+      },
+      {
+        "id": "Extension.extension:freeToShare.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:type.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/certainty-type|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:informationType",
+        "path": "Extension.extension",
+        "sliceName": "informationType",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:informationType.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:informationType.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "informationType"
+      },
+      {
+        "id": "Extension.extension:informationType.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/artifactassessment-information-type|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ArtifactAssessment.content"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

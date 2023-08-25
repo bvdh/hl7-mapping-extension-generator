@@ -1,0 +1,363 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-SubscriptionTopic.resourceTrigger",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.resourceTrigger",
+  "name": "SubscriptionTopicResourceTrigger",
+  "title": "SubscriptionTopic ResourceTrigger ",
+  "status": "draft",
+  "description": "Cross version extension for SubscriptionTopic.resourceTrigger from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "SubscriptionTopic ResourceTrigger ",
+        "definition": "Cross version extension for SubscriptionTopic.resourceTrigger from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:supportedInteraction",
+        "path": "Extension.extension",
+        "sliceName": "supportedInteraction",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:supportedInteraction.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:supportedInteraction.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "supportedInteraction"
+      },
+      {
+        "id": "Extension.extension:supportedInteraction.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/interaction-trigger|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:queryCriteria",
+        "path": "Extension.extension",
+        "sliceName": "queryCriteria",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:queryCriteria.extension:current",
+        "path": "Extension.extension.extension",
+        "sliceName": "current",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:queryCriteria.extension:current.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:queryCriteria.extension:current.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "current"
+      },
+      {
+        "id": "Extension.extension:queryCriteria.extension:current.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:queryCriteria.extension:requireBoth",
+        "path": "Extension.extension.extension",
+        "sliceName": "requireBoth",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:queryCriteria.extension:requireBoth.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:queryCriteria.extension:requireBoth.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "requireBoth"
+      },
+      {
+        "id": "Extension.extension:queryCriteria.extension:requireBoth.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:queryCriteria.extension:previous",
+        "path": "Extension.extension.extension",
+        "sliceName": "previous",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:queryCriteria.extension:previous.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:queryCriteria.extension:previous.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "previous"
+      },
+      {
+        "id": "Extension.extension:queryCriteria.extension:previous.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:queryCriteria.extension:resultForCreate",
+        "path": "Extension.extension.extension",
+        "sliceName": "resultForCreate",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:queryCriteria.extension:resultForCreate.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:queryCriteria.extension:resultForCreate.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "resultForCreate"
+      },
+      {
+        "id": "Extension.extension:queryCriteria.extension:resultForCreate.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/subscriptiontopic-cr-behavior|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:queryCriteria.extension:resultForDelete",
+        "path": "Extension.extension.extension",
+        "sliceName": "resultForDelete",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:queryCriteria.extension:resultForDelete.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:queryCriteria.extension:resultForDelete.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "resultForDelete"
+      },
+      {
+        "id": "Extension.extension:queryCriteria.extension:resultForDelete.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/subscriptiontopic-cr-behavior|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:queryCriteria.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:queryCriteria.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:queryCriteria.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:queryCriteria.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:queryCriteria.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "queryCriteria"
+      },
+      {
+        "id": "Extension.extension:queryCriteria.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:resource",
+        "path": "Extension.extension",
+        "sliceName": "resource",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:resource.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:resource.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "resource"
+      },
+      {
+        "id": "Extension.extension:resource.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:fhirPathCriteria",
+        "path": "Extension.extension",
+        "sliceName": "fhirPathCriteria",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:fhirPathCriteria.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:fhirPathCriteria.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "fhirPathCriteria"
+      },
+      {
+        "id": "Extension.extension:fhirPathCriteria.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:description",
+        "path": "Extension.extension",
+        "sliceName": "description",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:description.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:description.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:description.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.resourceTrigger"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

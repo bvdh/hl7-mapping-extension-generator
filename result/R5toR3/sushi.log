@@ -1,0 +1,750 @@
+info  Running SUSHI v3.3.2 (implements FHIR Shorthand specification v3.0.0-ballot)
+info  Arguments:
+info    /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3
+info  No output path specified. Output to .
+info  Using configuration file: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/sushi-config.yaml
+info  Importing FSH text...
+error mismatched input 'http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1' expecting {'MS', 'SU', 'TU', 'N', 'D', 'codes', 'valueset', 'system', NUMBER, SEQUENCE}
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ImagingSelectionInstance.fsh
+  Line: 12
+error mismatched input 'http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1' expecting {'MS', 'SU', 'TU', 'N', 'D', 'codes', 'valueset', 'system', NUMBER, SEQUENCE}
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ImagingSelectionInstanceSopClass.fsh
+  Line: 6
+error mismatched input 'http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1' expecting {'MS', 'SU', 'TU', 'N', 'D', 'codes', 'valueset', 'system', NUMBER, SEQUENCE}
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ImagingStudySeries.fsh
+  Line: 15
+error mismatched input 'http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1' expecting {'MS', 'SU', 'TU', 'N', 'D', 'codes', 'valueset', 'system', NUMBER, SEQUENCE}
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ImagingStudySeriesInstance.fsh
+  Line: 13
+error mismatched input 'http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1' expecting {'MS', 'SU', 'TU', 'N', 'D', 'codes', 'valueset', 'system', NUMBER, SEQUENCE}
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ImagingStudySeriesInstanceSopClass.fsh
+  Line: 7
+error mismatched input 'contentReference' expecting {'MS', 'SU', 'TU', 'N', 'D', 'codes', 'valueset', 'system', NUMBER, SEQUENCE}
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/StructureDefinitionDifferential.fsh
+  Line: 12
+error mismatched input 'contentReference' expecting {'MS', 'SU', 'TU', 'N', 'D', 'codes', 'valueset', 'system', NUMBER, SEQUENCE}
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/StructureDefinitionDifferentialElement.fsh
+  Line: 8
+error mismatched input 'contentReference' expecting {'MS', 'SU', 'TU', 'N', 'D', 'codes', 'valueset', 'system', NUMBER, SEQUENCE}
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/StructureDefinitionSnapshot.fsh
+  Line: 12
+error mismatched input 'contentReference' expecting {'MS', 'SU', 'TU', 'N', 'D', 'codes', 'valueset', 'system', NUMBER, SEQUENCE}
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/StructureDefinitionSnapshotElement.fsh
+  Line: 8
+info  Preprocessed 7449 documents with 0 aliases.
+info  Imported 7449 definitions and 0 instances.
+info  Checking /home/nly98977/.fhir/packages for hl7.fhir.uv.tools#current...
+info  Found hl7.fhir.uv.tools#current in /home/nly98977/.fhir/packages.
+info  Loaded package hl7.fhir.uv.tools#current
+info  Checking /home/nly98977/.fhir/packages for hl7.terminology.r4#5.0.0...
+info  Found hl7.terminology.r4#5.0.0 in /home/nly98977/.fhir/packages.
+info  Loaded package hl7.terminology.r4#5.0.0
+info  Checking /home/nly98977/.fhir/packages for hl7.fhir.r4.core#4.0.1...
+info  Found hl7.fhir.r4.core#4.0.1 in /home/nly98977/.fhir/packages.
+info  Loaded package hl7.fhir.r4.core#4.0.1
+info  Converting FSH to FHIR resources...
+error Could not find element balance on resource Account to use as extension context.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/AccountBalanceAggregate.fsh
+  Line: 5
+error Could not find element balance on resource Account to use as extension context.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/AccountBalanceAmount.fsh
+  Line: 5
+error Could not find element balance on resource Account to use as extension context.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/AccountBalanceEstimate.fsh
+  Line: 5
+error Could not find element balance on resource Account to use as extension context.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/AccountBalanceId.fsh
+  Line: 5
+error Could not find element balance on resource Account to use as extension context.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/AccountBalanceTerm.fsh
+  Line: 5
+error The string "extension-AdministrableProductDefinition.routeOfAdministration.code" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/AdministrableProductDefinitionRouteOfAdministrationCode.fsh
+  Line: 1 - 6
+error The string "extension-AdministrableProductDefinition.routeOfAdministration.firstDose" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/AdministrableProductDefinitionRouteOfAdministrationFirstDose.fsh
+  Line: 1 - 5
+error The string "extension-AdministrableProductDefinition.routeOfAdministration.id" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/AdministrableProductDefinitionRouteOfAdministrationId.fsh
+  Line: 1 - 5
+error The string "extension-AdministrableProductDefinition.routeOfAdministration.maxDosePerDay" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/AdministrableProductDefinitionRouteOfAdministrationMaxDosePerDay.fsh
+  Line: 1 - 5
+error The string "extension-AdministrableProductDefinition.routeOfAdministration.maxDosePerTreatmentPeriod" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/AdministrableProductDefinitionRouteOfAdministrationMaxDosePerTreatmentPeriod.fsh
+  Line: 1 - 5
+error The string "extension-AdministrableProductDefinition.routeOfAdministration.maxSingleDose" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/AdministrableProductDefinitionRouteOfAdministrationMaxSingleDose.fsh
+  Line: 1 - 5
+error The string "extension-AdministrableProductDefinition.routeOfAdministration.maxTreatmentPeriod" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/AdministrableProductDefinitionRouteOfAdministrationMaxTreatmentPeriod.fsh
+  Line: 1 - 5
+error The string "extension-AdministrableProductDefinition.routeOfAdministration.targetSpecies" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/AdministrableProductDefinitionRouteOfAdministrationTargetSpecies.fsh
+  Line: 1 - 21
+error The string "extension-AdministrableProductDefinition.routeOfAdministration.targetSpecies.code" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/AdministrableProductDefinitionRouteOfAdministrationTargetSpeciesCode.fsh
+  Line: 1 - 6
+error The string "extension-AdministrableProductDefinition.routeOfAdministration.targetSpecies.id" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/AdministrableProductDefinitionRouteOfAdministrationTargetSpeciesId.fsh
+  Line: 1 - 5
+error The string "extension-AdministrableProductDefinition.routeOfAdministration.targetSpecies.withdrawalPeriod" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/AdministrableProductDefinitionRouteOfAdministrationTargetSpeciesWithdrawalPeriod.fsh
+  Line: 1 - 14
+error The string "extension-AdministrableProductDefinition.routeOfAdministration.targetSpecies.withdrawalPeriod.id" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/AdministrableProductDefinitionRouteOfAdministrationTargetSpeciesWithdrawalPeriodId.fsh
+  Line: 1 - 5
+error The string "extension-AdministrableProductDefinition.routeOfAdministration.targetSpecies.withdrawalPeriod.supportingInformation" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/AdministrableProductDefinitionRouteOfAdministrationTargetSpeciesWithdrawalPeriodSupportingInformation.fsh
+  Line: 1 - 5
+error The string "extension-AdministrableProductDefinition.routeOfAdministration.targetSpecies.withdrawalPeriod.tissue" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/AdministrableProductDefinitionRouteOfAdministrationTargetSpeciesWithdrawalPeriodTissue.fsh
+  Line: 1 - 6
+error The string "extension-AdministrableProductDefinition.routeOfAdministration.targetSpecies.withdrawalPeriod.value" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/AdministrableProductDefinitionRouteOfAdministrationTargetSpeciesWithdrawalPeriodValue.fsh
+  Line: 1 - 5
+error The string "extension-Appointment.recurrenceTemplate.monthlyTemplate.dayOfMonth" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/AppointmentRecurrenceTemplateMonthlyTemplateDayOfMonth.fsh
+  Line: 1 - 5
+error The string "extension-Appointment.recurrenceTemplate.monthlyTemplate.dayOfWeek" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/AppointmentRecurrenceTemplateMonthlyTemplateDayOfWeek.fsh
+  Line: 1 - 6
+error The string "extension-Appointment.recurrenceTemplate.monthlyTemplate.monthInterval" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/AppointmentRecurrenceTemplateMonthlyTemplateMonthInterval.fsh
+  Line: 1 - 5
+error The string "extension-Appointment.recurrenceTemplate.monthlyTemplate.nthWeekOfMonth" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/AppointmentRecurrenceTemplateMonthlyTemplateNthWeekOfMonth.fsh
+  Line: 1 - 6
+error The string "extension-Appointment.recurrenceTemplate.weeklyTemplate.wednesday" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/AppointmentRecurrenceTemplateWeeklyTemplateWednesday.fsh
+  Line: 1 - 5
+error The string "extension-Appointment.recurrenceTemplate.weeklyTemplate.weekInterval" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/AppointmentRecurrenceTemplateWeeklyTemplateWeekInterval.fsh
+  Line: 1 - 5
+error The string "extension-Appointment.recurrenceTemplate.yearlyTemplate.yearInterval" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/AppointmentRecurrenceTemplateYearlyTemplateYearInterval.fsh
+  Line: 1 - 5
+error The string "extension-BiologicallyDerivedProductDispense.originRelationshipType" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/BiologicallyDerivedProductDispenseOriginRelationshipType.fsh
+  Line: 1 - 6
+error The string "extension-BodyStructure.includedStructure.bodyLandmarkOrientation" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/BodyStructureIncludedStructureBodyLandmarkOrientation.fsh
+  Line: 1 - 32
+error The string "extension-BodyStructure.includedStructure.bodyLandmarkOrientation.clockFacePosition" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/BodyStructureIncludedStructureBodyLandmarkOrientationClockFacePosition.fsh
+  Line: 1 - 6
+error The string "extension-BodyStructure.includedStructure.bodyLandmarkOrientation.distanceFromLandmark" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/BodyStructureIncludedStructureBodyLandmarkOrientationDistanceFromLandmark.fsh
+  Line: 1 - 19
+error The string "extension-BodyStructure.includedStructure.bodyLandmarkOrientation.distanceFromLandmark.device" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/BodyStructureIncludedStructureBodyLandmarkOrientationDistanceFromLandmarkDevice.fsh
+  Line: 1 - 13
+error The string "extension-BodyStructure.includedStructure.bodyLandmarkOrientation.distanceFromLandmark.id" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/BodyStructureIncludedStructureBodyLandmarkOrientationDistanceFromLandmarkId.fsh
+  Line: 1 - 5
+error The string "extension-BodyStructure.includedStructure.bodyLandmarkOrientation.distanceFromLandmark.value" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/BodyStructureIncludedStructureBodyLandmarkOrientationDistanceFromLandmarkValue.fsh
+  Line: 1 - 5
+error The string "extension-BodyStructure.includedStructure.bodyLandmarkOrientation.id" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/BodyStructureIncludedStructureBodyLandmarkOrientationId.fsh
+  Line: 1 - 5
+error The string "extension-BodyStructure.includedStructure.bodyLandmarkOrientation.landmarkDescription" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/BodyStructureIncludedStructureBodyLandmarkOrientationLandmarkDescription.fsh
+  Line: 1 - 6
+error The string "extension-BodyStructure.includedStructure.bodyLandmarkOrientation.surfaceOrientation" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/BodyStructureIncludedStructureBodyLandmarkOrientationSurfaceOrientation.fsh
+  Line: 1 - 6
+error The string "extension-CapabilityStatement.messaging.supportedMessage.definition" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/CapabilityStatementMessagingSupportedMessageDefinition.fsh
+  Line: 1 - 6
+error The string "extension-CapabilityStatement.rest.resource.interaction.documentation" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/CapabilityStatementRestResourceInteractionDocumentation.fsh
+  Line: 1 - 6
+error The string "extension-CapabilityStatement.rest.resource.operation.documentation" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/CapabilityStatementRestResourceOperationDocumentation.fsh
+  Line: 1 - 5
+error The string "extension-CapabilityStatement.rest.resource.searchParam.definition" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/CapabilityStatementRestResourceSearchParamDefinition.fsh
+  Line: 1 - 6
+error The string "extension-CapabilityStatement.rest.resource.searchParam.documentation" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/CapabilityStatementRestResourceSearchParamDocumentation.fsh
+  Line: 1 - 6
+error The string "extension-Citation.citedArtifact.classification.artifactAssessment" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/CitationCitedArtifactClassificationArtifactAssessment.fsh
+  Line: 1 - 5
+error The string "extension-Citation.citedArtifact.contributorship.entry.affiliation" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/CitationCitedArtifactContributorshipEntryAffiliation.fsh
+  Line: 1 - 6
+error The string "extension-Citation.citedArtifact.contributorship.entry.contributionInstance" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/CitationCitedArtifactContributorshipEntryContributionInstance.fsh
+  Line: 1 - 12
+error The string "extension-Citation.citedArtifact.contributorship.entry.contributionInstance.id" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/CitationCitedArtifactContributorshipEntryContributionInstanceId.fsh
+  Line: 1 - 5
+error The string "extension-Citation.citedArtifact.contributorship.entry.contributionInstance.time" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/CitationCitedArtifactContributorshipEntryContributionInstanceTime.fsh
+  Line: 1 - 5
+error The string "extension-Citation.citedArtifact.contributorship.entry.contributionInstance.type" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/CitationCitedArtifactContributorshipEntryContributionInstanceType.fsh
+  Line: 1 - 6
+error The string "extension-Citation.citedArtifact.contributorship.entry.contributionType" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/CitationCitedArtifactContributorshipEntryContributionType.fsh
+  Line: 1 - 6
+error The string "extension-Citation.citedArtifact.contributorship.entry.contributor" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/CitationCitedArtifactContributorshipEntryContributor.fsh
+  Line: 1 - 6
+error The string "extension-Citation.citedArtifact.contributorship.entry.correspondingContact" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/CitationCitedArtifactContributorshipEntryCorrespondingContact.fsh
+  Line: 1 - 5
+error The string "extension-Citation.citedArtifact.contributorship.entry.forenameInitials" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/CitationCitedArtifactContributorshipEntryForenameInitials.fsh
+  Line: 1 - 5
+error The string "extension-Citation.citedArtifact.contributorship.entry.rankingOrder" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/CitationCitedArtifactContributorshipEntryRankingOrder.fsh
+  Line: 1 - 5
+error The string "extension-Citation.citedArtifact.publicationForm.lastRevisionDate" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/CitationCitedArtifactPublicationFormLastRevisionDate.fsh
+  Line: 1 - 5
+error The string "extension-Citation.citedArtifact.publicationForm.publicationDateSeason" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/CitationCitedArtifactPublicationFormPublicationDateSeason.fsh
+  Line: 1 - 5
+error The string "extension-Citation.citedArtifact.publicationForm.publicationDateText" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/CitationCitedArtifactPublicationFormPublicationDateText.fsh
+  Line: 1 - 5
+error The string "extension-Citation.citedArtifact.publicationForm.publishedIn.identifier" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/CitationCitedArtifactPublicationFormPublishedInIdentifier.fsh
+  Line: 1 - 5
+error The string "extension-Citation.citedArtifact.publicationForm.publishedIn.publisher" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/CitationCitedArtifactPublicationFormPublishedInPublisher.fsh
+  Line: 1 - 6
+error The string "extension-Citation.citedArtifact.publicationForm.publishedIn.publisherLocation" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/CitationCitedArtifactPublicationFormPublishedInPublisherLocation.fsh
+  Line: 1 - 5
+error The string "extension-Citation.citedArtifact.publicationForm.publishedIn.title" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/CitationCitedArtifactPublicationFormPublishedInTitle.fsh
+  Line: 1 - 5
+error The string "extension-Citation.citedArtifact.publicationForm.publishedIn.type" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/CitationCitedArtifactPublicationFormPublishedInType.fsh
+  Line: 1 - 6
+error The string "extension-ClaimResponse.addItem.detail.subDetail.productOrService" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ClaimResponseAddItemDetailSubDetailProductOrService.fsh
+  Line: 1 - 6
+error The string "extension-ClaimResponse.addItem.detail.subDetail.productOrServiceEnd" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ClaimResponseAddItemDetailSubDetailProductOrServiceEnd.fsh
+  Line: 1 - 6
+error The string "extension-ClinicalUseDefinition.contraindication.diseaseSymptomProcedure" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ClinicalUseDefinitionContraindicationDiseaseSymptomProcedure.fsh
+  Line: 1 - 13
+error The string "extension-ClinicalUseDefinition.contraindication.otherTherapy.relationshipType" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ClinicalUseDefinitionContraindicationOtherTherapyRelationshipType.fsh
+  Line: 1 - 6
+error The string "extension-ClinicalUseDefinition.contraindication.otherTherapy.treatment" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ClinicalUseDefinitionContraindicationOtherTherapyTreatment.fsh
+  Line: 1 - 13
+error The string "extension-ClinicalUseDefinition.indication.diseaseSymptomProcedure" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ClinicalUseDefinitionIndicationDiseaseSymptomProcedure.fsh
+  Line: 1 - 13
+error The string "extension-ClinicalUseDefinition.undesirableEffect.frequencyOfOccurrence" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ClinicalUseDefinitionUndesirableEffectFrequencyOfOccurrence.fsh
+  Line: 1 - 6
+error The string "extension-ClinicalUseDefinition.undesirableEffect.symptomConditionEffect" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ClinicalUseDefinitionUndesirableEffectSymptomConditionEffect.fsh
+  Line: 1 - 13
+error The string "extension-CoverageEligibilityRequest.insurance.businessArrangement" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/CoverageEligibilityRequestInsuranceBusinessArrangement.fsh
+  Line: 1 - 5
+error The string "extension-CoverageEligibilityResponse.insurance.item.authorizationRequired" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/CoverageEligibilityResponseInsuranceItemAuthorizationRequired.fsh
+  Line: 1 - 5
+error The string "extension-CoverageEligibilityResponse.insurance.item.authorizationSupporting" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/CoverageEligibilityResponseInsuranceItemAuthorizationSupporting.fsh
+  Line: 1 - 6
+error The string "extension-CoverageEligibilityResponse.insurance.item.authorizationUrl" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/CoverageEligibilityResponseInsuranceItemAuthorizationUrl.fsh
+  Line: 1 - 5
+error The string "extension-CoverageEligibilityResponse.insurance.item.benefit.allowed" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/CoverageEligibilityResponseInsuranceItemBenefitAllowed.fsh
+  Line: 1 - 5
+error The string "extension-CoverageEligibilityResponse.insurance.item.benefit.type" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/CoverageEligibilityResponseInsuranceItemBenefitType.fsh
+  Line: 1 - 6
+error The string "extension-CoverageEligibilityResponse.insurance.item.benefit.used" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/CoverageEligibilityResponseInsuranceItemBenefitUsed.fsh
+  Line: 1 - 5
+error The string "extension-CoverageEligibilityResponse.insurance.item.productOrService" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/CoverageEligibilityResponseInsuranceItemProductOrService.fsh
+  Line: 1 - 6
+error The string "extension-DeviceDefinition.packaging.distributor.organizationReference" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/DeviceDefinitionPackagingDistributorOrganizationReference.fsh
+  Line: 1 - 6
+error The string "extension-DeviceDefinition.udiDeviceIdentifier.marketDistribution" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/DeviceDefinitionUdiDeviceIdentifierMarketDistribution.fsh
+  Line: 1 - 11
+error The string "extension-DeviceDefinition.udiDeviceIdentifier.marketDistribution.id" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/DeviceDefinitionUdiDeviceIdentifierMarketDistributionId.fsh
+  Line: 1 - 5
+error The string "extension-DeviceDefinition.udiDeviceIdentifier.marketDistribution.marketPeriod" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/DeviceDefinitionUdiDeviceIdentifierMarketDistributionMarketPeriod.fsh
+  Line: 1 - 5
+error The string "extension-DeviceDefinition.udiDeviceIdentifier.marketDistribution.subJurisdiction" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/DeviceDefinitionUdiDeviceIdentifierMarketDistributionSubJurisdiction.fsh
+  Line: 1 - 5
+error Could not find element reason on resource Encounter to use as extension context.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/EncounterReasonId.fsh
+  Line: 5
+error Could not find element reason on resource Encounter to use as extension context.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/EncounterReasonUse.fsh
+  Line: 5
+error Could not find element reason on resource Encounter to use as extension context.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/EncounterReasonValue.fsh
+  Line: 5
+error The string "extension-Evidence.statistic.modelCharacteristic.variable.handling" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/EvidenceStatisticModelCharacteristicVariableHandling.fsh
+  Line: 1 - 6
+error The string "extension-Evidence.statistic.modelCharacteristic.variable.valueCategory" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/EvidenceStatisticModelCharacteristicVariableValueCategory.fsh
+  Line: 1 - 5
+error The string "extension-Evidence.statistic.modelCharacteristic.variable.valueQuantity" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/EvidenceStatisticModelCharacteristicVariableValueQuantity.fsh
+  Line: 1 - 5
+error The string "extension-Evidence.statistic.modelCharacteristic.variable.valueRange" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/EvidenceStatisticModelCharacteristicVariableValueRange.fsh
+  Line: 1 - 5
+error The string "extension-Evidence.statistic.modelCharacteristic.variable.variableDefinition" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/EvidenceStatisticModelCharacteristicVariableVariableDefinition.fsh
+  Line: 1 - 6
+error The string "extension-EvidenceVariable.characteristic.definitionByCombination" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/EvidenceVariableCharacteristicDefinitionByCombination.fsh
+  Line: 1 - 12
+error The string "extension-EvidenceVariable.characteristic.definitionByCombination.code" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/EvidenceVariableCharacteristicDefinitionByCombinationCode.fsh
+  Line: 1 - 6
+error The string "extension-EvidenceVariable.characteristic.definitionByCombination.id" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/EvidenceVariableCharacteristicDefinitionByCombinationId.fsh
+  Line: 1 - 5
+error The string "extension-EvidenceVariable.characteristic.definitionByCombination.threshold" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/EvidenceVariableCharacteristicDefinitionByCombinationThreshold.fsh
+  Line: 1 - 5
+error The string "extension-EvidenceVariable.characteristic.definitionByTypeAndValue" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/EvidenceVariableCharacteristicDefinitionByTypeAndValue.fsh
+  Line: 1 - 21
+error The string "extension-EvidenceVariable.characteristic.definitionByTypeAndValue.device" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/EvidenceVariableCharacteristicDefinitionByTypeAndValueDevice.fsh
+  Line: 1 - 6
+error The string "extension-EvidenceVariable.characteristic.definitionByTypeAndValue.id" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/EvidenceVariableCharacteristicDefinitionByTypeAndValueId.fsh
+  Line: 1 - 5
+error The string "extension-EvidenceVariable.characteristic.definitionByTypeAndValue.method" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/EvidenceVariableCharacteristicDefinitionByTypeAndValueMethod.fsh
+  Line: 1 - 6
+error The string "extension-EvidenceVariable.characteristic.definitionByTypeAndValue.offset" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/EvidenceVariableCharacteristicDefinitionByTypeAndValueOffset.fsh
+  Line: 1 - 6
+error The string "extension-EvidenceVariable.characteristic.definitionByTypeAndValue.type" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/EvidenceVariableCharacteristicDefinitionByTypeAndValueType.fsh
+  Line: 1 - 6
+error The string "extension-EvidenceVariable.characteristic.definitionByTypeAndValue.value" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/EvidenceVariableCharacteristicDefinitionByTypeAndValueValue.fsh
+  Line: 1 - 5
+error The string "extension-EvidenceVariable.characteristic.definitionCodeableConcept" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/EvidenceVariableCharacteristicDefinitionCodeableConcept.fsh
+  Line: 1 - 5
+error The string "extension-EvidenceVariable.characteristic.timeFromEvent.description" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/EvidenceVariableCharacteristicTimeFromEventDescription.fsh
+  Line: 1 - 5
+error The string "extension-ExampleScenario.instance.containedInstance.instanceReference" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ExampleScenarioInstanceContainedInstanceInstanceReference.fsh
+  Line: 1 - 5
+error The string "extension-ExampleScenario.instance.containedInstance.versionReference" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ExampleScenarioInstanceContainedInstanceVersionReference.fsh
+  Line: 1 - 5
+error The string "extension-ExplanationOfBenefit.addItem.detail.productOrServiceEnd" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ExplanationOfBenefitAddItemDetailProductOrServiceEnd.fsh
+  Line: 1 - 7
+error The string "extension-ExplanationOfBenefit.addItem.detail.subDetail.noteNumber" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ExplanationOfBenefitAddItemDetailSubDetailNoteNumber.fsh
+  Line: 1 - 5
+error The string "extension-ExplanationOfBenefit.addItem.detail.subDetail.patientPaid" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ExplanationOfBenefitAddItemDetailSubDetailPatientPaid.fsh
+  Line: 1 - 5
+error The string "extension-ExplanationOfBenefit.addItem.detail.subDetail.productOrService" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ExplanationOfBenefitAddItemDetailSubDetailProductOrService.fsh
+  Line: 1 - 6
+error The string "extension-ExplanationOfBenefit.addItem.detail.subDetail.productOrServiceEnd" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ExplanationOfBenefitAddItemDetailSubDetailProductOrServiceEnd.fsh
+  Line: 1 - 6
+error The string "extension-ExplanationOfBenefit.addItem.detail.subDetail.traceNumber" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ExplanationOfBenefitAddItemDetailSubDetailTraceNumber.fsh
+  Line: 1 - 5
+error The string "extension-ExplanationOfBenefit.addItem.detail.subDetail.unitPrice" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ExplanationOfBenefitAddItemDetailSubDetailUnitPrice.fsh
+  Line: 1 - 5
+error The string "extension-ExplanationOfBenefit.item.detail.subDetail.productOrService" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ExplanationOfBenefitItemDetailSubDetailProductOrService.fsh
+  Line: 1 - 7
+error The string "extension-ExplanationOfBenefit.item.detail.subDetail.productOrServiceEnd" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ExplanationOfBenefitItemDetailSubDetailProductOrServiceEnd.fsh
+  Line: 1 - 7
+error Could not find element condition on resource FamilyMemberHistory to use as extension context.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/FamilyMemberHistoryConditionCode.fsh
+  Line: 5
+error Could not find element condition on resource FamilyMemberHistory to use as extension context.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/FamilyMemberHistoryConditionContributedToDeath.fsh
+  Line: 5
+error Could not find element condition on resource FamilyMemberHistory to use as extension context.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/FamilyMemberHistoryConditionId.fsh
+  Line: 5
+error Could not find element condition on resource FamilyMemberHistory to use as extension context.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/FamilyMemberHistoryConditionNote.fsh
+  Line: 5
+error Could not find element condition on resource FamilyMemberHistory to use as extension context.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/FamilyMemberHistoryConditionOnset.fsh
+  Line: 5
+error Could not find element condition on resource FamilyMemberHistory to use as extension context.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/FamilyMemberHistoryConditionOutcome.fsh
+  Line: 5
+error The string "extension-ImmunizationRecommendation.recommendation.contraindicatedVaccineCode" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ImmunizationRecommendationRecommendationContraindicatedVaccineCode.fsh
+  Line: 1 - 7
+error The string "extension-ImmunizationRecommendation.recommendation.dateCriterion" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ImmunizationRecommendationRecommendationDateCriterion.fsh
+  Line: 1 - 13
+error The string "extension-ImmunizationRecommendation.recommendation.dateCriterion.code" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ImmunizationRecommendationRecommendationDateCriterionCode.fsh
+  Line: 1 - 7
+error The string "extension-ImmunizationRecommendation.recommendation.dateCriterion.id" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ImmunizationRecommendationRecommendationDateCriterionId.fsh
+  Line: 1 - 6
+error The string "extension-ImmunizationRecommendation.recommendation.dateCriterion.value" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ImmunizationRecommendationRecommendationDateCriterionValue.fsh
+  Line: 1 - 6
+error The string "extension-ImmunizationRecommendation.recommendation.forecastReason" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ImmunizationRecommendationRecommendationForecastReason.fsh
+  Line: 1 - 7
+error The string "extension-ImmunizationRecommendation.recommendation.forecastStatus" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ImmunizationRecommendationRecommendationForecastStatus.fsh
+  Line: 1 - 7
+error The string "extension-ImmunizationRecommendation.recommendation.supportingImmunization" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ImmunizationRecommendationRecommendationSupportingImmunization.fsh
+  Line: 1 - 7
+error The string "extension-ImmunizationRecommendation.recommendation.supportingPatientInformation" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ImmunizationRecommendationRecommendationSupportingPatientInformation.fsh
+  Line: 1 - 7
+error The string "extension-ImmunizationRecommendation.recommendation.targetDisease" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ImmunizationRecommendationRecommendationTargetDisease.fsh
+  Line: 1 - 7
+error The string "extension-Ingredient.substance.strength.referenceStrength.country" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/IngredientSubstanceStrengthReferenceStrengthCountry.fsh
+  Line: 1 - 6
+error The string "extension-Ingredient.substance.strength.referenceStrength.measurementPoint" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/IngredientSubstanceStrengthReferenceStrengthMeasurementPoint.fsh
+  Line: 1 - 5
+error The string "extension-Ingredient.substance.strength.referenceStrength.strength" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/IngredientSubstanceStrengthReferenceStrengthStrength.fsh
+  Line: 1 - 5
+error The string "extension-Ingredient.substance.strength.referenceStrength.substance" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/IngredientSubstanceStrengthReferenceStrengthSubstance.fsh
+  Line: 1 - 13
+error The string "extension-InsurancePlan.plan.specificCost.benefit.cost.applicability" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/InsurancePlanPlanSpecificCostBenefitCostApplicability.fsh
+  Line: 1 - 6
+error The string "extension-InsurancePlan.plan.specificCost.benefit.cost.qualifiers" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/InsurancePlanPlanSpecificCostBenefitCostQualifiers.fsh
+  Line: 1 - 5
+error The string "extension-ManufacturedItemDefinition.component.constituent.amount" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ManufacturedItemDefinitionComponentConstituentAmount.fsh
+  Line: 1 - 5
+error The string "extension-ManufacturedItemDefinition.component.constituent.function" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ManufacturedItemDefinitionComponentConstituentFunction.fsh
+  Line: 1 - 5
+error The string "extension-ManufacturedItemDefinition.component.constituent.hasIngredient" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ManufacturedItemDefinitionComponentConstituentHasIngredient.fsh
+  Line: 1 - 13
+error The string "extension-ManufacturedItemDefinition.component.constituent.location" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ManufacturedItemDefinitionComponentConstituentLocation.fsh
+  Line: 1 - 5
+error The string "extension-MeasureReport.group.stratifier.stratum.component.linkId" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/MeasureReportGroupStratifierStratumComponentLinkId.fsh
+  Line: 1 - 5
+error The string "extension-MeasureReport.group.stratifier.stratum.population.count" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/MeasureReportGroupStratifierStratumPopulationCount.fsh
+  Line: 1 - 6
+error The string "extension-MeasureReport.group.stratifier.stratum.population.linkId" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/MeasureReportGroupStratifierStratumPopulationLinkId.fsh
+  Line: 1 - 6
+error The string "extension-MeasureReport.group.stratifier.stratum.population.subjectReport" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/MeasureReportGroupStratifierStratumPopulationSubjectReport.fsh
+  Line: 1 - 7
+error The string "extension-MeasureReport.group.stratifier.stratum.population.subjectResults" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/MeasureReportGroupStratifierStratumPopulationSubjectResults.fsh
+  Line: 1 - 7
+error The string "extension-MeasureReport.group.stratifier.stratum.population.subjects" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/MeasureReportGroupStratifierStratumPopulationSubjects.fsh
+  Line: 1 - 7
+error The string "extension-MedicationKnowledge.definitional.drugCharacteristic.type" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/MedicationKnowledgeDefinitionalDrugCharacteristicType.fsh
+  Line: 1 - 6
+error The string "extension-MedicationKnowledge.definitional.drugCharacteristic.value" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/MedicationKnowledgeDefinitionalDrugCharacteristicValue.fsh
+  Line: 1 - 5
+error The string "extension-MedicationKnowledge.indicationGuideline.dosingGuideline" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/MedicationKnowledgeIndicationGuidelineDosingGuideline.fsh
+  Line: 1 - 77
+error The string "extension-MedicationKnowledge.indicationGuideline.dosingGuideline.administrationTreatment" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/MedicationKnowledgeIndicationGuidelineDosingGuidelineAdministrationTreatment.fsh
+  Line: 1 - 5
+error The string "extension-MedicationKnowledge.indicationGuideline.dosingGuideline.dosage" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/MedicationKnowledgeIndicationGuidelineDosingGuidelineDosage.fsh
+  Line: 1 - 61
+error The string "extension-MedicationKnowledge.indicationGuideline.dosingGuideline.dosage.dosage" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/MedicationKnowledgeIndicationGuidelineDosingGuidelineDosageDosage.fsh
+  Line: 1 - 55
+error The string "extension-MedicationKnowledge.indicationGuideline.dosingGuideline.dosage.id" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/MedicationKnowledgeIndicationGuidelineDosingGuidelineDosageId.fsh
+  Line: 1 - 5
+error The string "extension-MedicationKnowledge.indicationGuideline.dosingGuideline.dosage.type" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/MedicationKnowledgeIndicationGuidelineDosingGuidelineDosageType.fsh
+  Line: 1 - 5
+error The string "extension-MedicationKnowledge.indicationGuideline.dosingGuideline.id" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/MedicationKnowledgeIndicationGuidelineDosingGuidelineId.fsh
+  Line: 1 - 5
+error The string "extension-MedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/MedicationKnowledgeIndicationGuidelineDosingGuidelinePatientCharacteristic.fsh
+  Line: 1 - 11
+error The string "extension-MedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic.id" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/MedicationKnowledgeIndicationGuidelineDosingGuidelinePatientCharacteristicId.fsh
+  Line: 1 - 5
+error The string "extension-MedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic.type" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/MedicationKnowledgeIndicationGuidelineDosingGuidelinePatientCharacteristicType.fsh
+  Line: 1 - 5
+error The string "extension-MedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic.value" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/MedicationKnowledgeIndicationGuidelineDosingGuidelinePatientCharacteristicValue.fsh
+  Line: 1 - 5
+error The string "extension-MedicationKnowledge.indicationGuideline.dosingGuideline.treatmentIntent" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/MedicationKnowledgeIndicationGuidelineDosingGuidelineTreatmentIntent.fsh
+  Line: 1 - 5
+error The string "extension-MedicationKnowledge.medicineClassification.classification" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/MedicationKnowledgeMedicineClassificationClassification.fsh
+  Line: 1 - 5
+error The string "extension-MedicationKnowledge.relatedMedicationKnowledge.reference" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/MedicationKnowledgeRelatedMedicationKnowledgeReference.fsh
+  Line: 1 - 5
+error The string "extension-MedicationKnowledge.storageGuideline.environmentalSetting" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/MedicationKnowledgeStorageGuidelineEnvironmentalSetting.fsh
+  Line: 1 - 11
+error The string "extension-MedicationKnowledge.storageGuideline.environmentalSetting.id" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/MedicationKnowledgeStorageGuidelineEnvironmentalSettingId.fsh
+  Line: 1 - 5
+error The string "extension-MedicationKnowledge.storageGuideline.environmentalSetting.type" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/MedicationKnowledgeStorageGuidelineEnvironmentalSettingType.fsh
+  Line: 1 - 5
+error The string "extension-MedicationKnowledge.storageGuideline.environmentalSetting.value" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/MedicationKnowledgeStorageGuidelineEnvironmentalSettingValue.fsh
+  Line: 1 - 5
+error The string "extension-MedicationRequest.dispenseRequest.doseAdministrationAid" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/MedicationRequestDispenseRequestDoseAdministrationAid.fsh
+  Line: 1 - 7
+error The string "extension-MedicationRequest.dispenseRequest.expectedSupplyDuration" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/MedicationRequestDispenseRequestExpectedSupplyDuration.fsh
+  Line: 1 - 6
+error The string "extension-MedicationRequest.dispenseRequest.numberOfRepeatsAllowed" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/MedicationRequestDispenseRequestNumberOfRepeatsAllowed.fsh
+  Line: 1 - 6
+error The string "extension-MedicinalProductDefinition.additionalMonitoringIndicator" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/MedicinalProductDefinitionAdditionalMonitoringIndicator.fsh
+  Line: 1 - 6
+error The string "extension-MedicinalProductDefinition.combinedPharmaceuticalDoseForm" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/MedicinalProductDefinitionCombinedPharmaceuticalDoseForm.fsh
+  Line: 1 - 6
+error The string "extension-MedicinalProductDefinition.operation.confidentialityIndicator" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/MedicinalProductDefinitionOperationConfidentialityIndicator.fsh
+  Line: 1 - 6
+error The string "extension-MolecularSequence.relative.startingSequence.genomeAssembly" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/MolecularSequenceRelativeStartingSequenceGenomeAssembly.fsh
+  Line: 1 - 6
+error The string "extension-MolecularSequence.relative.startingSequence.orientation" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/MolecularSequenceRelativeStartingSequenceOrientation.fsh
+  Line: 1 - 6
+error The string "extension-MolecularSequence.relative.startingSequence.windowStart" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/MolecularSequenceRelativeStartingSequenceWindowStart.fsh
+  Line: 1 - 5
+error The string "extension-NutritionOrder.enteralFormula.administrationInstruction" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/NutritionOrderEnteralFormulaAdministrationInstruction.fsh
+  Line: 1 - 6
+error The string "extension-NutritionOrder.enteralFormula.administration.schedule.asNeeded" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/NutritionOrderEnteralFormulaAdministrationScheduleAsNeeded.fsh
+  Line: 1 - 6
+error The string "extension-NutritionOrder.enteralFormula.administration.schedule.asNeededFor" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/NutritionOrderEnteralFormulaAdministrationScheduleAsNeededFor.fsh
+  Line: 1 - 7
+error The string "extension-NutritionOrder.enteralFormula.administration.schedule.id" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/NutritionOrderEnteralFormulaAdministrationScheduleId.fsh
+  Line: 1 - 6
+error The string "extension-NutritionOrder.enteralFormula.administration.schedule.timing" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/NutritionOrderEnteralFormulaAdministrationScheduleTiming.fsh
+  Line: 1 - 6
+error The string "extension-ObservationDefinition.qualifiedValue.abnormalCodedValueSet" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ObservationDefinitionQualifiedValueAbnormalCodedValueSet.fsh
+  Line: 1 - 5
+error The string "extension-ObservationDefinition.qualifiedValue.criticalCodedValueSet" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ObservationDefinitionQualifiedValueCriticalCodedValueSet.fsh
+  Line: 1 - 5
+error The string "extension-ObservationDefinition.qualifiedValue.normalCodedValueSet" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ObservationDefinitionQualifiedValueNormalCodedValueSet.fsh
+  Line: 1 - 5
+error The string "extension-ObservationDefinition.qualifiedValue.validCodedValueSet" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ObservationDefinitionQualifiedValueValidCodedValueSet.fsh
+  Line: 1 - 5
+error The string "extension-PackagedProductDefinition.legalStatusOfSupply.jurisdiction" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/PackagedProductDefinitionLegalStatusOfSupplyJurisdiction.fsh
+  Line: 1 - 6
+error The string "extension-PackagedProductDefinition.packaging.containedItem.amount" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/PackagedProductDefinitionPackagingContainedItemAmount.fsh
+  Line: 1 - 5
+error The string "extension-RequestOrchestration.action.relatedAction.endRelationship" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/RequestOrchestrationActionRelatedActionEndRelationship.fsh
+  Line: 1 - 6
+error The string "extension-SpecimenDefinition.typeTested.container.additive.additive" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/SpecimenDefinitionTypeTestedContainerAdditiveAdditive.fsh
+  Line: 1 - 6
+error The string "extension-SpecimenDefinition.typeTested.handling.temperatureQualifier" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/SpecimenDefinitionTypeTestedHandlingTemperatureQualifier.fsh
+  Line: 1 - 6
+error The string "extension-SpecimenDefinition.typeTested.handling.temperatureRange" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/SpecimenDefinitionTypeTestedHandlingTemperatureRange.fsh
+  Line: 1 - 5
+error The string "extension-SubscriptionTopic.resourceTrigger.queryCriteria.current" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/SubscriptionTopicResourceTriggerQueryCriteriaCurrent.fsh
+  Line: 1 - 5
+error The string "extension-SubscriptionTopic.resourceTrigger.queryCriteria.previous" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/SubscriptionTopicResourceTriggerQueryCriteriaPrevious.fsh
+  Line: 1 - 5
+error The string "extension-SubscriptionTopic.resourceTrigger.queryCriteria.requireBoth" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/SubscriptionTopicResourceTriggerQueryCriteriaRequireBoth.fsh
+  Line: 1 - 5
+error The string "extension-SubscriptionTopic.resourceTrigger.queryCriteria.resultForCreate" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/SubscriptionTopicResourceTriggerQueryCriteriaResultForCreate.fsh
+  Line: 1 - 6
+error The string "extension-SubscriptionTopic.resourceTrigger.queryCriteria.resultForDelete" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/SubscriptionTopicResourceTriggerQueryCriteriaResultForDelete.fsh
+  Line: 1 - 6
+error The string "extension-SubstanceDefinition.structure.representation.representation" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/SubstanceDefinitionStructureRepresentationRepresentation.fsh
+  Line: 1 - 5
+error The string "extension-SubstancePolymer.monomerSet.startingMaterial.isDefining" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/SubstancePolymerMonomerSetStartingMaterialIsDefining.fsh
+  Line: 1 - 5
+error The string "extension-SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/SubstancePolymerRepeatRepeatUnitDegreeOfPolymerisation.fsh
+  Line: 1 - 15
+error The string "extension-SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.average" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/SubstancePolymerRepeatRepeatUnitDegreeOfPolymerisationAverage.fsh
+  Line: 1 - 5
+error The string "extension-SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.high" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/SubstancePolymerRepeatRepeatUnitDegreeOfPolymerisationHigh.fsh
+  Line: 1 - 5
+error The string "extension-SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.id" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/SubstancePolymerRepeatRepeatUnitDegreeOfPolymerisationId.fsh
+  Line: 1 - 5
+error The string "extension-SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.low" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/SubstancePolymerRepeatRepeatUnitDegreeOfPolymerisationLow.fsh
+  Line: 1 - 5
+error The string "extension-SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.type" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/SubstancePolymerRepeatRepeatUnitDegreeOfPolymerisationType.fsh
+  Line: 1 - 5
+error The string "extension-SubstancePolymer.repeat.repeatUnit.structuralRepresentation" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/SubstancePolymerRepeatRepeatUnitStructuralRepresentation.fsh
+  Line: 1 - 15
+error The string "extension-SubstancePolymer.repeat.repeatUnit.structuralRepresentation.attachment" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/SubstancePolymerRepeatRepeatUnitStructuralRepresentationAttachment.fsh
+  Line: 1 - 5
+error The string "extension-SubstancePolymer.repeat.repeatUnit.structuralRepresentation.format" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/SubstancePolymerRepeatRepeatUnitStructuralRepresentationFormat.fsh
+  Line: 1 - 5
+error The string "extension-SubstancePolymer.repeat.repeatUnit.structuralRepresentation.id" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/SubstancePolymerRepeatRepeatUnitStructuralRepresentationId.fsh
+  Line: 1 - 5
+error The string "extension-SubstancePolymer.repeat.repeatUnit.structuralRepresentation.representation" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/SubstancePolymerRepeatRepeatUnitStructuralRepresentationRepresentation.fsh
+  Line: 1 - 5
+error The string "extension-SubstancePolymer.repeat.repeatUnit.structuralRepresentation.type" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/SubstancePolymerRepeatRepeatUnitStructuralRepresentationType.fsh
+  Line: 1 - 5
+error The string "extension-SubstanceSourceMaterial.fractionDescription.materialType" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/SubstanceSourceMaterialFractionDescriptionMaterialType.fsh
+  Line: 1 - 5
+error The string "extension-SubstanceSourceMaterial.organism.author.authorDescription" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/SubstanceSourceMaterialOrganismAuthorAuthorDescription.fsh
+  Line: 1 - 5
+error The string "extension-SubstanceSourceMaterial.organism.hybrid.maternalOrganismId" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/SubstanceSourceMaterialOrganismHybridMaternalOrganismId.fsh
+  Line: 1 - 5
+error The string "extension-SubstanceSourceMaterial.organism.hybrid.maternalOrganismName" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/SubstanceSourceMaterialOrganismHybridMaternalOrganismName.fsh
+  Line: 1 - 5
+error The string "extension-SubstanceSourceMaterial.organism.hybrid.paternalOrganismId" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/SubstanceSourceMaterialOrganismHybridPaternalOrganismId.fsh
+  Line: 1 - 5
+error The string "extension-SubstanceSourceMaterial.organism.hybrid.paternalOrganismName" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/SubstanceSourceMaterialOrganismHybridPaternalOrganismName.fsh
+  Line: 1 - 5
+error The string "extension-SubstanceSourceMaterial.organism.intraspecificDescription" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/SubstanceSourceMaterialOrganismIntraspecificDescription.fsh
+  Line: 1 - 5
+error The string "extension-SubstanceSourceMaterial.organism.organismGeneral.kingdom" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/SubstanceSourceMaterialOrganismOrganismGeneralKingdom.fsh
+  Line: 1 - 5
+error The string "extension-SubstanceSourceMaterial.organism.organismGeneral.phylum" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/SubstanceSourceMaterialOrganismOrganismGeneralPhylum.fsh
+  Line: 1 - 5
+error The string "extension-TerminologyCapabilities.codeSystem.version.compositional" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/TerminologyCapabilitiesCodeSystemVersionCompositional.fsh
+  Line: 1 - 5
+error The string "extension-TerminologyCapabilities.expansion.parameter.documentation" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/TerminologyCapabilitiesExpansionParameterDocumentation.fsh
+  Line: 1 - 5
+error The string "extension-TestScript.setup.action.assert.compareToSourceExpression" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/TestScriptSetupActionAssertCompareToSourceExpression.fsh
+  Line: 1 - 6
+error The string "extension-ValueSet.compose.include.concept.designation.additionalUse" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/ValueSetComposeIncludeConceptDesignationAdditionalUse.fsh
+  Line: 1 - 7
+error The string "extension-VerificationResult.attestation.proxyIdentityCertificate" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/VerificationResultAttestationProxyIdentityCertificate.fsh
+  Line: 1 - 5
+error The string "extension-VerificationResult.attestation.sourceIdentityCertificate" does not represent a valid FHIR id. FHIR ids only allow ASCII letters (A-Z, a-z), numbers (0-9), hyphens (-), and dots (.), with a length limit of 64 characters.
+  File: /home/nly98977/SwArchives/hl7-mapping-extension-generator/result/R5toR3/input/fsh/VerificationResultAttestationSourceIdentityCertificate.fsh
+  Line: 1 - 5
+info  Converted 7449 FHIR StructureDefinitions.
+info  Exporting FHIR resources as JSON...
+info  Exported 7449 FHIR resources as JSON.
+info  Assembling Implementation Guide sources...
+warn  
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! IMPORTANT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Your ig.ini file does NOT point to the Implementation Guide resource that SUSHI generates. As a
+result, the IG Publisher will IGNORE the SUSHI-generated ImplementationGuide resource. To fix this,
+please do one of the following:
+- Update your ig.ini file with 'ig = fsh-generated/resources/ImplementationGuide-hl7.fhir.extensions:r5:4.0.1.json' (recommended), or
+- Update your sushi-config.yaml file with 'FSHOnly: true' to tell SUSHI NOT to generate the IG resource
+
+
+info  Generated ImplementationGuide-hl7.fhir.extensions:r5:4.0.1.json
+info  Assembled Implementation Guide sources; ready for IG Publisher.
+
+========================= SUSHI RESULTS ===========================
+|  -------------------------------------------------------------  |
+| |    Profiles   |  Extensions  |   Logicals   |   Resources   | |
+| |-------------------------------------------------------------| |
+| |       0       |     7449     |      0       |       0       | |
+|  -------------------------------------------------------------  |
+|  -------------------------------------------------------------  |
+| |      ValueSets     |    CodeSystems    |     Instances      | |
+| |-------------------------------------------------------------| |
+| |         0          |         0         |         0          | |
+|  -------------------------------------------------------------  |
+|                                                                 |
+===================================================================
+| The docs might be bene-fish-al.       233 Errors      1 Warning |
+===================================================================
+

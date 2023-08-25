@@ -1,0 +1,498 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-SubstanceNucleicAcid.subunit",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubstanceNucleicAcid.subunit",
+  "name": "SubstanceNucleicAcidSubunit",
+  "title": "SubstanceNucleicAcid Subunit ",
+  "status": "draft",
+  "description": "Cross version extension for SubstanceNucleicAcid.subunit from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "SubstanceNucleicAcid Subunit ",
+        "definition": "Cross version extension for SubstanceNucleicAcid.subunit from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:sequence",
+        "path": "Extension.extension",
+        "sliceName": "sequence",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:sequence.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:sequence.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "sequence"
+      },
+      {
+        "id": "Extension.extension:sequence.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:threePrime",
+        "path": "Extension.extension",
+        "sliceName": "threePrime",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:threePrime.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:threePrime.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "threePrime"
+      },
+      {
+        "id": "Extension.extension:threePrime.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:length",
+        "path": "Extension.extension",
+        "sliceName": "length",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:length.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:length.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "length"
+      },
+      {
+        "id": "Extension.extension:length.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:fivePrime",
+        "path": "Extension.extension",
+        "sliceName": "fivePrime",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:fivePrime.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:fivePrime.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "fivePrime"
+      },
+      {
+        "id": "Extension.extension:fivePrime.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:linkage",
+        "path": "Extension.extension",
+        "sliceName": "linkage",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:linkage.extension:identifier",
+        "path": "Extension.extension.extension",
+        "sliceName": "identifier",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:linkage.extension:identifier.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:linkage.extension:identifier.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "identifier"
+      },
+      {
+        "id": "Extension.extension:linkage.extension:identifier.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:linkage.extension:connectivity",
+        "path": "Extension.extension.extension",
+        "sliceName": "connectivity",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:linkage.extension:connectivity.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:linkage.extension:connectivity.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "connectivity"
+      },
+      {
+        "id": "Extension.extension:linkage.extension:connectivity.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:linkage.extension:residueSite",
+        "path": "Extension.extension.extension",
+        "sliceName": "residueSite",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:linkage.extension:residueSite.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:linkage.extension:residueSite.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "residueSite"
+      },
+      {
+        "id": "Extension.extension:linkage.extension:residueSite.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:linkage.extension:name",
+        "path": "Extension.extension.extension",
+        "sliceName": "name",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:linkage.extension:name.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:linkage.extension:name.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "name"
+      },
+      {
+        "id": "Extension.extension:linkage.extension:name.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:linkage.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:linkage.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:linkage.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:linkage.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:linkage.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "linkage"
+      },
+      {
+        "id": "Extension.extension:linkage.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:subunit",
+        "path": "Extension.extension",
+        "sliceName": "subunit",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:subunit.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:subunit.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "subunit"
+      },
+      {
+        "id": "Extension.extension:subunit.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:sugar",
+        "path": "Extension.extension",
+        "sliceName": "sugar",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:sugar.extension:identifier",
+        "path": "Extension.extension.extension",
+        "sliceName": "identifier",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:sugar.extension:identifier.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:sugar.extension:identifier.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "identifier"
+      },
+      {
+        "id": "Extension.extension:sugar.extension:identifier.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:sugar.extension:residueSite",
+        "path": "Extension.extension.extension",
+        "sliceName": "residueSite",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:sugar.extension:residueSite.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:sugar.extension:residueSite.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "residueSite"
+      },
+      {
+        "id": "Extension.extension:sugar.extension:residueSite.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:sugar.extension:name",
+        "path": "Extension.extension.extension",
+        "sliceName": "name",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:sugar.extension:name.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:sugar.extension:name.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "name"
+      },
+      {
+        "id": "Extension.extension:sugar.extension:name.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:sugar.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:sugar.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:sugar.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:sugar.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:sugar.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "sugar"
+      },
+      {
+        "id": "Extension.extension:sugar.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:sequenceAttachment",
+        "path": "Extension.extension",
+        "sliceName": "sequenceAttachment",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:sequenceAttachment.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:sequenceAttachment.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "sequenceAttachment"
+      },
+      {
+        "id": "Extension.extension:sequenceAttachment.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Attachment"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubstanceNucleicAcid.subunit"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

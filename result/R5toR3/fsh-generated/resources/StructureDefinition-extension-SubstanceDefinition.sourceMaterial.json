@@ -1,0 +1,224 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-SubstanceDefinition.sourceMaterial",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubstanceDefinition.sourceMaterial",
+  "name": "SubstanceDefinitionSourceMaterial",
+  "title": "SubstanceDefinition SourceMaterial ",
+  "status": "draft",
+  "description": "Cross version extension for SubstanceDefinition.sourceMaterial from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "SubstanceDefinition SourceMaterial ",
+        "definition": "Cross version extension for SubstanceDefinition.sourceMaterial from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:species",
+        "path": "Extension.extension",
+        "sliceName": "species",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:species.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:species.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "species"
+      },
+      {
+        "id": "Extension.extension:species.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/substance-source-material-species|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:genus",
+        "path": "Extension.extension",
+        "sliceName": "genus",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:genus.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:genus.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "genus"
+      },
+      {
+        "id": "Extension.extension:genus.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/substance-source-material-genus|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:part",
+        "path": "Extension.extension",
+        "sliceName": "part",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:part.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:part.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "part"
+      },
+      {
+        "id": "Extension.extension:part.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/substance-source-material-part|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:countryOfOrigin",
+        "path": "Extension.extension",
+        "sliceName": "countryOfOrigin",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:countryOfOrigin.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:countryOfOrigin.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "countryOfOrigin"
+      },
+      {
+        "id": "Extension.extension:countryOfOrigin.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/country|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:type.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/substance-source-material-type|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubstanceDefinition.sourceMaterial"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

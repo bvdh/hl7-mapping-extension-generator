@@ -1,0 +1,694 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-ImagingStudy.series",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ImagingStudy.series",
+  "name": "ImagingStudySeries",
+  "title": "ImagingStudy Series ",
+  "status": "draft",
+  "description": "Cross version extension for ImagingStudy.series from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "ImagingStudy",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "ImagingStudy Series ",
+        "definition": "Cross version extension for ImagingStudy.series from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:instance",
+        "path": "Extension.extension",
+        "sliceName": "instance",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:instance.extension:number",
+        "path": "Extension.extension.extension",
+        "sliceName": "number",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:instance.extension:number.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:instance.extension:number.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "number"
+      },
+      {
+        "id": "Extension.extension:instance.extension:number.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "unsignedInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:instance.extension:uid",
+        "path": "Extension.extension.extension",
+        "sliceName": "uid",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:instance.extension:uid.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:instance.extension:uid.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "uid"
+      },
+      {
+        "id": "Extension.extension:instance.extension:uid.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:instance.extension:sopClass",
+        "path": "Extension.extension.extension",
+        "sliceName": "sopClass",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:instance.extension:sopClass.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:instance.extension:sopClass.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "sopClass"
+      },
+      {
+        "id": "Extension.extension:instance.extension:sopClass.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1"
+        }
+      },
+      {
+        "id": "Extension.extension:instance.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:instance.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:instance.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:instance.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:instance.extension:title",
+        "path": "Extension.extension.extension",
+        "sliceName": "title",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:instance.extension:title.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:instance.extension:title.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "title"
+      },
+      {
+        "id": "Extension.extension:instance.extension:title.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:instance.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "instance"
+      },
+      {
+        "id": "Extension.extension:instance.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:performer",
+        "path": "Extension.extension",
+        "sliceName": "performer",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:performer.extension:actor",
+        "path": "Extension.extension.extension",
+        "sliceName": "actor",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:performer.extension:actor.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:performer.extension:actor.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "actor"
+      },
+      {
+        "id": "Extension.extension:performer.extension:actor.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+              "http://hl7.org/fhir/StructureDefinition/Organization",
+              "http://hl7.org/fhir/StructureDefinition/CareTeam",
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/Device",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+              "http://hl7.org/fhir/StructureDefinition/HealthcareService"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:performer.extension:function",
+        "path": "Extension.extension.extension",
+        "sliceName": "function",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:performer.extension:function.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:performer.extension:function.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "function"
+      },
+      {
+        "id": "Extension.extension:performer.extension:function.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/series-performer-function|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:performer.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:performer.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:performer.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:performer.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:performer.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "performer"
+      },
+      {
+        "id": "Extension.extension:performer.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:modality",
+        "path": "Extension.extension",
+        "sliceName": "modality",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:modality.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:modality.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "modality"
+      },
+      {
+        "id": "Extension.extension:modality.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_33.html"
+        }
+      },
+      {
+        "id": "Extension.extension:description",
+        "path": "Extension.extension",
+        "sliceName": "description",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:description.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:description.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:description.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:started",
+        "path": "Extension.extension",
+        "sliceName": "started",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:started.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:started.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "started"
+      },
+      {
+        "id": "Extension.extension:started.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:laterality",
+        "path": "Extension.extension",
+        "sliceName": "laterality",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:laterality.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:laterality.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "laterality"
+      },
+      {
+        "id": "Extension.extension:laterality.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_244.html"
+        }
+      },
+      {
+        "id": "Extension.extension:uid",
+        "path": "Extension.extension",
+        "sliceName": "uid",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:uid.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:uid.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "uid"
+      },
+      {
+        "id": "Extension.extension:uid.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:number",
+        "path": "Extension.extension",
+        "sliceName": "number",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:number.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:number.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "number"
+      },
+      {
+        "id": "Extension.extension:number.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "unsignedInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:bodySite",
+        "path": "Extension.extension",
+        "sliceName": "bodySite",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:bodySite.extension:codeablereference",
+        "path": "Extension.extension.extension",
+        "sliceName": "codeablereference",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:bodySite.extension:codeablereference.extension:reference",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "reference",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:bodySite.extension:codeablereference.extension:reference.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:bodySite.extension:codeablereference.extension:reference.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:bodySite.extension:codeablereference.extension:reference.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:bodySite.extension:codeablereference.extension:concept",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "concept",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:bodySite.extension:codeablereference.extension:concept.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:bodySite.extension:codeablereference.extension:concept.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "concept"
+      },
+      {
+        "id": "Extension.extension:bodySite.extension:codeablereference.extension:concept.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:bodySite.extension:codeablereference.extension:id",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:bodySite.extension:codeablereference.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:bodySite.extension:codeablereference.extension:id.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:bodySite.extension:codeablereference.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:bodySite.extension:codeablereference.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "codeablereference"
+      },
+      {
+        "id": "Extension.extension:bodySite.extension:codeablereference.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:bodySite.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "bodySite"
+      },
+      {
+        "id": "Extension.extension:bodySite.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:endpoint",
+        "path": "Extension.extension",
+        "sliceName": "endpoint",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:endpoint.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:endpoint.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "endpoint"
+      },
+      {
+        "id": "Extension.extension:endpoint.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Endpoint"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:numberOfInstances",
+        "path": "Extension.extension",
+        "sliceName": "numberOfInstances",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:numberOfInstances.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:numberOfInstances.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "numberOfInstances"
+      },
+      {
+        "id": "Extension.extension:numberOfInstances.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "unsignedInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:specimen",
+        "path": "Extension.extension",
+        "sliceName": "specimen",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:specimen.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:specimen.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "specimen"
+      },
+      {
+        "id": "Extension.extension:specimen.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Specimen"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ImagingStudy.series"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

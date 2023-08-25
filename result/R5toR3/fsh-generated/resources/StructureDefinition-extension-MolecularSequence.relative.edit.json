@@ -1,0 +1,178 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-MolecularSequence.relative.edit",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MolecularSequence.relative.edit",
+  "name": "MolecularSequenceRelativeEdit",
+  "title": "MolecularSequence Relative Edit ",
+  "status": "draft",
+  "description": "Cross version extension for MolecularSequence.relative.edit from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "MolecularSequence Relative Edit ",
+        "definition": "Cross version extension for MolecularSequence.relative.edit from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:replacedSequence",
+        "path": "Extension.extension",
+        "sliceName": "replacedSequence",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:replacedSequence.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:replacedSequence.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "replacedSequence"
+      },
+      {
+        "id": "Extension.extension:replacedSequence.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:replacementSequence",
+        "path": "Extension.extension",
+        "sliceName": "replacementSequence",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:replacementSequence.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:replacementSequence.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "replacementSequence"
+      },
+      {
+        "id": "Extension.extension:replacementSequence.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:start",
+        "path": "Extension.extension",
+        "sliceName": "start",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:start.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:start.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "start"
+      },
+      {
+        "id": "Extension.extension:start.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:end",
+        "path": "Extension.extension",
+        "sliceName": "end",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:end.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:end.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "end"
+      },
+      {
+        "id": "Extension.extension:end.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MolecularSequence.relative.edit"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

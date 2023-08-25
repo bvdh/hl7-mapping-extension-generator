@@ -1,0 +1,156 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-NutritionOrder.enteralFormula.administration.schedule",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.enteralFormula.administration.schedule",
+  "name": "NutritionOrderEnteralFormulaAdministrationSchedule",
+  "title": "NutritionOrder EnteralFormula Administration Schedule ",
+  "status": "draft",
+  "description": "Cross version extension for NutritionOrder.enteralFormula.administration.schedule from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "NutritionOrder.enteralFormula.administration",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "NutritionOrder EnteralFormula Administration Schedule ",
+        "definition": "Cross version extension for NutritionOrder.enteralFormula.administration.schedule from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:asNeeded",
+        "path": "Extension.extension",
+        "sliceName": "asNeeded",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:asNeeded.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:asNeeded.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "asNeeded"
+      },
+      {
+        "id": "Extension.extension:asNeeded.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:timing",
+        "path": "Extension.extension",
+        "sliceName": "timing",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:timing.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:timing.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "timing"
+      },
+      {
+        "id": "Extension.extension:timing.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Timing"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:asNeededFor",
+        "path": "Extension.extension",
+        "sliceName": "asNeededFor",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:asNeededFor.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:asNeededFor.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "asNeededFor"
+      },
+      {
+        "id": "Extension.extension:asNeededFor.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/medication-as-needed-reason|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.enteralFormula.administration.schedule"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

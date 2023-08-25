@@ -1,0 +1,8 @@
+Extension:   ClaimInsuranceClaimResponse
+Id:          extension-Claim.insurance.claimResponse
+Title:       "Claim Insurance ClaimResponse "
+Description: "Cross version extension for Claim.insurance.claimResponse from FHIR version 4.0.1 to FHIR version 5.0.0"
+Context:     Claim.insurance
+* value[x] only Reference
+* valueReference only Reference( ClaimResponse)
+

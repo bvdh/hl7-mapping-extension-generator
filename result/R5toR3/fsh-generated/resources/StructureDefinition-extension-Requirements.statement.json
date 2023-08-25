@@ -1,0 +1,349 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-Requirements.statement",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement",
+  "name": "RequirementsStatement",
+  "title": "Requirements Statement ",
+  "status": "draft",
+  "description": "Cross version extension for Requirements.statement from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Requirements Statement ",
+        "definition": "Cross version extension for Requirements.statement from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:reference",
+        "path": "Extension.extension",
+        "sliceName": "reference",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:reference.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:reference.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:reference.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:parent",
+        "path": "Extension.extension",
+        "sliceName": "parent",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:parent.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:parent.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "parent"
+      },
+      {
+        "id": "Extension.extension:parent.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:satisfiedBy",
+        "path": "Extension.extension",
+        "sliceName": "satisfiedBy",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:satisfiedBy.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:satisfiedBy.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "satisfiedBy"
+      },
+      {
+        "id": "Extension.extension:satisfiedBy.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:conditionality",
+        "path": "Extension.extension",
+        "sliceName": "conditionality",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:conditionality.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:conditionality.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "conditionality"
+      },
+      {
+        "id": "Extension.extension:conditionality.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:conformance",
+        "path": "Extension.extension",
+        "sliceName": "conformance",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:conformance.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:conformance.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "conformance"
+      },
+      {
+        "id": "Extension.extension:conformance.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/conformance-expectation|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:derivedFrom",
+        "path": "Extension.extension",
+        "sliceName": "derivedFrom",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:derivedFrom.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:derivedFrom.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "derivedFrom"
+      },
+      {
+        "id": "Extension.extension:derivedFrom.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:requirement",
+        "path": "Extension.extension",
+        "sliceName": "requirement",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:requirement.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:requirement.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "requirement"
+      },
+      {
+        "id": "Extension.extension:requirement.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:source",
+        "path": "Extension.extension",
+        "sliceName": "source",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:source.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:source.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "source"
+      },
+      {
+        "id": "Extension.extension:source.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/CareTeam",
+              "http://hl7.org/fhir/StructureDefinition/Device",
+              "http://hl7.org/fhir/StructureDefinition/Group",
+              "http://hl7.org/fhir/StructureDefinition/HealthcareService",
+              "http://hl7.org/fhir/StructureDefinition/Organization",
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:label",
+        "path": "Extension.extension",
+        "sliceName": "label",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:label.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:label.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "label"
+      },
+      {
+        "id": "Extension.extension:label.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:key",
+        "path": "Extension.extension",
+        "sliceName": "key",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:key.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:key.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "key"
+      },
+      {
+        "id": "Extension.extension:key.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

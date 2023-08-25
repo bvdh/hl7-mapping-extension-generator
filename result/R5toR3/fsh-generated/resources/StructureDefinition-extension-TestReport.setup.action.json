@@ -1,0 +1,393 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-TestReport.setup.action",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestReport.setup.action",
+  "name": "TestReportSetupAction",
+  "title": "TestReport Setup Action ",
+  "status": "draft",
+  "description": "Cross version extension for TestReport.setup.action from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "TestReport.setup",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "TestReport Setup Action ",
+        "definition": "Cross version extension for TestReport.setup.action from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:assert",
+        "path": "Extension.extension",
+        "sliceName": "assert",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:assert.extension:result",
+        "path": "Extension.extension.extension",
+        "sliceName": "result",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:assert.extension:result.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:assert.extension:result.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "result"
+      },
+      {
+        "id": "Extension.extension:assert.extension:result.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/report-action-result-codes|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:assert.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:assert.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:assert.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:assert.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:assert.extension:requirement",
+        "path": "Extension.extension.extension",
+        "sliceName": "requirement",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:assert.extension:requirement.extension:link",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "link",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:assert.extension:requirement.extension:link.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:assert.extension:requirement.extension:link.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "link"
+      },
+      {
+        "id": "Extension.extension:assert.extension:requirement.extension:link.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:assert.extension:requirement.extension:id",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:assert.extension:requirement.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:assert.extension:requirement.extension:id.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:assert.extension:requirement.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:assert.extension:requirement.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "requirement"
+      },
+      {
+        "id": "Extension.extension:assert.extension:requirement.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:assert.extension:detail",
+        "path": "Extension.extension.extension",
+        "sliceName": "detail",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:assert.extension:detail.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:assert.extension:detail.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "detail"
+      },
+      {
+        "id": "Extension.extension:assert.extension:detail.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:assert.extension:message",
+        "path": "Extension.extension.extension",
+        "sliceName": "message",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:assert.extension:message.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:assert.extension:message.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "message"
+      },
+      {
+        "id": "Extension.extension:assert.extension:message.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:assert.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "assert"
+      },
+      {
+        "id": "Extension.extension:assert.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:operation",
+        "path": "Extension.extension",
+        "sliceName": "operation",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:operation.extension:result",
+        "path": "Extension.extension.extension",
+        "sliceName": "result",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:operation.extension:result.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:operation.extension:result.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "result"
+      },
+      {
+        "id": "Extension.extension:operation.extension:result.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/report-action-result-codes|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:operation.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:operation.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:operation.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:operation.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:operation.extension:detail",
+        "path": "Extension.extension.extension",
+        "sliceName": "detail",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:operation.extension:detail.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:operation.extension:detail.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "detail"
+      },
+      {
+        "id": "Extension.extension:operation.extension:detail.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:operation.extension:message",
+        "path": "Extension.extension.extension",
+        "sliceName": "message",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:operation.extension:message.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:operation.extension:message.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "message"
+      },
+      {
+        "id": "Extension.extension:operation.extension:message.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:operation.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "operation"
+      },
+      {
+        "id": "Extension.extension:operation.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestReport.setup.action"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

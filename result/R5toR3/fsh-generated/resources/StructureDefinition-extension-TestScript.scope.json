@@ -1,0 +1,160 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-TestScript.scope",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestScript.scope",
+  "name": "TestScriptScope",
+  "title": "TestScript Scope ",
+  "status": "draft",
+  "description": "Cross version extension for TestScript.scope from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "TestScript",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "TestScript Scope ",
+        "definition": "Cross version extension for TestScript.scope from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:phase",
+        "path": "Extension.extension",
+        "sliceName": "phase",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:phase.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:phase.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "phase"
+      },
+      {
+        "id": "Extension.extension:phase.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/testscript-scope-phase-codes|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:artifact",
+        "path": "Extension.extension",
+        "sliceName": "artifact",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:artifact.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:artifact.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "artifact"
+      },
+      {
+        "id": "Extension.extension:artifact.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:conformance",
+        "path": "Extension.extension",
+        "sliceName": "conformance",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:conformance.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:conformance.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "conformance"
+      },
+      {
+        "id": "Extension.extension:conformance.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/testscript-scope-conformance-codes|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestScript.scope"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

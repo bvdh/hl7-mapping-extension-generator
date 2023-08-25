@@ -1,0 +1,432 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-AdministrableProductDefinition.routeOfAdministration",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-AdministrableProductDefinition.routeOfAdministration",
+  "name": "AdministrableProductDefinitionRouteOfAdministration",
+  "title": "AdministrableProductDefinition RouteOfAdministration ",
+  "status": "draft",
+  "description": "Cross version extension for AdministrableProductDefinition.routeOfAdministration from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "AdministrableProductDefinition RouteOfAdministration ",
+        "definition": "Cross version extension for AdministrableProductDefinition.routeOfAdministration from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:code",
+        "path": "Extension.extension",
+        "sliceName": "code",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:code.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:code.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:code.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/route-codes|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:maxSingleDose",
+        "path": "Extension.extension",
+        "sliceName": "maxSingleDose",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:maxSingleDose.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:maxSingleDose.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "maxSingleDose"
+      },
+      {
+        "id": "Extension.extension:maxSingleDose.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:maxTreatmentPeriod",
+        "path": "Extension.extension",
+        "sliceName": "maxTreatmentPeriod",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:maxTreatmentPeriod.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:maxTreatmentPeriod.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "maxTreatmentPeriod"
+      },
+      {
+        "id": "Extension.extension:maxTreatmentPeriod.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Duration"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:targetSpecies",
+        "path": "Extension.extension",
+        "sliceName": "targetSpecies",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:targetSpecies.extension:code",
+        "path": "Extension.extension.extension",
+        "sliceName": "code",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:targetSpecies.extension:code.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:targetSpecies.extension:code.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:targetSpecies.extension:code.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/target-species|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:targetSpecies.extension:withdrawalPeriod",
+        "path": "Extension.extension.extension",
+        "sliceName": "withdrawalPeriod",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:targetSpecies.extension:withdrawalPeriod.extension:supportingInformation",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "supportingInformation",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:targetSpecies.extension:withdrawalPeriod.extension:supportingInformation.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:targetSpecies.extension:withdrawalPeriod.extension:supportingInformation.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "supportingInformation"
+      },
+      {
+        "id": "Extension.extension:targetSpecies.extension:withdrawalPeriod.extension:supportingInformation.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:targetSpecies.extension:withdrawalPeriod.extension:tissue",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "tissue",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:targetSpecies.extension:withdrawalPeriod.extension:tissue.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:targetSpecies.extension:withdrawalPeriod.extension:tissue.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "tissue"
+      },
+      {
+        "id": "Extension.extension:targetSpecies.extension:withdrawalPeriod.extension:tissue.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/animal-tissue-type|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:targetSpecies.extension:withdrawalPeriod.extension:id",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:targetSpecies.extension:withdrawalPeriod.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:targetSpecies.extension:withdrawalPeriod.extension:id.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:targetSpecies.extension:withdrawalPeriod.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:targetSpecies.extension:withdrawalPeriod.extension:value",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "value",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:targetSpecies.extension:withdrawalPeriod.extension:value.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:targetSpecies.extension:withdrawalPeriod.extension:value.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "value"
+      },
+      {
+        "id": "Extension.extension:targetSpecies.extension:withdrawalPeriod.extension:value.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:targetSpecies.extension:withdrawalPeriod.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "withdrawalPeriod"
+      },
+      {
+        "id": "Extension.extension:targetSpecies.extension:withdrawalPeriod.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:targetSpecies.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:targetSpecies.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:targetSpecies.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:targetSpecies.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:targetSpecies.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "targetSpecies"
+      },
+      {
+        "id": "Extension.extension:targetSpecies.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:firstDose",
+        "path": "Extension.extension",
+        "sliceName": "firstDose",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:firstDose.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:firstDose.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "firstDose"
+      },
+      {
+        "id": "Extension.extension:firstDose.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:maxDosePerTreatmentPeriod",
+        "path": "Extension.extension",
+        "sliceName": "maxDosePerTreatmentPeriod",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:maxDosePerTreatmentPeriod.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:maxDosePerTreatmentPeriod.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "maxDosePerTreatmentPeriod"
+      },
+      {
+        "id": "Extension.extension:maxDosePerTreatmentPeriod.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Ratio"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:maxDosePerDay",
+        "path": "Extension.extension",
+        "sliceName": "maxDosePerDay",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:maxDosePerDay.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:maxDosePerDay.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "maxDosePerDay"
+      },
+      {
+        "id": "Extension.extension:maxDosePerDay.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-AdministrableProductDefinition.routeOfAdministration"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-ExampleScenario.instance.containedInstance",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ExampleScenario.instance.containedInstance",
+  "name": "ExampleScenarioInstanceContainedInstance",
+  "title": "ExampleScenario Instance ContainedInstance ",
+  "status": "draft",
+  "description": "Cross version extension for ExampleScenario.instance.containedInstance from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "ExampleScenario Instance ContainedInstance ",
+        "definition": "Cross version extension for ExampleScenario.instance.containedInstance from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:instanceReference",
+        "path": "Extension.extension",
+        "sliceName": "instanceReference",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:instanceReference.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:instanceReference.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "instanceReference"
+      },
+      {
+        "id": "Extension.extension:instanceReference.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:versionReference",
+        "path": "Extension.extension",
+        "sliceName": "versionReference",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:versionReference.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:versionReference.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "versionReference"
+      },
+      {
+        "id": "Extension.extension:versionReference.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ExampleScenario.instance.containedInstance"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

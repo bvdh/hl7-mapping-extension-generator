@@ -1,0 +1,126 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-OperationDefinition.overload",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-OperationDefinition.overload",
+  "name": "OperationDefinitionOverload",
+  "title": "OperationDefinition Overload ",
+  "status": "draft",
+  "description": "Cross version extension for OperationDefinition.overload from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "OperationDefinition",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "OperationDefinition Overload ",
+        "definition": "Cross version extension for OperationDefinition.overload from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:comment",
+        "path": "Extension.extension",
+        "sliceName": "comment",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:comment.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:comment.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "comment"
+      },
+      {
+        "id": "Extension.extension:comment.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:parameterName",
+        "path": "Extension.extension",
+        "sliceName": "parameterName",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:parameterName.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:parameterName.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "parameterName"
+      },
+      {
+        "id": "Extension.extension:parameterName.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-OperationDefinition.overload"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+Extension:   ExplanationOfBenefitSupportingInfoTiming
+Id:          extension-ExplanationOfBenefit.supportingInfo.timing
+Title:       "ExplanationOfBenefit SupportingInfo Timing[x] "
+Description: "Cross version extension for ExplanationOfBenefit.supportingInfo.timing[x] from FHIR version 5.0.0 to FHIR version 4.0.1"
+Context:     ExplanationOfBenefit.supportingInfo
+* value[x] only date or Period
+

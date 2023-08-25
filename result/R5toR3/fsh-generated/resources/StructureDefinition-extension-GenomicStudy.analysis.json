@@ -1,0 +1,900 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-GenomicStudy.analysis",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-GenomicStudy.analysis",
+  "name": "GenomicStudyAnalysis",
+  "title": "GenomicStudy Analysis ",
+  "status": "draft",
+  "description": "Cross version extension for GenomicStudy.analysis from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "GenomicStudy Analysis ",
+        "definition": "Cross version extension for GenomicStudy.analysis from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:date",
+        "path": "Extension.extension",
+        "sliceName": "date",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:date.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:date.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "date"
+      },
+      {
+        "id": "Extension.extension:date.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:identifier",
+        "path": "Extension.extension",
+        "sliceName": "identifier",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:identifier.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:identifier.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "identifier"
+      },
+      {
+        "id": "Extension.extension:identifier.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:note",
+        "path": "Extension.extension",
+        "sliceName": "note",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:note.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:note.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "note"
+      },
+      {
+        "id": "Extension.extension:note.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Annotation"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:regionsStudied",
+        "path": "Extension.extension",
+        "sliceName": "regionsStudied",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:regionsStudied.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:regionsStudied.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "regionsStudied"
+      },
+      {
+        "id": "Extension.extension:regionsStudied.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/DocumentReference",
+              "http://hl7.org/fhir/StructureDefinition/Observation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:performer",
+        "path": "Extension.extension",
+        "sliceName": "performer",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:performer.extension:actor",
+        "path": "Extension.extension.extension",
+        "sliceName": "actor",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:performer.extension:actor.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:performer.extension:actor.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "actor"
+      },
+      {
+        "id": "Extension.extension:performer.extension:actor.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+              "http://hl7.org/fhir/StructureDefinition/Organization",
+              "http://hl7.org/fhir/StructureDefinition/Device"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:performer.extension:role",
+        "path": "Extension.extension.extension",
+        "sliceName": "role",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:performer.extension:role.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:performer.extension:role.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "role"
+      },
+      {
+        "id": "Extension.extension:performer.extension:role.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:performer.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:performer.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:performer.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:performer.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:performer.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "performer"
+      },
+      {
+        "id": "Extension.extension:performer.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:changeType",
+        "path": "Extension.extension",
+        "sliceName": "changeType",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:changeType.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:changeType.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "changeType"
+      },
+      {
+        "id": "Extension.extension:changeType.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/genomicstudy-changetype|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:focus",
+        "path": "Extension.extension",
+        "sliceName": "focus",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:focus.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:focus.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "focus"
+      },
+      {
+        "id": "Extension.extension:focus.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Resource"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:instantiatesCanonical",
+        "path": "Extension.extension",
+        "sliceName": "instantiatesCanonical",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:instantiatesCanonical.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:instantiatesCanonical.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "instantiatesCanonical"
+      },
+      {
+        "id": "Extension.extension:instantiatesCanonical.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:title",
+        "path": "Extension.extension",
+        "sliceName": "title",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:title.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:title.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "title"
+      },
+      {
+        "id": "Extension.extension:title.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:instantiatesUri",
+        "path": "Extension.extension",
+        "sliceName": "instantiatesUri",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:instantiatesUri.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:instantiatesUri.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "instantiatesUri"
+      },
+      {
+        "id": "Extension.extension:instantiatesUri.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:output",
+        "path": "Extension.extension",
+        "sliceName": "output",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:output.extension:file",
+        "path": "Extension.extension.extension",
+        "sliceName": "file",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:output.extension:file.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:output.extension:file.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "file"
+      },
+      {
+        "id": "Extension.extension:output.extension:file.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/DocumentReference"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:output.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:output.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:output.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:output.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:output.extension:type",
+        "path": "Extension.extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:output.extension:type.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:output.extension:type.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:output.extension:type.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/genomicstudy-dataformat|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:output.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "output"
+      },
+      {
+        "id": "Extension.extension:output.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:input",
+        "path": "Extension.extension",
+        "sliceName": "input",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:input.extension:file",
+        "path": "Extension.extension.extension",
+        "sliceName": "file",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:input.extension:file.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:input.extension:file.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "file"
+      },
+      {
+        "id": "Extension.extension:input.extension:file.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/DocumentReference"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:input.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:input.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:input.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:input.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:input.extension:type",
+        "path": "Extension.extension.extension",
+        "sliceName": "type",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:input.extension:type.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:input.extension:type.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:input.extension:type.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/genomicstudy-dataformat|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:input.extension:generatedBy",
+        "path": "Extension.extension.extension",
+        "sliceName": "generatedBy",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:input.extension:generatedBy.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:input.extension:generatedBy.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "generatedBy"
+      },
+      {
+        "id": "Extension.extension:input.extension:generatedBy.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Identifier"
+          },
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:input.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "input"
+      },
+      {
+        "id": "Extension.extension:input.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:methodType",
+        "path": "Extension.extension",
+        "sliceName": "methodType",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:methodType.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:methodType.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "methodType"
+      },
+      {
+        "id": "Extension.extension:methodType.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/genomicstudy-methodtype|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:regionsCalled",
+        "path": "Extension.extension",
+        "sliceName": "regionsCalled",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:regionsCalled.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:regionsCalled.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "regionsCalled"
+      },
+      {
+        "id": "Extension.extension:regionsCalled.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/DocumentReference",
+              "http://hl7.org/fhir/StructureDefinition/Observation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:genomeBuild",
+        "path": "Extension.extension",
+        "sliceName": "genomeBuild",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:genomeBuild.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:genomeBuild.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "genomeBuild"
+      },
+      {
+        "id": "Extension.extension:genomeBuild.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://loinc.org/vs/LL1040-6"
+        }
+      },
+      {
+        "id": "Extension.extension:specimen",
+        "path": "Extension.extension",
+        "sliceName": "specimen",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:specimen.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:specimen.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "specimen"
+      },
+      {
+        "id": "Extension.extension:specimen.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Specimen"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:protocolPerformed",
+        "path": "Extension.extension",
+        "sliceName": "protocolPerformed",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:protocolPerformed.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:protocolPerformed.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "protocolPerformed"
+      },
+      {
+        "id": "Extension.extension:protocolPerformed.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Procedure",
+              "http://hl7.org/fhir/StructureDefinition/Task"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:device",
+        "path": "Extension.extension",
+        "sliceName": "device",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:device.extension:function",
+        "path": "Extension.extension.extension",
+        "sliceName": "function",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:device.extension:function.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:device.extension:function.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "function"
+      },
+      {
+        "id": "Extension.extension:device.extension:function.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:device.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:device.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:device.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:device.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:device.extension:device",
+        "path": "Extension.extension.extension",
+        "sliceName": "device",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:device.extension:device.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:device.extension:device.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "device"
+      },
+      {
+        "id": "Extension.extension:device.extension:device.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Device"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:device.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "device"
+      },
+      {
+        "id": "Extension.extension:device.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-GenomicStudy.analysis"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

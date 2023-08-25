@@ -1,0 +1,678 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extension-ValueSet.compose",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ValueSet.compose",
+  "name": "ValueSetCompose",
+  "title": "ValueSet Compose ",
+  "status": "draft",
+  "description": "Cross version extension for ValueSet.compose from FHIR version 5.0.0 to FHIR version 3.0.1",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "ValueSet",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "ValueSet Compose ",
+        "definition": "Cross version extension for ValueSet.compose from FHIR version 5.0.0 to FHIR version 3.0.1"
+      },
+      {
+        "id": "Extension.extension:inactive",
+        "path": "Extension.extension",
+        "sliceName": "inactive",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:inactive.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:inactive.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "inactive"
+      },
+      {
+        "id": "Extension.extension:inactive.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:include-",
+        "path": "Extension.extension",
+        "sliceName": "include-",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:include-.extension:filter",
+        "path": "Extension.extension.extension",
+        "sliceName": "filter",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:include-.extension:filter.extension:op",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "op",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:include-.extension:filter.extension:op.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:include-.extension:filter.extension:op.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "op"
+      },
+      {
+        "id": "Extension.extension:include-.extension:filter.extension:op.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/filter-operator|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:include-.extension:filter.extension:property",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "property",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:include-.extension:filter.extension:property.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:include-.extension:filter.extension:property.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "property"
+      },
+      {
+        "id": "Extension.extension:include-.extension:filter.extension:property.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:include-.extension:filter.extension:id",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:include-.extension:filter.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:include-.extension:filter.extension:id.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:include-.extension:filter.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:include-.extension:filter.extension:value",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "value",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:include-.extension:filter.extension:value.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:include-.extension:filter.extension:value.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "value"
+      },
+      {
+        "id": "Extension.extension:include-.extension:filter.extension:value.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:include-.extension:filter.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "filter"
+      },
+      {
+        "id": "Extension.extension:include-.extension:filter.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:include-.extension:copyright",
+        "path": "Extension.extension.extension",
+        "sliceName": "copyright",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:include-.extension:copyright.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:include-.extension:copyright.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "copyright"
+      },
+      {
+        "id": "Extension.extension:include-.extension:copyright.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:include-.extension:system",
+        "path": "Extension.extension.extension",
+        "sliceName": "system",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:include-.extension:system.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:include-.extension:system.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "system"
+      },
+      {
+        "id": "Extension.extension:include-.extension:system.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:include-.extension:valueSet",
+        "path": "Extension.extension.extension",
+        "sliceName": "valueSet",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:include-.extension:valueSet.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:include-.extension:valueSet.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "valueSet"
+      },
+      {
+        "id": "Extension.extension:include-.extension:valueSet.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:include-.extension:concept",
+        "path": "Extension.extension.extension",
+        "sliceName": "concept",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:include-.extension:concept.extension:code",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "code",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:include-.extension:concept.extension:code.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:include-.extension:concept.extension:code.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:include-.extension:concept.extension:code.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:include-.extension:concept.extension:display",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "display",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:include-.extension:concept.extension:display.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:include-.extension:concept.extension:display.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "display"
+      },
+      {
+        "id": "Extension.extension:include-.extension:concept.extension:display.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:include-.extension:concept.extension:designation",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "designation",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:include-.extension:concept.extension:designation.extension:use",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "use",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:include-.extension:concept.extension:designation.extension:use.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:include-.extension:concept.extension:designation.extension:use.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "use"
+      },
+      {
+        "id": "Extension.extension:include-.extension:concept.extension:designation.extension:use.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/designation-use|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:include-.extension:concept.extension:designation.extension:language",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "language",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:include-.extension:concept.extension:designation.extension:language.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:include-.extension:concept.extension:designation.extension:language.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "language"
+      },
+      {
+        "id": "Extension.extension:include-.extension:concept.extension:designation.extension:language.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/all-languages|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:include-.extension:concept.extension:designation.extension:id",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:include-.extension:concept.extension:designation.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:include-.extension:concept.extension:designation.extension:id.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:include-.extension:concept.extension:designation.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:include-.extension:concept.extension:designation.extension:value",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "value",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:include-.extension:concept.extension:designation.extension:value.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:include-.extension:concept.extension:designation.extension:value.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "value"
+      },
+      {
+        "id": "Extension.extension:include-.extension:concept.extension:designation.extension:value.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:include-.extension:concept.extension:designation.extension:additionalUse",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "additionalUse",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:include-.extension:concept.extension:designation.extension:additionalUse.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:include-.extension:concept.extension:designation.extension:additionalUse.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "fixedUri": "additionalUse"
+      },
+      {
+        "id": "Extension.extension:include-.extension:concept.extension:designation.extension:additionalUse.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/designation-use|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:include-.extension:concept.extension:designation.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "designation"
+      },
+      {
+        "id": "Extension.extension:include-.extension:concept.extension:designation.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:include-.extension:concept.extension:id",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:include-.extension:concept.extension:id.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:include-.extension:concept.extension:id.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:include-.extension:concept.extension:id.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:include-.extension:concept.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "concept"
+      },
+      {
+        "id": "Extension.extension:include-.extension:concept.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:include-.extension:id",
+        "path": "Extension.extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:include-.extension:id.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:include-.extension:id.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:include-.extension:id.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:include-.extension:version",
+        "path": "Extension.extension.extension",
+        "sliceName": "version",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:include-.extension:version.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:include-.extension:version.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "version"
+      },
+      {
+        "id": "Extension.extension:include-.extension:version.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:include-.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "include-"
+      },
+      {
+        "id": "Extension.extension:include-.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:property",
+        "path": "Extension.extension",
+        "sliceName": "property",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:property.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:property.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "property"
+      },
+      {
+        "id": "Extension.extension:property.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:lockedDate",
+        "path": "Extension.extension",
+        "sliceName": "lockedDate",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:lockedDate.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:lockedDate.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "lockedDate"
+      },
+      {
+        "id": "Extension.extension:lockedDate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:id",
+        "path": "Extension.extension",
+        "sliceName": "id",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:id.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:id.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "id"
+      },
+      {
+        "id": "Extension.extension:id.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ValueSet.compose"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}
