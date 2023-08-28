@@ -12,7 +12,7 @@ The first includes the cross-reference extension for CodeableReference in the ex
 {
   "url" : "supportingInfo",
   "extension" : [{
-    "url" = "http://hl7.org/fhir/5.0/StructureDefinition/extension-Extension.valueCodeableReference",
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Extension.valueCodeableReference",
     "extension" : [{
       "url" : "concept",
       "valueCodeableConcept": ...
@@ -50,6 +50,7 @@ The context of the included datatype would be the definition of the extension th
 
 There was some discussion about what something similar might look like on a resource. I believe it would be this:
 
+```json
         {
           "_resourceType" : "Observation",
           "extension" : [
@@ -68,4 +69,5 @@ There was some discussion about what something similar might look like on a reso
             }
           ],
           ...
+```
         }
