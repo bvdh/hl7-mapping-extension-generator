@@ -55,7 +55,7 @@ There was some discussion about what something similar might look like on a reso
           "_resourceType" : "Observation",
           "extension" : [
             {
-              "url" = "http://hl7.org/fhir/x.0/StructureDefinition/extension-Observation.valueCodeableReference",
+              "url" : "http://hl7.org/fhir/x.0/StructureDefinition/extension-Observation.valueCodeableReference",
               "extension" : [
                 {
                   "url" : "concept",
